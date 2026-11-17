@@ -11,7 +11,7 @@
     "source": "Visit Luxembourg (ECHO)",
     "status": "probable",
     "reason": "texte semble en luxembourgeois (3 mots typiques)",
-    "decision": null
+    "decision": "approve"
   },
   {
     "id": "da0eae93ad2c",
@@ -25,7 +25,7 @@
     "source": "Visit Luxembourg (ECHO)",
     "status": "probable",
     "reason": "texte semble en luxembourgeois (3 mots typiques)",
-    "decision": null
+    "decision": "approve"
   },
   {
     "id": "284909c39f48",
@@ -53,7 +53,7 @@
     "source": "Visit Luxembourg (ECHO)",
     "status": "probable",
     "reason": "texte semble en luxembourgeois (3 mots typiques)",
-    "decision": null
+    "decision": "approve"
   },
   {
     "id": "3db3a41995e1",
@@ -67,7 +67,7 @@
     "source": "Visit Luxembourg (ECHO)",
     "status": "probable",
     "reason": "texte semble en luxembourgeois (3 mots typiques)",
-    "decision": null
+    "decision": "approve"
   },
   {
     "id": "44ccbfdea502",
@@ -95,7 +95,7 @@
     "source": "Visit Luxembourg (ECHO)",
     "status": "probable",
     "reason": "texte semble en luxembourgeois (5 mots typiques)",
-    "decision": null
+    "decision": "approve"
   },
   {
     "id": "1f31d26d0d3e",
@@ -137,7 +137,7 @@
     "source": "Visit Luxembourg (ECHO)",
     "status": "probable",
     "reason": "texte semble en luxembourgeois (3 mots typiques)",
-    "decision": null
+    "decision": "approve"
   },
   {
     "id": "88340f7f826c",
@@ -151,7 +151,7 @@
     "source": "Visit Luxembourg (ECHO)",
     "status": "probable",
     "reason": "texte semble en luxembourgeois (5 mots typiques)",
-    "decision": null
+    "decision": "approve"
   },
   {
     "id": "48e84f01a63f",
@@ -179,7 +179,7 @@
     "source": "Visit Luxembourg (ECHO)",
     "status": "probable",
     "reason": "texte semble en luxembourgeois (3 mots typiques)",
-    "decision": null
+    "decision": "approve"
   },
   {
     "id": "00e01778e400",
@@ -193,7 +193,7 @@
     "source": "Visit Luxembourg (ECHO)",
     "status": "probable",
     "reason": "texte semble en luxembourgeois (3 mots typiques)",
-    "decision": null
+    "decision": "approve"
   },
   {
     "id": "6c34a1689022",
@@ -207,7 +207,7 @@
     "source": "Visit Luxembourg (ECHO)",
     "status": "probable",
     "reason": "texte semble en luxembourgeois (8 mots typiques)",
-    "decision": null
+    "decision": "approve"
   },
   {
     "id": "3b05712a36a9",
@@ -221,6 +221,6 @@
     "source": "Visit Luxembourg (ECHO)",
     "status": "probable",
     "reason": "mention de la langue/du pays dans le texte",
-    "decision": null
+    "decision": "reject"
   }
 ]
