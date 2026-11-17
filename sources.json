@@ -11,11 +11,11 @@
     "name": "Visit Luxembourg (ECHO)",
     "type": "echo_html",
     "urls": [
-      "https://www.visitluxembourg.com/fr/agenda"
+      "https://www.visitluxembourg.com/fr/explorer-le-luxembourg/evenements-festivals"
     ],
-    "max_list_pages": 15,
-    "max_events": 250,
-    "delay": 1.0,
+    "max_list_pages": 40,
+    "max_events": 700,
+    "delay": 0.7,
     "lb_only": false,
     "enabled": true,
     "note": "Agenda national relayé depuis ECHO. Fiches lues une à une ; langue détectée dans le texte."
