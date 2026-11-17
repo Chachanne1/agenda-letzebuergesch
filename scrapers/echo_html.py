@@ -162,22 +162,28 @@ def scrape(source):
         seen_lists.add(url)
         try:
             page = fetch(url)
-        except Exception:
+        except Exception as exc:
+            print(f"[echo] liste en échec {url[-60:]} : {type(exc).__name__}: {exc}")
             continue
         evs, pgs = find_links(page, url)
+        print(f"[echo] liste {len(seen_lists)} : {len(page)} car., {len(evs)} fiches, {len(pgs)} liens de page")
         for e in evs:
             if e not in event_urls:
                 event_urls.append(e)
         queue.extend(p for p in pgs if p not in seen_lists)
         time.sleep(delay)
 
-    events = []
+    events, nodate, failed = [], 0, 0
     for url in event_urls[:max_events]:
         try:
-            events.extend(parse_detail(fetch(url), url, name))
+            got = parse_detail(fetch(url), url, name)
+            events.extend(got)
+            nodate += 0 if got else 1
         except Exception:
-            pass  # une fiche en échec ne bloque pas les autres
+            failed += 1  # une fiche en échec ne bloque pas les autres
         time.sleep(delay)
+    print(f"[echo] {len(seen_lists)} pages de liste, {len(event_urls)} fiches, "
+          f"{len(events)} événements, {nodate} sans date, {failed} en échec")
     if not event_urls:
         raise ValueError("aucun lien d'événement trouvé dans les pages de liste")
     return events
