@@ -43,8 +43,8 @@ def meta(page, prop):
 def find_links(page, base):
     """Renvoie (liens d'événements, liens de pagination)."""
     events, pages = [], []
-    for href in re.findall(r'href="([^"#]+)"', page):
-        url = urljoin(base, htmllib.unescape(href))
+    for href in re.findall(r'href="([^"]+)"', page):
+        url = urljoin(base, htmllib.unescape(href)).split("#")[0]
         path = urlparse(url).path
         if EVENT_PATH.search(path):
             if url not in events:
