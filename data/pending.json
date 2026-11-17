@@ -11,7 +11,7 @@
     "source": "Visit Luxembourg (ECHO)",
     "status": "probable",
     "reason": "texte semble en luxembourgeois (3 mots typiques)",
-    "decision": null
+    "decision": "approve"
   },
   {
     "id": "44ccbfdea502",
@@ -25,7 +25,7 @@
     "source": "Visit Luxembourg (ECHO)",
     "status": "probable",
     "reason": "texte semble en luxembourgeois (5 mots typiques)",
-    "decision": null
+    "decision": "approve"
   },
   {
     "id": "1f31d26d0d3e",
@@ -39,7 +39,7 @@
     "source": "Visit Luxembourg (ECHO)",
     "status": "probable",
     "reason": "texte semble en luxembourgeois (4 mots typiques)",
-    "decision": null
+    "decision": "approve"
   },
   {
     "id": "e56e6ce91fc3",
@@ -53,7 +53,7 @@
     "source": "Visit Luxembourg (ECHO)",
     "status": "probable",
     "reason": "texte semble en luxembourgeois (8 mots typiques)",
-    "decision": null
+    "decision": "approve"
   },
   {
     "id": "48e84f01a63f",
@@ -67,6 +67,6 @@
     "source": "Visit Luxembourg (ECHO)",
     "status": "probable",
     "reason": "texte semble en luxembourgeois (3 mots typiques)",
-    "decision": null
+    "decision": "approve"
   }
 ]
