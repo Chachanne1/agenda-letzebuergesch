@@ -1,4 +1,26 @@
 {
-  "updated": "2026-11-17T17:44:49+00:00",
-  "sources": []
+  "updated": "2026-11-17T19:14:37+00:00",
+  "sources": [
+    {
+      "name": "Université du Luxembourg - Institut de luxembourgeois (FHSE)",
+      "ok": false,
+      "found": 0,
+      "kept": 0,
+      "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "name": "Visit Luxembourg (ECHO)",
+      "ok": true,
+      "found": 405,
+      "kept": 54,
+      "error": ""
+    },
+    {
+      "name": "Ville de Dudelange",
+      "ok": true,
+      "found": 50,
+      "kept": 1,
+      "error": ""
+    }
+  ]
 }
