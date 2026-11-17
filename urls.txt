@@ -15,7 +15,7 @@ https://www.philharmonie.lu/en/programm                    # [vu]
 https://www.rotondes.lu/fr/programmation                   # [vu]
 https://www.rotondes.lu/fr/agenda                          # [à confirmer] (fiches sous /fr/agenda/...)
 https://kulturfabrik.lu/                                   # [à confirmer] trouver le lien « Agenda »
-https://theatres.lu/en                                     # [vu]
+https://theatres.lu/                                         # corrigé : /en renvoyait 404
 https://cape.lu/                                           # [vu] domaine
 https://trifolion.lu/                                      # [vu] domaine
 https://cerclecite.lu/agenda                               # [vu]
@@ -29,3 +29,27 @@ https://www.citybiblio.lu/                                 # [vu] domaine (Tuffi
 # --- Langue luxembourgeoise ---
 https://www.tickettailor.com/events/inll                   # [à confirmer] événements INLL (Walk&Talk, Meet&Speak)
 # Site du Dag vun der Lëtzebuerger Sprooch : dag.lëtzebuergesch.lu -> copier l'adresse en punycode depuis le navigateur
+
+# --- Ajouts v6 : lieux, communes, associations, langue ---
+https://www.kinneksbond.lu/                                # [vu] Mamer, programme aussi en PDF
+https://www.cnl.public.lu/                                 # [vu] Centre national de littérature (Mersch)
+https://theatre.esch.lu/                                   # [vu] Escher Theater
+https://www.tnl.lu/                                        # [à confirmer] Théâtre National du Luxembourg
+https://www.kasemattentheater.lu/                          # [à confirmer]
+https://www.opderschmelz.lu/                               # [à confirmer] Dudelange
+https://www.cna.public.lu/en/events.html                   # [vu] CNA Dudelange
+https://www.mnr.lu/                                        # [à confirmer] Musée de la Résistance (Esch)
+https://citymuseum.lu/en/event/cafe-des-langues/           # [vu] cafés des langues
+https://www.vdl.lu/en/events                               # [à confirmer] Ville de Luxembourg, classes de conversation
+https://www.niederanven.lu/en/events                       # [vu] Sproochecafé mensuel
+https://differdange.lu/                                    # [vu] Aalt Stadhaus, bibliothèque, Dag vun der Lëtzebuerger Sprooch
+https://www.dudelange.lu/                                  # [à confirmer] agenda communal, bibliothèque régionale
+https://dudilinga.lu/                                      # [vu] Diddelenger Geschichtsfrënn (affiches PDF)
+https://www.zls.public.lu/                                 # [à confirmer] Zenter fir d'Lëtzebuerger Sprooch
+https://www.inll.lu/                                       # [vu] LëtzCamp, Meet&Speak
+https://www.100komma7.lu/                                  # [vu] radio publique
+https://www.luxembourg-ticket.lu/                          # [vu] billetterie (Kabarets, concerts)
+https://www.uni.lu/fhse-en/events/                         # [vu] chaque événement a une version .../calendar (iCal)
+https://www.mnha.lu/                                       # [vu] Museomagenda PDF : langue de chaque conférence
+# Site du Dag vun der Lëtzebuerger Sprooch (liste centralisée, chaque 26 septembre) :
+# copier l'adresse en punycode depuis le navigateur (dag.lëtzebuergesch.lu)

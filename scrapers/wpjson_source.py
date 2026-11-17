@@ -20,12 +20,13 @@ DEFAULT_FIELDS = {
 def parse_items(items, source_name, fields):
     events = []
     for it in items:
-        meta = it.get("meta") or {}
+        # champs dans `meta` (uni.lu) ou au niveau racine (Dudelange)
+        meta = {**it, **(it.get("meta") or {})}
         start = parse_dt(str(meta.get(fields["start"], "")))
         title = (it.get("title") or {}).get("rendered", "")
         if not start or not title:
             continue
-        address = " ".join(str(meta.get(fields[k], "") or "") for k in ("street", "zip", "city")).strip()
+        address = " ".join(str(meta.get(fields[k], "") or "") for k in ("street", "zip", "city") if fields.get(k)).strip()
         events.append(make_event(
             source_name, title, start,
             end=parse_dt(str(meta.get(fields["end"], ""))),

@@ -1,0 +1,23 @@
+# Pages de détail d'événements précises, enregistrées par snapshot.py (une URL par ligne).
+# Toutes ces adresses sont apparues dans mes recherches ou dans vos fichiers.
+
+# visitluxembourg.com (relais ECHO) : événements en luxembourgeois
+https://www.visitluxembourg.com/fr/evenement/variatioun-am-letzebuergeschen
+https://www.visitluxembourg.com/de/veranstaltung/feierungen-vun-der-nationalbibliotheik-op-letzebuergesch
+https://www.visitluxembourg.com/de/veranstaltung/schreif-wei-de-schniewel-gewuess-ass
+https://www.visitluxembourg.com/fr/evenement/mardis-litteraires-nadege-sanou
+
+# luxembourg-city.com : exemple d'atelier en luxembourgeois + une fiche de votre snapshot
+https://www.luxembourg-city.com/en/what-s-on/event/tuffi-children-s-reading-workshop-iiujsd
+https://www.luxembourg-city.com/fr/agenda/event/octave
+
+# Bibliothèque nationale (fiches statiques avec champ « Language(s) »)
+https://bnl.public.lu/en/a-la-une/agenda/2026/ws/cons-07-03.html
+https://bnl.public.lu/en/a-la-une/agenda/2023/portes-ouvertes.html
+
+# neimënster et Trifolion (les API REST ne contiennent pas les dates)
+https://www.neimenster.lu/en/events/journee-internationale-des-droits-de-lhomme/
+https://trifolion.lu/fr/programmation/the-pigeon-dance/
+
+# INLL (Ticket Tailor)
+https://www.tickettailor.com/events/inll/2085367

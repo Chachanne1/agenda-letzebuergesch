@@ -47,7 +47,3 @@ python scrapers/build.py
 cd _site
 python -m http.server 8000      # puis ouvrir http://localhost:8000
 ```
-
-## Propositions des organisateurs
-
-Le formulaire *Eng Aktivitéit proposéieren* (onglet Issues) permet de proposer un événement ; à copier ensuite dans `data/events.json` après vérification.

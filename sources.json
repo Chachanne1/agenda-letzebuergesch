@@ -8,11 +8,40 @@
     "note": "API WordPress. Format d'un événement vérifié (meta.event_start_date, event_location...). L'URL de liste est à confirmer avec probe.py. La langue est détectée dans le texte (beaucoup de textes en luxembourgeois)."
   },
   {
+    "name": "Visit Luxembourg (ECHO)",
+    "type": "echo_html",
+    "urls": [
+      "https://www.visitluxembourg.com/fr/agenda"
+    ],
+    "max_list_pages": 15,
+    "max_events": 250,
+    "delay": 1.0,
+    "lb_only": false,
+    "enabled": true,
+    "note": "Agenda national relayé depuis ECHO. Fiches lues une à une ; langue détectée dans le texte."
+  },
+  {
+    "name": "Ville de Dudelange",
+    "type": "wpjson",
+    "url": "https://www.dudelange.lu/index.php/wp-json/wp/v2/evenement?per_page=50&orderby=date&order=desc",
+    "fields": {
+      "start": "date_from",
+      "end": "date_to",
+      "venue": "place_name",
+      "street": "address",
+      "zip": "",
+      "city": ""
+    },
+    "lb_only": false,
+    "enabled": true,
+    "note": "WP REST, champs à la racine."
+  },
+  {
     "name": "EXEMPLE - à copier (désactivé)",
     "type": "ical",
     "url": "https://exemple.lu/agenda.ics",
     "lb_only": false,
     "enabled": false,
-    "note": "type = 'ical', 'jsonld' ou 'wpjson'. 'urls' (liste) possible pour jsonld. lb_only=true si TOUS les événements de la source sont en luxembourgeois."
+    "note": "type = 'ical', 'jsonld', 'wpjson' ou 'echo_html'. 'urls' (liste) possible pour jsonld et echo_html. lb_only=true si TOUS les événements de la source sont en luxembourgeois."
   }
 ]
