@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="lb">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agenda Lëtzebuergesch</title>
+  <meta name="description" content="Aktivitéiten, Konferenzen a Manifestatiounen op Lëtzebuergesch zu Lëtzebuerg.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Agenda Lëtzebuergesch</h1>
+    <p>Aktivitéiten, Konferenzen a Manifestatiounen op Lëtzebuergesch zu Lëtzebuerg.</p>
+  </header>
+
+  <main>
+    <section class="filters" aria-label="Filteren">
+      <input id="q" type="search" placeholder="Sichen (Titel, Plaz, Beschreiwung)…">
+      <select id="venue"><option value="">All Plazen</option></select>
+      <label>Vun <input id="from" type="date"></label>
+      <label>Bis <input id="to" type="date"></label>
+      <button id="reset" type="button">Zrécksetzen</button>
+    </section>
+
+    <p id="count" class="count"></p>
+    <ul id="list" class="list"></ul>
+    <p id="empty" class="empty" hidden>Keng Aktivitéit fonnt.</p>
+  </main>
+
+  <footer>
+    <p>
+      <a href="events.ics">Kalenner abonnéieren (iCal)</a> ·
+      <a href="https://github.com/Chachanne1/agenda-letzebuergesch/issues/new?template=proposer-evenement.yml">Eng Aktivitéit proposéieren</a> ·
+      <a href="https://github.com/Chachanne1/agenda-letzebuergesch">Quellcode</a>
+    </p>
+    <p id="updated"></p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

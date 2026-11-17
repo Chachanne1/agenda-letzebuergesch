@@ -1,0 +1,10 @@
+[
+  {
+    "name": "EXEMPLE - à remplacer (désactivé)",
+    "type": "ical",
+    "url": "https://exemple.lu/agenda.ics",
+    "lb_only": false,
+    "enabled": false,
+    "note": "type = 'ical' ou 'jsonld'. 'urls' (liste) possible pour jsonld. lb_only=true si TOUS les événements de la source sont en luxembourgeois."
+  }
+]

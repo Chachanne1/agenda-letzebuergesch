@@ -1,0 +1,41 @@
+name: Eng Aktivitéit proposéieren / Proposer un événement
+description: Une activité en luxembourgeois qui manque dans l'agenda
+title: "[Événement] "
+labels: ["proposition"]
+body:
+  - type: input
+    id: titre
+    attributes:
+      label: Titel / Titre
+    validations:
+      required: true
+  - type: input
+    id: date
+    attributes:
+      label: Datum an Auerzäit / Date et heure
+      description: "Exemple : 2026-12-05 19:30"
+    validations:
+      required: true
+  - type: input
+    id: lieu
+    attributes:
+      label: Plaz / Lieu (et adresse)
+    validations:
+      required: true
+  - type: input
+    id: lien
+    attributes:
+      label: Link / Lien vers la page officielle
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Beschreiwung / Description
+  - type: checkboxes
+    id: langue
+    attributes:
+      label: Sprooch
+      options:
+        - label: D'Aktivitéit ass op Lëtzebuergesch / L'activité se déroule en luxembourgeois
+          required: true

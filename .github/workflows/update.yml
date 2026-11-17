@@ -1,0 +1,70 @@
+name: Collecte quotidienne et déploiement
+
+on:
+  schedule:
+    - cron: "17 4 * * *"      # chaque jour à 04:17 UTC (05:17 ou 06:17 à Luxembourg)
+  workflow_dispatch:           # lancement manuel depuis l'onglet Actions
+  push:
+    branches: [main]
+    paths-ignore: ["data/**"]  # évite de relancer pour les commits de données
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+  issues: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  update-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Collecte des événements
+        id: collect
+        run: python scrapers/run.py
+        continue-on-error: true   # une source cassée ne doit pas bloquer le déploiement
+
+      - name: Enregistrer les données si elles ont changé
+        run: |
+          git config user.name "agenda-bot"
+          git config user.email "agenda-bot@users.noreply.github.com"
+          git add data/
+          git diff --cached --quiet || git commit -m "Mise à jour automatique des données"
+          git push
+
+      - name: Alerte si une source est en panne
+        if: steps.collect.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh label create source-en-panne --color d93f0b --description "Scraper sans résultat" 2>/dev/null || true
+          existing=$(gh issue list --label source-en-panne --state open --json number --jq 'length')
+          if [ "$existing" = "0" ]; then
+            gh issue create --title "Une ou plusieurs sources ne renvoient rien" \
+              --label source-en-panne \
+              --body "Voir data/status.json et les logs du workflow : ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          fi
+
+      - name: Construire le site
+        run: python scrapers/build.py
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - id: deployment
+        uses: actions/deploy-pages@v4
