@@ -5,33 +5,65 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Agenda Lëtzebuergesch</title>
   <meta name="description" content="Aktivitéiten, Konferenzen a Manifestatiounen op Lëtzebuergesch zu Lëtzebuerg.">
+  <meta name="color-scheme" content="light dark">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Agenda Lëtzebuergesch</h1>
-    <p>Aktivitéiten, Konferenzen a Manifestatiounen op Lëtzebuergesch zu Lëtzebuerg.</p>
+  <a class="skip" href="#list">Zum Inhalt sprangen</a>
+  <div class="flag" aria-hidden="true"></div>
+
+  <header class="bar">
+    <div class="wrap bar__in">
+      <span class="brand">Agenda Lëtzebuergesch</span>
+      <a class="ics" href="events.ics">Kalenner abonnéieren</a>
+    </div>
   </header>
 
-  <main>
-    <section class="filters" aria-label="Filteren">
-      <input id="q" type="search" placeholder="Sichen (Titel, Plaz, Beschreiwung)…">
-      <select id="venue"><option value="">All Plazen</option></select>
-      <label>Vun <input id="from" type="date"></label>
-      <label>Bis <input id="to" type="date"></label>
-      <button id="reset" type="button">Zrécksetzen</button>
-    </section>
+  <main class="wrap">
+    <h1>Wat ass lass op Lëtzebuergesch?</h1>
+    <p class="lede">Aktivitéiten, Konferenzen a Manifestatiounen op Lëtzebuergesch, all Nuecht aktualiséiert.</p>
 
-    <p id="count" class="count"></p>
-    <ul id="list" class="list"></ul>
-    <p id="empty" class="empty" hidden>Keng Aktivitéit fonnt.</p>
+    <form class="filters" role="search" aria-label="Aktivitéite filteren" onsubmit="return false">
+      <input id="q" type="search" placeholder="Sichen no Titel, Plaz oder Thema" aria-label="Sichen" autocomplete="off">
+
+      <div class="row">
+      <div class="chips" role="group" aria-label="Zäitraum">
+        <button type="button" class="chip" data-range="all" aria-pressed="true">All</button>
+        <button type="button" class="chip" data-range="today" aria-pressed="false">Haut</button>
+        <button type="button" class="chip" data-range="week" aria-pressed="false">Dës Woch</button>
+        <button type="button" class="chip" data-range="weekend" aria-pressed="false">Weekend</button>
+        <button type="button" class="chip" data-range="month" aria-pressed="false">Dëse Mount</button>
+      </div>
+      <label class="check"><input id="onlyok" type="checkbox"> Nëmme bestätegt Aktivitéiten</label>
+      </div>
+
+      <details class="more">
+        <summary>Méi Filteren</summary>
+        <div class="more__in">
+          <label>Plaz <select id="venue"><option value="">All Plazen</option></select></label>
+          <label>Vun <input id="from" type="date"></label>
+          <label>Bis <input id="to" type="date"></label>
+        </div>
+      </details>
+
+    </form>
+
+    <div class="meta">
+      <p id="count" class="count" aria-live="polite"></p>
+      <p class="legend"><span class="legend__line" aria-hidden="true"></span> Gestrach Linn: Sprooch nach net bestätegt.</p>
+    </div>
+
+    <div id="list" class="days"></div>
+
+    <p id="empty" class="empty" hidden>
+      Keng Aktivitéit fonnt. Probéier en aneren Zäitraum oder e méi kuerzt Sichwuert.
+      <button id="reset" type="button">Filtere läschen</button>
+    </p>
+    <button id="more" class="morebtn" type="button" hidden>Méi Deeg weisen</button>
   </main>
 
-  <footer>
-    <p>
-      <a href="events.ics">Kalenner abonnéieren (iCal)</a> ·
-      <a href="https://github.com/Chachanne1/agenda-letzebuergesch">Quellcode</a>
-    </p>
+  <footer class="wrap foot">
+    <p><a href="events.ics">Kalenner abonnéieren (iCal)</a> · <a href="https://github.com/Chachanne1/agenda-letzebuergesch">Quellcode</a></p>
     <p id="updated"></p>
   </footer>
 

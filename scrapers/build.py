@@ -37,7 +37,22 @@ def main():
     shutil.copytree(ROOT / "site", OUT)
     (OUT / "data").mkdir(exist_ok=True)
     events = json.loads((ROOT / "data" / "events.json").read_text(encoding="utf-8"))
+    # les « probables » non encore tranchés sont affichés avec une pastille « à confirmer »
+    try:
+        pending = json.loads((ROOT / "data" / "pending.json").read_text(encoding="utf-8"))
+    except (FileNotFoundError, json.JSONDecodeError):
+        pending = []
+    known = {e["id"] for e in events}
+    for e in pending:
+        if e.get("decision") != "reject" and e["id"] not in known:
+            events.append({k: v for k, v in e.items() if k != "decision"})
+    events.sort(key=lambda e: e["start"])
     (OUT / "data" / "events.json").write_text(json.dumps(events, ensure_ascii=False), encoding="utf-8")
+    try:
+        updated = json.loads((ROOT / "data" / "status.json").read_text(encoding="utf-8")).get("updated", "")
+    except (FileNotFoundError, json.JSONDecodeError):
+        updated = ""
+    (OUT / "data" / "meta.json").write_text(json.dumps({"updated": updated}), encoding="utf-8")
     (OUT / "events.ics").write_text(build_ics(events), encoding="utf-8")
     print(f"Site construit dans {OUT} ({len(events)} événements)")
 
