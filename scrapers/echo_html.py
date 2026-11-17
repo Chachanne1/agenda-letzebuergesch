@@ -12,6 +12,7 @@ Configuration dans sources.json :
 import html as htmllib
 import re
 import time
+from datetime import date, timedelta
 from urllib.parse import urljoin, urlparse
 
 from common import fetch, make_event
@@ -121,9 +122,29 @@ def parse_detail(page, url, source_name):
     description = " ".join(desc_parts) or meta(page, "og:description")
 
     out = []
-    for start in dates[:25]:
-        out.append(make_event(source_name, title, start, venue=venue, address=address,
+    for start, end in merge_dates(dates)[:25]:
+        out.append(make_event(source_name, title, start, end=end, venue=venue, address=address,
                               description=description, url=url))
+    return out
+
+
+def merge_dates(dates):
+    """Regroupe les jours consécutifs (expositions…) en une seule période (début, fin)."""
+    items = sorted(set(dates))
+    runs = []
+    for d in items:
+        day, _, hour = d.partition("T")
+        cur = date.fromisoformat(day)
+        if runs:
+            last_day, last_hour, first = runs[-1]
+            if cur == last_day + timedelta(days=1) and hour == last_hour:
+                runs[-1] = (cur, hour, first)
+                continue
+        runs.append((cur, hour, d))
+    out = []
+    for last_day, hour, first in runs:
+        end = last_day.isoformat() + (f"T{hour}" if hour else "")
+        out.append((first, end if end != first else None))
     return out
 
 

@@ -64,7 +64,8 @@ STRONG_PATTERNS = [
     r"langue\s*:\s*luxembourgeois",
     r"language\s*:\s*luxembourgish",
 ]
-WEAK_PATTERNS = [r"l[eë]tz[eë]buerg(esch|er)", r"luxembourgish", r"luxemburgisch", r"luxembourgeois"]
+# « luxembourgeois » / « Lëtzebuerger » désignent surtout la nationalité (artiste, prix…) : pas un indice de langue
+WEAK_PATTERNS = [r"l[eë]tz[eë]buergesch", r"luxembourgish", r"luxemburgisch"]
 
 # mots fonctionnels fréquents en luxembourgeois (et rares dans les autres langues)
 LB_WORDS = {
