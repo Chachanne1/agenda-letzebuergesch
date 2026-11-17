@@ -65,7 +65,16 @@ STRONG_PATTERNS = [
     r"language\s*:\s*luxembourgish",
 ]
 # « luxembourgeois » / « Lëtzebuerger » désignent surtout la nationalité (artiste, prix…) : pas un indice de langue
-WEAK_PATTERNS = [r"l[eë]tz[eë]buergesch", r"luxembourgish", r"luxemburgisch"]
+WEAK_PATTERNS = [
+    r"l[eë]tz[eë]buergesch", r"luxembourgish", r"luxemburgisch",
+    r"l[eë]tz[eë]buerger sprooch", r"langues? luxembourgeoises?", r"luxembourgish languages?",
+    r"luxemburger sprachen?",
+]
+# organismes dont l'activité porte sur la langue luxembourgeoise
+ORGANISER_PATTERNS = [
+    r"zenter fir d.l[eë]tz[eë]buerger sprooch", r"\bzls\b", r"actioun l[eë]tz[eë]buergesch",
+    r"institut national des langues", r"\binll\b", r"dag vun der l[eë]tz[eë]buerger sprooch",
+]
 
 # mots fonctionnels fréquents en luxembourgeois (et rares dans les autres langues)
 LB_WORDS = {
@@ -97,6 +106,9 @@ def detect_lb(title, description, explicit_lang="", lb_only_source=False):
     for pat in WEAK_PATTERNS:
         if re.search(pat, text):
             return "probable", "mention de la langue/du pays dans le texte"
+    for pat in ORGANISER_PATTERNS:
+        if re.search(pat, text):
+            return "probable", "organisme lié à la langue luxembourgeoise"
     return None, ""
 
 

@@ -53,3 +53,4 @@ https://www.uni.lu/fhse-en/events/                         # [vu] chaque événe
 https://www.mnha.lu/                                       # [vu] Museomagenda PDF : langue de chaque conférence
 # Site du Dag vun der Lëtzebuerger Sprooch (liste centralisée, chaque 26 septembre) :
 # copier l'adresse en punycode depuis le navigateur (dag.lëtzebuergesch.lu)
+https://www.tickettailor.com/events/inll
