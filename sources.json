@@ -1,10 +1,18 @@
 [
   {
-    "name": "EXEMPLE - à remplacer (désactivé)",
+    "name": "Université du Luxembourg - Institut de luxembourgeois (FHSE)",
+    "type": "wpjson",
+    "url": "https://www.uni.lu/fhse-en/wp-json/wp/v2/events?per_page=50&orderby=date&order=desc",
+    "lb_only": false,
+    "enabled": true,
+    "note": "API WordPress. Format d'un événement vérifié (meta.event_start_date, event_location...). L'URL de liste est à confirmer avec probe.py. La langue est détectée dans le texte (beaucoup de textes en luxembourgeois)."
+  },
+  {
+    "name": "EXEMPLE - à copier (désactivé)",
     "type": "ical",
     "url": "https://exemple.lu/agenda.ics",
     "lb_only": false,
     "enabled": false,
-    "note": "type = 'ical' ou 'jsonld'. 'urls' (liste) possible pour jsonld. lb_only=true si TOUS les événements de la source sont en luxembourgeois."
+    "note": "type = 'ical', 'jsonld' ou 'wpjson'. 'urls' (liste) possible pour jsonld. lb_only=true si TOUS les événements de la source sont en luxembourgeois."
   }
 ]

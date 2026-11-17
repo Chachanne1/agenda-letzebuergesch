@@ -1,5 +1,6 @@
 """Outils communs : schéma d'événement, téléchargement, détection du luxembourgeois."""
 import hashlib
+import html
 import re
 import unicodedata
 import urllib.request
@@ -19,6 +20,7 @@ def fetch(url, timeout=30):
 
 def clean(text, limit=400):
     text = re.sub(r"<[^>]+>", " ", text or "")
+    text = html.unescape(text)
     text = re.sub(r"\s+", " ", text).strip()
     return text[:limit]
 

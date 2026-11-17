@@ -24,7 +24,8 @@ sources.json → scrapers/run.py (chaque jour, GitHub Actions)
 { "name": "Nom du lieu", "type": "ical", "url": "https://.../agenda.ics", "lb_only": false, "enabled": true }
 ```
 
-- `type: "ical"` : flux .ics. `type: "jsonld"` : page(s) web avec des blocs schema.org/Event (`"urls": [...]` pour plusieurs pages).
+- `type: "ical"` : flux .ics. `type: "jsonld"` : page(s) web avec des blocs schema.org/Event (`"urls": [...]` pour plusieurs pages). `type: "wpjson"` : API REST WordPress avec champs `meta.event_*` (cas de uni.lu).
+- Pour savoir quel format un site offre : `python scrapers/probe.py https://site.lu/agenda` (sans argument, teste toutes les URLs de `sources.json`).
 - `lb_only: true` si tous les événements de la source sont en luxembourgeois.
 
 ## Détection de la langue

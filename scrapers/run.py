@@ -13,11 +13,12 @@ from pathlib import Path
 
 import ical_source
 import jsonld_source
+import wpjson_source
 from common import detect_lb, today_iso
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
-SCRAPERS = {"ical": ical_source, "jsonld": jsonld_source}
+SCRAPERS = {"ical": ical_source, "jsonld": jsonld_source, "wpjson": wpjson_source}
 
 
 def load(path, default):

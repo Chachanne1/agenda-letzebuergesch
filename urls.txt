@@ -1,0 +1,31 @@
+# URLs à tester avec :  python scrapers/probe.py
+# Une URL par ligne. Les lignes commençant par # sont ignorées.
+# [vu] = adresse apparue telle quelle dans mes recherches ; [à confirmer] = page d'accueil ou adresse probable.
+
+# --- Agrégateurs (tous alimentés par ECHO) ---
+https://www.visitluxembourg.com/fr/agenda                  # [vu]
+https://www.luxembourg-city.com/fr/agenda                  # [à confirmer] (les fiches sont sous /fr/agenda/event/...)
+https://www.visitguttland.lu/                              # [vu] fiches /event/...
+https://www.visit-eislek.lu/                               # [vu] fiches /event/...
+https://visitminett.lu/                                    # [vu] fiches /event/...
+
+# --- Lieux culturels ---
+https://www.neimenster.lu/                                 # [à confirmer] trouver le lien « Agenda »
+https://www.philharmonie.lu/en/programm                    # [vu]
+https://www.rotondes.lu/fr/programmation                   # [vu]
+https://www.rotondes.lu/fr/agenda                          # [à confirmer] (fiches sous /fr/agenda/...)
+https://kulturfabrik.lu/                                   # [à confirmer] trouver le lien « Agenda »
+https://theatres.lu/en                                     # [vu]
+https://cape.lu/                                           # [vu] domaine
+https://trifolion.lu/                                      # [vu] domaine
+https://cerclecite.lu/agenda                               # [vu]
+https://www.mnaha.lu/                                      # [vu] domaine
+https://www.mudam.com/                                     # [à confirmer]
+
+# --- Bibliothèques ---
+https://bnl.public.lu/en/a-la-une/agenda.html              # [vu] les fiches ont un champ « Language(s) »
+https://www.citybiblio.lu/                                 # [vu] domaine (Tuffi : ateliers en luxembourgeois)
+
+# --- Langue luxembourgeoise ---
+https://www.tickettailor.com/events/inll                   # [à confirmer] événements INLL (Walk&Talk, Meet&Speak)
+# Site du Dag vun der Lëtzebuerger Sprooch : dag.lëtzebuergesch.lu -> copier l'adresse en punycode depuis le navigateur
