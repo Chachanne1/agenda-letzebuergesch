@@ -4,7 +4,7 @@
     "type": "wpjson",
     "url": "https://www.uni.lu/fhse-en/wp-json/wp/v2/events?per_page=50&orderby=date&order=desc",
     "lb_only": false,
-    "enabled": true,
+    "enabled": false,
     "note": "API WordPress. Format d'un événement vérifié (meta.event_start_date, event_location...). L'URL de liste est à confirmer avec probe.py. La langue est détectée dans le texte (beaucoup de textes en luxembourgeois)."
   },
   {
