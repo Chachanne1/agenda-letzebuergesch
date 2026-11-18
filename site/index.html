@@ -9,63 +9,90 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <a class="skip" href="#list">Zum Inhalt sprangen</a>
-  <div class="flag" aria-hidden="true"></div>
+  <a class="skip" href="#main">Zum Inhalt sprangen</a>
 
-  <header class="bar">
-    <div class="wrap bar__in">
-      <span class="brand">Agenda Lëtzebuergesch</span>
-      <a class="ics" href="events.ics">Kalenner abonnéieren</a>
+  <header class="top">
+    <a class="brand" href="./" aria-label="Agenda Lëtzebuergesch">
+      <span class="brand__mark" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span class="brand__name">Agenda Lëtzebuergesch</span>
+    </a>
+    <label class="search">
+      <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m13 13 4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      <input id="q" type="search" placeholder="Sichen no Titel, Plaz oder Thema" aria-label="Sichen" autocomplete="off">
+      <kbd aria-hidden="true">/</kbd>
+    </label>
+    <div class="seg" role="group" aria-label="Usiicht">
+      <button type="button" data-view="list" aria-pressed="true">Lëscht</button>
+      <button type="button" data-view="month" aria-pressed="false">Mount</button>
     </div>
   </header>
 
-  <main class="wrap">
-    <h1>Wat ass lass op Lëtzebuergesch?</h1>
-    <p class="lede">Aktivitéiten, Konferenzen a Manifestatiounen op Lëtzebuergesch, all Nuecht aktualiséiert.</p>
+  <div class="app">
+    <aside class="side" aria-label="Filteren">
+      <details class="side__box" open>
+        <summary>Filteren <span id="activeCount" class="pill" hidden></span></summary>
 
-    <form class="filters" role="search" aria-label="Aktivitéite filteren" onsubmit="return false">
-      <input id="q" type="search" placeholder="Sichen no Titel, Plaz oder Thema" aria-label="Sichen" autocomplete="off">
-
-      <div class="row">
-      <div class="chips" role="group" aria-label="Zäitraum">
-        <button type="button" class="chip" data-range="all" aria-pressed="true">All</button>
-        <button type="button" class="chip" data-range="today" aria-pressed="false">Haut</button>
-        <button type="button" class="chip" data-range="week" aria-pressed="false">Dës Woch</button>
-        <button type="button" class="chip" data-range="weekend" aria-pressed="false">Weekend</button>
-        <button type="button" class="chip" data-range="month" aria-pressed="false">Dëse Mount</button>
-      </div>
-      <label class="check"><input id="onlyok" type="checkbox"> Nëmme bestätegt Aktivitéiten</label>
-      </div>
-
-      <details class="more">
-        <summary>Méi Filteren</summary>
-        <div class="more__in">
-          <label>Plaz <select id="venue"><option value="">All Plazen</option></select></label>
-          <label>Vun <input id="from" type="date"></label>
-          <label>Bis <input id="to" type="date"></label>
+        <div class="group">
+          <p class="group__t" id="gz">Zäitraum</p>
+          <div class="chips" role="group" aria-labelledby="gz">
+            <button type="button" class="chip" data-range="all" aria-pressed="true">All</button>
+            <button type="button" class="chip" data-range="today" aria-pressed="false">Haut</button>
+            <button type="button" class="chip" data-range="week" aria-pressed="false">Dës Woch</button>
+            <button type="button" class="chip" data-range="weekend" aria-pressed="false">Weekend</button>
+            <button type="button" class="chip" data-range="month" aria-pressed="false">Dëse Mount</button>
+          </div>
+          <div class="dates">
+            <label>Vun <input id="from" type="date"></label>
+            <label>Bis <input id="to" type="date"></label>
+          </div>
         </div>
+
+        <div class="group">
+          <label class="group__t" for="venue">Plaz</label>
+          <select id="venue"><option value="">All Plazen</option></select>
+        </div>
+
+        <div class="group">
+          <label class="switch">
+            <input id="onlyok" type="checkbox" role="switch">
+            <span class="switch__ui" aria-hidden="true"></span>
+            <span>Nëmme bestätegt Aktivitéiten</span>
+          </label>
+          <p class="hint">Déi aner hunn e gestrachene Rand: d'Sprooch ass nach net bestätegt.</p>
+        </div>
+
+        <button id="reset" class="link" type="button" hidden>Filtere läschen</button>
       </details>
 
-    </form>
+      <p class="side__foot"><a href="events.ics">Kalenner abonnéieren</a><br><a href="https://github.com/Chachanne1/agenda-letzebuergesch">Quellcode</a><br><span id="updated"></span></p>
+    </aside>
 
-    <div class="meta">
-      <p id="count" class="count" aria-live="polite"></p>
-      <p class="legend"><span class="legend__line" aria-hidden="true"></span> Gestrach Linn: Sprooch nach net bestätegt.</p>
+    <main id="main" class="main">
+      <section id="next" class="next" aria-label="Als nächst" hidden></section>
+      <div class="bar">
+        <h1 id="count" class="count" aria-live="polite">Aktivitéiten</h1>
+        <div id="monthnav" class="monthnav" hidden>
+          <button type="button" id="prev" aria-label="Virege Mount">‹</button>
+          <strong id="monthlabel"></strong>
+          <button type="button" id="nextm" aria-label="Nächste Mount">›</button>
+          <button type="button" id="todaybtn" class="link">Haut</button>
+        </div>
+      </div>
+      <div id="list" class="days"></div>
+      <div id="month" class="month" hidden></div>
+      <p id="empty" class="empty" hidden>Keng Aktivitéit fonnt. Probéier en aneren Zäitraum oder e méi kuerzt Sichwuert.<br><button id="reset2" type="button" class="btn">Filtere läschen</button></p>
+      <button id="more" class="btn btn--center" type="button" hidden>Méi Deeg weisen</button>
+    </main>
+  </div>
+
+  <div id="scrim" class="scrim" hidden></div>
+  <aside id="drawer" class="drawer" role="dialog" aria-modal="false" aria-labelledby="dTitle" tabindex="-1">
+    <div class="drawer__head">
+      <button id="dClose" type="button" class="icon" aria-label="Zoumaachen">×</button>
     </div>
-
-    <div id="list" class="days"></div>
-
-    <p id="empty" class="empty" hidden>
-      Keng Aktivitéit fonnt. Probéier en aneren Zäitraum oder e méi kuerzt Sichwuert.
-      <button id="reset" type="button">Filtere läschen</button>
-    </p>
-    <button id="more" class="morebtn" type="button" hidden>Méi Deeg weisen</button>
-  </main>
-
-  <footer class="wrap foot">
-    <p><a href="events.ics">Kalenner abonnéieren (iCal)</a> · <a href="https://github.com/Chachanne1/agenda-letzebuergesch">Quellcode</a></p>
-    <p id="updated"></p>
-  </footer>
+    <div id="dBody" class="drawer__body"></div>
+  </aside>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
 
   <script src="app.js"></script>
 </body>
