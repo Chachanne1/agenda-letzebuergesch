@@ -12,5 +12,19 @@
     "status": "probable",
     "reason": "mention de la langue/du pays dans le texte",
     "decision": null
+  },
+  {
+    "id": "6358143deb77",
+    "title": "Marche des 1000 lumières",
+    "start": "2026-12-12T17:00",
+    "end": "",
+    "venue": "Grevenmacher",
+    "address": "1, rue de l'Ecole, L-6722 GREVENMACHER",
+    "description": "D’Kommissioun fir Famill an Inklusioun vun der Stad Maacher, d’Grondschoul Gréiwemaacher a CARE invitéieren am Kader vum Maacher Chrëschtmoart op d’ Marche des 1000 lumières als Symbol fir déi éischt 1000 Deeg am Liewe vun engem Kand Samsdes, den 12. Dezember 2026 16:00 Auer: Verkafe vu Lampionen um Stand vu CARE, 17:00 Auer: Marche duerch d’Stroosse vu Maacher bis bei de Buer, wou d’Lampionen nid",
+    "url": "https://www.visitluxembourg.com/fr/evenement/marche-des-1000-lumieres",
+    "source": "Visit Luxembourg (ECHO)",
+    "status": "probable",
+    "reason": "texte semble en luxembourgeois (4 mots typiques)",
+    "decision": null
   }
 ]
