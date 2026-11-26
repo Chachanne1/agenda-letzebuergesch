@@ -11,6 +11,7 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
+import echo_api
 import echo_html
 import ical_source
 import jsonld_source
@@ -19,7 +20,7 @@ from common import detect_lb, today_iso
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
-SCRAPERS = {"ical": ical_source, "jsonld": jsonld_source, "wpjson": wpjson_source, "echo_html": echo_html}
+SCRAPERS = {"ical": ical_source, "jsonld": jsonld_source, "wpjson": wpjson_source, "echo_html": echo_html, "echo_api": echo_api}
 
 
 def load(path, default):

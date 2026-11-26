@@ -9,13 +9,18 @@ Configuration dans sources.json :
   {"type": "echo_html", "urls": ["https://www.visitluxembourg.com/fr/agenda"],
    "max_list_pages": 15, "max_events": 250, "delay": 1.0}
 """
+import hashlib
 import html as htmllib
+import json
 import re
 import time
 from datetime import date, timedelta
+from pathlib import Path
 from urllib.parse import urljoin, urlparse
 
 from common import fetch, make_event
+
+CACHE_FILE = Path(__file__).resolve().parent.parent / "data" / "echo_cache.json"
 
 EVENT_PATH = re.compile(r"/(?:evenement|event|veranstaltung|evenementen)/[^/?#]+$")
 DATE_RE = re.compile(r"\b(\d{2})\.(\d{2})\.(20\d{2})\s*(\d{2}:\d{2})?")
@@ -148,6 +153,31 @@ def merge_dates(dates):
     return out
 
 
+def load_cache():
+    try:
+        return json.loads(CACHE_FILE.read_text(encoding="utf-8"))
+    except (FileNotFoundError, json.JSONDecodeError):
+        return {}
+
+
+def save_cache(cache):
+    """Une fiche par ligne : les différences entre deux jours restent lisibles dans git."""
+    lines = [f"{json.dumps(u, ensure_ascii=False)}:{json.dumps(e, ensure_ascii=False, separators=(',', ':'))}"
+             for u, e in sorted(cache.items())]
+    CACHE_FILE.write_text("{\n" + ",\n".join(lines) + "\n}\n", encoding="utf-8")
+
+
+def cache_is_fresh(entry, url, today, ttl_days):
+    """Une fiche déjà lue est réutilisée pendant `ttl_days` jours (+0 à 4 jours selon l'URL,
+    pour que les fiches ne expirent pas toutes le même jour)."""
+    try:
+        age = (today - date.fromisoformat(entry["fetched"])).days
+    except (KeyError, ValueError, TypeError):
+        return False
+    jitter = int(hashlib.sha1(url.encode()).hexdigest(), 16) % 5
+    return 0 <= age < ttl_days + jitter
+
+
 def scrape(source):
     name = source["name"]
     delay = float(source.get("delay", 1.0))
@@ -173,16 +203,41 @@ def scrape(source):
         queue.extend(p for p in pgs if p not in seen_lists)
         time.sleep(delay)
 
-    events, nodate, failed = [], 0, 0
+    # Cache : on ne relit que les fiches nouvelles ou périmées (le run passe de ~30 min à quelques minutes)
+    ttl = int(source.get("cache_days", 7))
+    today = date.today()
+    cache = load_cache() if ttl > 0 else {}
+    new_cache = {}
+    events, nodate, failed, reused = [], 0, 0, 0
     for url in event_urls[:max_events]:
-        try:
-            got = parse_detail(fetch(url), url, name)
-            events.extend(got)
-            nodate += 0 if got else 1
-        except Exception:
-            failed += 1  # une fiche en échec ne bloque pas les autres
-        time.sleep(delay)
-    print(f"[echo] {len(seen_lists)} pages de liste, {len(event_urls)} fiches, "
+        entry = cache.get(url)
+        if entry and cache_is_fresh(entry, url, today, ttl):
+            got = entry["events"]
+            reused += 1
+        else:
+            try:
+                got = parse_detail(fetch(url), url, name)
+            except Exception:
+                failed += 1  # une fiche en échec ne bloque pas les autres
+                if entry:  # on garde l'ancienne version plutôt que de perdre l'événement
+                    got = entry["events"]
+                    new_cache[url] = entry
+                    events.extend(got)
+                time.sleep(delay)
+                continue
+            entry = {"fetched": today.isoformat(), "events": got}
+            time.sleep(delay)
+        new_cache[url] = entry
+        events.extend(got)
+        nodate += 0 if got else 1
+    if ttl > 0 and new_cache:
+        # les fiches qui ne sont plus dans la liste quittent le cache ; mais si la liste paraît
+        # tronquée (panne partielle du site), on garde l'ancien cache pour ne rien perdre
+        if len(event_urls) < 0.5 * len(cache):
+            new_cache = {**cache, **new_cache}
+        save_cache(new_cache)
+    print(f"[echo] {len(seen_lists)} pages de liste, {len(event_urls)} fiches "
+          f"({reused} réutilisées du cache, {len(event_urls[:max_events]) - reused} lues), "
           f"{len(events)} événements, {nodate} sans date, {failed} en échec")
     if not event_urls:
         raise ValueError("aucun lien d'événement trouvé dans les pages de liste")
