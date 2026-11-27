@@ -112,6 +112,31 @@ def detect_lb(title, description, explicit_lang="", lb_only_source=False):
     return None, ""
 
 
+def classify_echo(title, description, langs):
+    """Tri des événements de l'API ECHO (règle de Romain, sans IA payante).
+
+    langs = langues déclarées par l'organisateur. Renvoie (voie, raison) :
+      'confirmé'  : texte en luxembourgeois (et/ou lb déclaré + indice dans le texte) -> affiché
+      'verifier'  : lb non déclaré mais le texte dit « en luxembourgeois »… -> affiché, à retirer si faux positif (liste 1)
+      'sauver'    : lb déclaré mais RIEN dans le texte ne l'indique -> écarté, à rattraper à la main (liste 2)
+      None        : aucun indice -> écarté
+    """
+    lb = "lb" in langs
+    text = f"{title} {description}".lower()
+    strong = any(re.search(p, text) for p in STRONG_PATTERNS)
+    words = re.findall(r"[a-zäöüéèëêàç]+", text)
+    hits = sum(1 for w in words if w in LB_DISTINCTIVE)
+    if hits >= 3:
+        return "confirmé", f"texte en luxembourgeois ({hits} mots typiques)"
+    if strong and lb:
+        return "confirmé", "lb déclaré + mention explicite dans le texte"
+    if strong:
+        return "verifier", "mention « en luxembourgeois » dans le texte, lb non déclaré"
+    if lb:
+        return "sauver", "lb déclaré mais aucune indication dans le texte"
+    return None, ""
+
+
 def parse_dt(value):
     """Parse une date ISO ou iCal simple -> chaîne ISO 'YYYY-MM-DDTHH:MM' ou 'YYYY-MM-DD'."""
     if not value:

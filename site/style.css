@@ -173,3 +173,6 @@ li:first-child > .row { border-top: 0; }
   .drawer { top: auto; width: 100vw; max-height: 88vh; border-left: 0; border-top: 1px solid var(--line); border-radius: 14px 14px 0 0; transform: translateY(104%); }
   .search kbd { display: none; }
 }
+.srclogo { display: inline-flex; align-items: center; }
+.srclogo img { display: block; height: 25px; width: auto; }
+@media (prefers-color-scheme: dark) { .srclogo--gray { filter: invert(1) brightness(1.1); } }

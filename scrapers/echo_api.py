@@ -106,6 +106,20 @@ def link_of(rec):
     return ""
 
 
+URL_KEYS = ("url", "slug", "link", "permalink", "shareUrl", "shareLink", "webUrl", "publicUrl", "pageUrl", "href")
+
+
+def echo_url_of(rec):
+    """Adresse de la fiche publique echo.lu si l'API la fournit (champ non documenté : on cherche plusieurs noms)."""
+    for k in URL_KEYS:
+        v = rec.get(k)
+        if isinstance(v, dict):
+            v = next((v[l] for l in ("fr", "en", "de", "lb") if isinstance(v.get(l), str)), "")
+        if isinstance(v, str) and v.startswith("http") and "echo.lu" in v:
+            return v
+    return ""
+
+
 def parse_record(rec, source_name):
     status = rec.get("status")
     current = (status.get("current") if isinstance(status, dict) else status) or ""
@@ -117,7 +131,7 @@ def parse_record(rec, source_name):
     langs = [str(l).lower() for l in (rec.get("languages") or [])]
     # « lb » seul = l'organisateur dit que c'est en luxembourgeois. « lb » parmi d'autres langues (de, fr, en…) ne prouve rien
     # (beaucoup d'événements multilingues le cochent) : dans ce cas run.py juge sur le texte (confirmé / probable / écarté).
-    explicit = "lb" if langs == ["lb"] else ""
+    explicit = ""  # le tri se fait dans run.py (common.classify_echo) à partir de _langs
     description = " ".join(p for p in (as_text(rec.get("subtitle")), as_text(rec.get("description"))) if p)
     lt = rec.get("luxembourgTickets")
     tickets = isinstance(lt, dict) and bool(lt.get("publishOnEventim"))
@@ -131,9 +145,10 @@ def parse_record(rec, source_name):
         out.append(make_event(
             source_name, title, start, end="" if end == start else end,
             venue=venue_of(rec), address=address_of(rec), description=description,
-            url=link_of(rec), explicit_lang=explicit,
+            url=echo_url_of(rec) or link_of(rec), explicit_lang=explicit,
         ))
         ev = out[-1]
+        ev["_langs"] = langs
         ev["description"] = clean(description, 2000)  # licence ECHO : fiche reprise le plus complètement possible
         ev["echo"] = True                              # affiche « Source : ECHO » + logo sur le site
         if tickets:
@@ -173,12 +188,17 @@ def scrape(source):
     while pages < max_pages:
         params = {"pagination[page]": page, "pagination[perPage]": per_page}
         if use_date:
-            params["date[from]"] = today + "T00:00:00Z"  # RFC 3339 exigé (pas une simple date)
+            params["date[from]"] = today  # RFC 3339 (AAAA-MM-JJT00:00:00Z)
         try:
             data = get_json(f"{base}?{urllib.parse.urlencode(params)}", key)
         except urllib.error.HTTPError as exc:
             if exc.code == 400 and use_date:
-                print("[echo_api] filtre date[from] refusé : relance sans filtre (les passés sont écartés ensuite)")
+                body = ""
+                try:
+                    body = exc.read().decode("utf-8", "replace")[:300]
+                except Exception:
+                    pass
+                print(f"[echo_api] filtre date[from]={today} refusé (HTTP 400 : {body}) : relance sans filtre")
                 use_date = False
                 continue
             raise
@@ -189,6 +209,9 @@ def scrape(source):
                 continue
             break
         pages += 1
+        if pages == 1:
+            print("[echo_api] champs d'une expérience :", ", ".join(sorted(records[0].keys())))
+            print("[echo_api] URL fiche echo.lu trouvée :", echo_url_of(records[0]) or "aucune")
         total += len(records)
         new = 0
         for rec in records:

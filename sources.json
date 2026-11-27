@@ -42,7 +42,7 @@
     "url": "https://api.echo.lu/v1/allExperiences",
     "key_env": "ECHO_API_KEY",
     "per_page": 100,
-    "max_pages": 30,
+    "max_pages": 80,
     "delay": 0.5,
     "lb_only": false,
     "enabled": true,

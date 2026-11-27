@@ -48,6 +48,13 @@ jobs:
           git pull --rebase -X theirs origin main || true
           git push
 
+      - name: Mettre à jour les listes de revue (issues)
+        if: always()
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python scrapers/revue.py publish
+
       - name: Alerte si une source est en panne
         if: steps.collect.outcome == 'failure'
         env:

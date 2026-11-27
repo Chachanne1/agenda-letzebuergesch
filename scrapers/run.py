@@ -16,7 +16,7 @@ import echo_html
 import ical_source
 import jsonld_source
 import wpjson_source
-from common import detect_lb, today_iso
+from common import classify_echo, detect_lb, today_iso
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
@@ -39,12 +39,21 @@ def is_upcoming(ev, today):
     return ref >= today
 
 
+def revue_item(ev, reason):
+    keys = ("id", "title", "start", "end", "venue", "url")
+    return {**{k: ev.get(k, "") for k in keys}, "reason": reason, "snippet": (ev.get("description") or "")[:200]}
+
+
 def main():
     today = today_iso()
     sources = load(ROOT / "sources.json", [])
     events = {e["id"]: e for e in load(DATA / "events.json", [])}
     pending = {e["id"]: e for e in load(DATA / "pending.json", [])}
     rejected = set(load(DATA / "rejected.json", []))
+    # décisions prises dans les issues de revue (voir revue.py) : {"retirer": [ids], "ajouter": [ids]}
+    revue = load(DATA / "revue.json", {})
+    retirer, ajouter = set(revue.get("retirer", [])), set(revue.get("ajouter", []))
+    queue = load(DATA / "revue_queue.json", {"verifier": [], "sauver": []})
     status = []
 
     # 1) Appliquer les décisions prises à la main dans pending.json
@@ -69,12 +78,33 @@ def main():
             found = SCRAPERS[src["type"]].scrape(src)
             entry["found"] = len(found)
             if src["type"] == "echo_api":
+                queue = {"verifier": [], "sauver": []}
+                found_ids = set()
                 # l'API renvoie tout à chaque fois : on repart de ses données fraîches (annulations, titres corrigés…)
                 for store in (events, pending):
                     for k in [k for k, v in store.items() if v.get("source") == src["name"]]:
                         del store[k]
             for ev in found:
                 if not is_upcoming(ev, today) or ev["id"] in rejected:
+                    continue
+                if src["type"] == "echo_api":
+                    found_ids.add(ev["id"])
+                    voie, reason = classify_echo(ev["title"], ev["description"], ev.pop("_langs", []))
+                    ev.pop("_lang", None)
+                    if voie is None or ev["id"] in retirer:
+                        continue
+                    if voie == "sauver":
+                        if ev["id"] not in ajouter:
+                            if not any(q["id"] == ev["id"] for q in queue["sauver"]):
+                                queue["sauver"].append(revue_item(ev, reason))
+                            continue
+                        voie, reason = "confirmé", "rattrapé manuellement"
+                    ev["status"] = "confirmé" if voie == "confirmé" else "probable"
+                    ev["reason"] = reason
+                    if voie == "verifier" and not any(q["id"] == ev["id"] for q in queue["verifier"]):
+                        queue["verifier"].append(revue_item(ev, reason))
+                    entry["kept"] += 1
+                    events[ev["id"]] = ev
                     continue
                 lang = ev.pop("_lang", "")
                 st, reason = detect_lb(ev["title"], ev["description"], lang, src.get("lb_only", False))
@@ -91,6 +121,9 @@ def main():
                 elif ev["id"] not in pending:
                     ev["decision"] = None
                     pending[ev["id"]] = ev
+            if src["type"] == "echo_api":
+                retirer &= found_ids  # on oublie les décisions sur des événements qui ne sont plus dans l'API
+                ajouter &= found_ids
             entry["ok"] = True
         except Exception as exc:  # une source cassée ne doit pas bloquer les autres
             entry["error"] = f"{type(exc).__name__}: {exc}"
@@ -102,6 +135,8 @@ def main():
     save(DATA / "events.json", sorted(events.values(), key=lambda e: e["start"]))
     save(DATA / "pending.json", sorted(pending.values(), key=lambda e: e["start"]))
     save(DATA / "rejected.json", sorted(rejected))
+    save(DATA / "revue.json", {"retirer": sorted(retirer), "ajouter": sorted(ajouter)})
+    save(DATA / "revue_queue.json", queue)
     save(DATA / "status.json", {
         "updated": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "sources": status,

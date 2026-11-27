@@ -141,6 +141,14 @@
   }
 
   /* ---------- panneau de détail ---------- */
+  function sourceHtml(e) {
+    const logo = (href, src, alt, w, cls) => `<a class="srclogo" href="${href}" target="_blank" rel="noopener noreferrer"><img src="${src}" alt="${alt}" width="${w}" height="25"${cls ? ` class="${cls}"` : ""}></a>`;
+    const name = String(e.source || "").replace(/\s*\(ECHO\)\s*$/, "");
+    if (e.echo) return logo("https://www.echo.lu/", "echo-logo.png", "ECHO", 70);
+    if (/visit\s*luxembourg/i.test(name)) return logo("https://www.visitluxembourg.com/", "visitluxembourg-logo.svg", "Visit Luxembourg", 65, "srclogo--gray");
+    return esc(name);
+  }
+
   function openEvent(id, trigger) {
     const e = byId.get(id); if (!e) return;
     lastTrigger = trigger || document.activeElement;
@@ -153,10 +161,9 @@
       ${e.status === "probable" ? '<p class="d__note">D\'Sprooch vun dëser Aktivitéit ass nach net bestätegt. Kuck w.e.g. op der Quell no.</p>' : ""}
       <dl class="d__dl">
         <dt>Plaz</dt><dd>${esc(e.venue || "—")}${e.address ? "<br>" + esc(e.address) : ""}${maps ? `<br><a href="${maps}" target="_blank" rel="noopener">Op der Kaart weisen</a>` : ""}</dd>
-        <dt>Quell</dt><dd>${esc(e.echo ? "ECHO" : String(e.source || "").replace(/\s*\(ECHO\)\s*$/, ""))}</dd>
+        <dt>Quell</dt><dd>${sourceHtml(e)}</dd>
       </dl>
       ${e.lt ? '<p class="d__src">Billets disponibles avec <a href="https://www.luxembourgticket.lu/" target="_blank" rel="noopener noreferrer">luxembourgticket</a></p>' : ""}
-      ${e.echo ? '<p class="d__src">Source : <a href="https://www.echo.lu/" target="_blank" rel="noopener noreferrer"><img src="echo-logo.png" alt="ECHO" width="70" height="25"></a></p>' : ""}
       ${e.description ? `<p class="d__desc">${esc(e.description)}</p>` : '<p class="d__desc" style="color:var(--muted)">Keng Beschreiwung verfügbar.</p>'}
       <div class="d__actions">
         ${url ? `<a class="btn btn--primary" href="${esc(url)}" target="_blank" rel="noopener noreferrer${e.proposed ? " nofollow ugc" : ""}">Méi Infos</a>` : ""}

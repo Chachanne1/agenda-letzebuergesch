@@ -1,0 +1,44 @@
+name: Revue des activités ECHO (cases cochées)
+
+on:
+  issues:
+    types: [edited]
+
+permissions:
+  contents: write
+  actions: write
+  issues: read
+
+concurrency:
+  group: "pages"      # attend la fin d'une mise à jour en cours pour ne pas écraser ses données
+  cancel-in-progress: false
+
+jobs:
+  apply:
+    # seulement les issues de revue, et seulement si c'est le propriétaire du dépôt qui les modifie
+    if: github.actor == github.repository_owner && (contains(join(github.event.issue.labels.*.name, ','), 'revue-verifier') || contains(join(github.event.issue.labels.*.name, ','), 'revue-sauver'))
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Enregistrer les cases cochées
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+          ISSUE_LABELS: ${{ join(github.event.issue.labels.*.name, ',') }}
+        run: python scrapers/revue.py apply
+      - name: Commit et relance de la mise à jour du site
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "agenda-bot"
+          git config user.email "agenda-bot@users.noreply.github.com"
+          git add data/revue.json
+          if git diff --cached --quiet; then echo "rien à enregistrer"; exit 0; fi
+          git commit -m "Revue : décisions enregistrées"
+          for i in 1 2 3 4 5; do
+            git pull --rebase -X theirs origin main && git push && break
+            sleep 5
+          done
+          gh workflow run update.yml
