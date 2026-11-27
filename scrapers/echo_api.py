@@ -18,6 +18,7 @@ Limites connues (à revoir avec de vraies réponses) :
   - les expériences « permanentes » (horaires d'ouverture, sans date) sont ignorées.
 """
 import json
+from collections import Counter
 import os
 import time
 import urllib.error
@@ -114,7 +115,9 @@ def parse_record(rec, source_name):
     if not title:
         return []
     langs = [str(l).lower() for l in (rec.get("languages") or [])]
-    explicit = "lb" if "lb" in langs else ""
+    # « lb » seul = l'organisateur dit que c'est en luxembourgeois. « lb » parmi d'autres langues (de, fr, en…) ne prouve rien
+    # (beaucoup d'événements multilingues le cochent) : dans ce cas run.py juge sur le texte (confirmé / probable / écarté).
+    explicit = "lb" if langs == ["lb"] else ""
     description = " ".join(p for p in (as_text(rec.get("subtitle")), as_text(rec.get("description"))) if p)
     lt = rec.get("luxembourgTickets")
     tickets = isinstance(lt, dict) and bool(lt.get("publishOnEventim"))
@@ -164,6 +167,7 @@ def scrape(source):
     today = datetime.now(timezone.utc).strftime("%Y-%m-%dT00:00:00Z")
 
     events, seen_ids, pages, total = [], set(), 0, 0
+    combos = Counter()
     first, use_date = 0, True  # l'API pourrait numéroter les pages dès 1 ou refuser le filtre de date : on s'adapte
     page = first
     while pages < max_pages:
@@ -194,11 +198,13 @@ def scrape(source):
             seen_ids.add(rid)
             new += 1
             events.extend(parse_record(rec, source["name"]))
+            combos[",".join(sorted(str(l).lower() for l in (rec.get("languages") or []))) or "(vide)"] += 1
         if new == 0 or len(records) < per_page:  # dernière page (ou l'API rejoue la même page)
             break
         page += 1
         time.sleep(delay)
     print(f"[echo_api] {pages} pages, {total} expériences, {len(events)} événements")
+    print("[echo_api] langues déclarées :", ", ".join(f"{k}={v}" for k, v in combos.most_common(12)))
     if total == 0:
         raise ValueError("l'API n'a renvoyé aucune expérience")
     return events

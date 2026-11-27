@@ -153,7 +153,7 @@
       ${e.status === "probable" ? '<p class="d__note">D\'Sprooch vun dëser Aktivitéit ass nach net bestätegt. Kuck w.e.g. op der Quell no.</p>' : ""}
       <dl class="d__dl">
         <dt>Plaz</dt><dd>${esc(e.venue || "—")}${e.address ? "<br>" + esc(e.address) : ""}${maps ? `<br><a href="${maps}" target="_blank" rel="noopener">Op der Kaart weisen</a>` : ""}</dd>
-        <dt>Quell</dt><dd>${esc(e.source)}</dd>
+        <dt>Quell</dt><dd>${esc(e.echo ? "ECHO" : String(e.source || "").replace(/\s*\(ECHO\)\s*$/, ""))}</dd>
       </dl>
       ${e.lt ? '<p class="d__src">Billets disponibles avec <a href="https://www.luxembourgticket.lu/" target="_blank" rel="noopener noreferrer">luxembourgticket</a></p>' : ""}
       ${e.echo ? '<p class="d__src">Source : <a href="https://www.echo.lu/" target="_blank" rel="noopener noreferrer"><img src="echo-logo.png" alt="ECHO" width="70" height="25"></a></p>' : ""}
