@@ -1,66 +1,6 @@
 {
   "verifier": [
     {
-      "id": "804ba0f71a27",
-      "title": "Spillkultur & Ludothéik am SEAS",
-      "start": "2026-11-27T08:00",
-      "end": "",
-      "venue": "Rotondes",
-      "url": "https://www.echo.lu/fr/experiences/spillkultur-ludotheik-am-seas-DPON2f",
-      "reason": "mention « en luxembourgeois » dans le texte, lb non déclaré",
-      "snippet": "Spielend lernen ist ein Kernprinzip der non-formalen Bildung. Gesellschaftsspiele fördern essenzielle Schlüsselkompetenzen wie Selbstständigkeit, Teamgeist und Regelverständnis weit über den bloßen Zeitvertreib hinaus. Diese Fortbildung vermittelt Ih"
-    },
-    {
-      "id": "646e86705869",
-      "title": "Super Maart – Christmas Edition",
-      "start": "2026-12-20T10:00",
-      "end": "",
-      "venue": "Rotondes",
-      "url": "https://www.echo.lu/fr/experiences/super-maart-christmas-edition-fKswwB",
-      "reason": "mention « en luxembourgeois » dans le texte, lb non déclaré",
-      "snippet": "Urban lifestyles & local culture Enfin, le Super Maart revient ! À cette occasion, il enfile son plus beau pull de Noël pour une spéciale Christmas Edition . Le temps d’un week-end, les Rotondes se transforment en un pop-up XXL proposant des idées ca"
-    },
-    {
-      "id": "1d90fc7749b9",
-      "title": "Escape Game",
-      "start": "2027-01-16T10:00",
-      "end": "",
-      "venue": "Rotondes",
-      "url": "https://www.echo.lu/fr/experiences/escape-game-zBDlMP",
-      "reason": "mention « en luxembourgeois » dans le texte, lb non déclaré",
-      "snippet": "Der Geist der Rotondes Wir schreiben das Jahr 1895. Ein Mitarbeiter der Eisenbahngesellschaft CFL stirbt auf tragische Weise in den Rotondes, an seinem Arbeitsplatz. Mehr als 130 Jahre nach diesem Unfall ereignen sich dort noch immer seltsame Vorfäll"
-    },
-    {
-      "id": "209437748ca7",
-      "title": "Escape Game",
-      "start": "2027-01-17T10:00",
-      "end": "",
-      "venue": "Rotondes",
-      "url": "https://www.echo.lu/fr/experiences/escape-game-zBDlMP",
-      "reason": "mention « en luxembourgeois » dans le texte, lb non déclaré",
-      "snippet": "Der Geist der Rotondes Wir schreiben das Jahr 1895. Ein Mitarbeiter der Eisenbahngesellschaft CFL stirbt auf tragische Weise in den Rotondes, an seinem Arbeitsplatz. Mehr als 130 Jahre nach diesem Unfall ereignen sich dort noch immer seltsame Vorfäll"
-    },
-    {
-      "id": "5238d50676a2",
-      "title": "35 Joer MooF",
-      "start": "2027-02-13T19:00",
-      "end": "",
-      "venue": "Centre Culturel Kulturfabrik Esch",
-      "url": "https://www.echo.lu/fr/experiences/35-ans-de-moof-vS2P7A",
-      "reason": "mention « en luxembourgeois » dans le texte, lb non déclaré",
-      "snippet": "Avec Max Feller, HEAR, Next Deed, Fallen Lies, Heavy Petrol En 2027, MooF célèbre 35 ans de rock made in Luxembourg ! Fondé en 1992 par Alex Heyar , le groupe a traversé les décennies avec une stabilité rare : sa formation est restée pratiquement inc"
-    },
-    {
-      "id": "2b8db6ce86f3",
-      "title": "Den Ale Klischee - Le vieux cliché",
-      "start": "2027-02-22T19:00",
-      "end": "",
-      "venue": "Aalt Stadhaus",
-      "url": "https://www.echo.lu/fr/experiences/den-ale-klischee-le-vieux-cliche-iRCRSh",
-      "reason": "mention « en luxembourgeois » dans le texte, lb non déclaré",
-      "snippet": "Après l’exposition photographique à l’Aalt Stadthaus sur la thématique «Les séniors sortent des clichés» et la projection du court-métrage «Den ale Klischee – Le vieux cliché», qui ont remporté un franc succès, la Commune de Differdange vous propose "
-    },
-    {
       "id": "516994f0abcd",
       "title": "Concert et yoga",
       "start": "2027-04-15T18:00",
