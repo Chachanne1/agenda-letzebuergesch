@@ -68,6 +68,11 @@ def main():
         try:
             found = SCRAPERS[src["type"]].scrape(src)
             entry["found"] = len(found)
+            if src["type"] == "echo_api":
+                # l'API renvoie tout à chaque fois : on repart de ses données fraîches (annulations, titres corrigés…)
+                for store in (events, pending):
+                    for k in [k for k, v in store.items() if v.get("source") == src["name"]]:
+                        del store[k]
             for ev in found:
                 if not is_upcoming(ev, today) or ev["id"] in rejected:
                     continue

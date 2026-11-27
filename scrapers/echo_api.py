@@ -67,6 +67,11 @@ def as_text(content):
     if isinstance(content, str):
         return content
     if isinstance(content, dict):
+        # une entrée par langue : on n'en garde qu'une (luxembourgeois d'abord), sinon le titre est répété 3 fois
+        for lang in ("lb", "lu", "ltz", "de", "fr", "en"):
+            text = as_text(content.get(lang))
+            if text.strip():
+                return text
         return " ".join(as_text(v) for v in content.values())
     if isinstance(content, list):
         return " ".join(as_text(v) for v in content)
@@ -164,7 +169,7 @@ def scrape(source):
     while pages < max_pages:
         params = {"pagination[page]": page, "pagination[perPage]": per_page}
         if use_date:
-            params["date[from]"] = today
+            params["date[from]"] = today + "T00:00:00Z"  # RFC 3339 exigé (pas une simple date)
         try:
             data = get_json(f"{base}?{urllib.parse.urlencode(params)}", key)
         except urllib.error.HTTPError as exc:
