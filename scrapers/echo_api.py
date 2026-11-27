@@ -18,6 +18,7 @@ Limites connues (à revoir avec de vraies réponses) :
   - les expériences « permanentes » (horaires d'ouverture, sans date) sont ignorées.
 """
 import json
+import re
 from collections import Counter
 import os
 import time
@@ -111,6 +112,10 @@ URL_KEYS = ("url", "slug", "link", "permalink", "shareUrl", "shareLink", "webUrl
 
 def echo_url_of(rec):
     """Adresse de la fiche publique echo.lu si l'API la fournit (champ non documenté : on cherche plusieurs noms)."""
+    # l'id de l'API EST la fin de l'adresse publique : https://www.echo.lu/fr/experiences/<titre>-<code>
+    rid = rec.get("id")
+    if isinstance(rid, str) and re.fullmatch(r"[a-z0-9]+(?:-[a-z0-9]+)*-[A-Za-z0-9_-]{6}", rid):
+        return "https://www.echo.lu/fr/experiences/" + rid
     for k in URL_KEYS:
         v = rec.get(k)
         if isinstance(v, dict):
@@ -218,9 +223,6 @@ def scrape(source):
         new = 0
         for rec in records:
             rid = rec.get("id")
-            t = as_text(rec.get("title")).strip().lower()
-            if t in ("cornhole", "80. salon vum art vivant") or t.startswith("mi ma mach musik"):
-                print(f"[echo_api] REPERE {t[:30]} | id={rid} | objectID={rec.get('objectID')} | timestamps={rec.get('timestamps')}")
             if rid in seen_ids:
                 continue
             seen_ids.add(rid)
