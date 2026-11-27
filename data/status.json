@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-27T13:02:53+00:00",
+  "updated": "2026-11-27T13:37:39+00:00",
   "sources": [
     {
       "name": "Visit Luxembourg (ECHO)",
@@ -10,16 +10,16 @@
     },
     {
       "name": "Ville de Dudelange",
-      "ok": true,
-      "found": 50,
+      "ok": false,
+      "found": 0,
       "kept": 0,
-      "error": ""
+      "error": "HTTPError: HTTP Error 500: Internal Server Error"
     },
     {
       "name": "ECHO API (officielle)",
       "ok": true,
-      "found": 4234,
-      "kept": 78,
+      "found": 10535,
+      "kept": 19,
       "error": ""
     }
   ]

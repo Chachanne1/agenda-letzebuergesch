@@ -1,0 +1,1776 @@
+{
+  "verifier": [
+    {
+      "id": "d6fc7d8c05c6",
+      "title": "Super Maart – Christmas Edition",
+      "start": "2026-12-19T10:00",
+      "end": "",
+      "venue": "Rotondes",
+      "url": "https://redirect.echo.lu/ticket?link=5de54292b050c15913fb9a488232888c5c04985d25992a868e25e916739836e3e747883fa1e621f0e4947d863b66c7ff925eb24345708edb3d0d2f2c1885beae95c79602d42861c8f8b040b2fe7f73581407c63eb4fcc38c0554b0dafffb95649f292b04caeae739efe09d48aee8962c&id=super-maart-christmas-edition-fKswwB",
+      "reason": "mention « en luxembourgeois » dans le texte, lb non déclaré",
+      "snippet": "Urban lifestyles & local culture Enfin, le Super Maart revient ! À cette occasion, il enfile son plus beau pull de Noël pour une spéciale Christmas Edition . Le temps d’un week-end, les Rotondes se tr"
+    },
+    {
+      "id": "646e86705869",
+      "title": "Super Maart – Christmas Edition",
+      "start": "2026-12-20T10:00",
+      "end": "",
+      "venue": "Rotondes",
+      "url": "https://redirect.echo.lu/ticket?link=5de54292b050c15913fb9a488232888c5c04985d25992a868e25e916739836e3e747883fa1e621f0e4947d863b66c7ff925eb24345708edb3d0d2f2c1885beae95c79602d42861c8f8b040b2fe7f73581407c63eb4fcc38c0554b0dafffb95649f292b04caeae739efe09d48aee8962c&id=super-maart-christmas-edition-fKswwB",
+      "reason": "mention « en luxembourgeois » dans le texte, lb non déclaré",
+      "snippet": "Urban lifestyles & local culture Enfin, le Super Maart revient ! À cette occasion, il enfile son plus beau pull de Noël pour une spéciale Christmas Edition . Le temps d’un week-end, les Rotondes se tr"
+    }
+  ],
+  "sauver": [
+    {
+      "id": "c6f58e1ab1ec",
+      "title": "Black Friday",
+      "start": "2026-11-27T09:00",
+      "end": "2026-11-27T19:00",
+      "venue": "Luxembourg-Ville",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "🖤 Deine Wunschliste ruft. Es ist Zeit, sie Wirklichkeit werden zu lassen! Der Black Friday erobert Luxemburg-Stadt! 🛍️ Von lang ersehnten Favoriten bis hin zu überraschenden Entdeckungen: Freu dich au"
+    },
+    {
+      "id": "25692ace7893",
+      "title": "Black Wine Friday",
+      "start": "2026-11-27T10:00",
+      "end": "2026-11-28T19:00",
+      "venue": "Black Wine Friday",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Le Black Wine Friday revient chez Vinissimo avec une nouvelle édition riche en opportunités : deux jours pour profiter de remises exceptionnelles sur une sélection* de grands vins italiens. Un rendez-"
+    },
+    {
+      "id": "a19e8eab6c9b",
+      "title": "Gratis Kinder Bastelatelier",
+      "start": "2026-11-28T15:00",
+      "end": "2026-11-28T18:00",
+      "venue": "Place Benelux Clervaux",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Von 15.00 – 18.00 Uhr können Kinder beim Adventschalet Weihnachtswichtel aus Wolle basteln und weihnachtliche Holzfiguren anmalen. Das Atelier wird gratis von der Gemeinde Clerf angeboten. Einfach vor"
+    },
+    {
+      "id": "3e812e32cf22",
+      "title": "Winterlighting @ MiniGolf-Minicars Remich",
+      "start": "2026-11-28T17:00",
+      "end": "2026-11-28T21:00",
+      "venue": "Minigolf Remich, Esplanade",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "WINTERLICHTER @ MINIGOLF-MINICARS REIMECH AB DEM 28. NOVEMBER Dieses Jahr haben wir etwas ganz Besonderes für euch vorbereitet… WIR ÖFFNEN UNSERE TÜREN FÜR EUCH! 4 ADVENTSWOCHENENDEN voller Lichter, M"
+    },
+    {
+      "id": "93f1c773657e",
+      "title": "Vide Dressing",
+      "start": "2026-11-29T10:00",
+      "end": "2026-11-29T18:00",
+      "venue": "Al Sportshal Medernach",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "an der aler Sportshal zu Medernach 20€/Stand Umellen bis den 15.11 per Whatsapp: 661 837 314 Een Deel vum Erléis geet un den Télévie Fir Iessen a Gedrénks ass gesuergt"
+    },
+    {
+      "id": "ea2bf3ab81c8",
+      "title": "🎄 Marché de Noël à Op der Rhum avec les Amis ! 🎄",
+      "start": "2026-11-29T10:30",
+      "end": "2026-11-29T17:00",
+      "venue": "CIPA Op der Rhum",
+      "url": "https://www.servior.lu/Centres/op-der-rhum/",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "🎄 Marché de Noël à Op der Rhum avec les Amis ! 🎄 Venez partager avec nous un moment convivial et festif dans l’ambiance chaleureuse de Noël ! 🎶 Au programme musical : 10h30 – 11h30 : Chorale Sainte-Cé"
+    },
+    {
+      "id": "d09dd52bcda7",
+      "title": "Billerausstellung",
+      "start": "2026-11-27T16:30",
+      "end": "2026-11-27T22:00",
+      "venue": "Roodt-sur-Syre - Syrkus",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "vun de Kënschtler aus de Betzder Atelieren Billerausstellung vun de Kënschtler aus de Betzder Atelieren Freideg, 27.11.2026 16:30 - 22:00 Auer Samschdeg, 28.11.2026 14:00 - 21:00 Auer Sonndeg, 29.11.2"
+    },
+    {
+      "id": "162bba3fd05d",
+      "title": "Billerausstellung",
+      "start": "2026-11-28T14:00",
+      "end": "2026-11-28T21:00",
+      "venue": "Roodt-sur-Syre - Syrkus",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "vun de Kënschtler aus de Betzder Atelieren Billerausstellung vun de Kënschtler aus de Betzder Atelieren Freideg, 27.11.2026 16:30 - 22:00 Auer Samschdeg, 28.11.2026 14:00 - 21:00 Auer Sonndeg, 29.11.2"
+    },
+    {
+      "id": "fe6bc13ec766",
+      "title": "Billerausstellung",
+      "start": "2026-11-29T14:00",
+      "end": "2026-11-29T19:00",
+      "venue": "Roodt-sur-Syre - Syrkus",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "vun de Kënschtler aus de Betzder Atelieren Billerausstellung vun de Kënschtler aus de Betzder Atelieren Freideg, 27.11.2026 16:30 - 22:00 Auer Samschdeg, 28.11.2026 14:00 - 21:00 Auer Sonndeg, 29.11.2"
+    },
+    {
+      "id": "d7c5fea01c17",
+      "title": "Große Verkostung der Weine aus dem Piemont",
+      "start": "2026-12-03T10:00",
+      "end": "2026-12-05T19:00",
+      "venue": "Grande Dégustation des Vins du Piémont - Terre de Grands Crus, en présence des producteurs",
+      "url": "https://redirect.echo.lu/ticket?link=5de54292b050c15913fb9a488232888cfa04fd445656b4f79c0f804d0b8cfa48c289bd24659f9d8d4d598e54e07bdc73a31fb33d809b69c39d97b3859d54e83ec8ddda9a7862366f722e76cccdd5811362c81de00c444fb6f1e7204110a836bdafe90a802980cb84ea8dee6152ea938ce33aedda770484b181363dccb734fbd3057168c212cb0e4590a2f63bcf93ef6468d6f6b5a75c2a2783b0d0ed666a7c8d&id=grand-tasting-of-piedmont-wines-vGsFlU",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "In Anwesenheit der Winzer Große Verkostung am 3., 4. und 5. Dezember, in Anwesenheit der Winzer 2. Ausgabe : Piemont-Weinmesse, vom 3. bis 12. Dezember 2026 Große Verkostung in Anwesenheit der Winzer "
+    },
+    {
+      "id": "152bedbbda6d",
+      "title": "Bazar International de Luxembourg",
+      "start": "2026-12-04T11:00",
+      "end": "2026-12-06T22:00",
+      "venue": "Luxexpo The Box",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Das Bazar International de Luxembourg feiert seine 65. Ausgabe in der Luxexpo The Box. Diese Veranstaltung ist das bedeutendste multikulturelle und wohltätige Event des Landes. Drei Tage lang bieten m"
+    },
+    {
+      "id": "ec88eed77639",
+      "title": "Wanterexpo \"La Palette\"",
+      "start": "2026-12-05T10:00",
+      "end": "2026-12-27T18:00",
+      "venue": "Maison de la Culture de Diekirch - Galerie d'art municipale",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Les membres de la Palette Dëss Editioun vun eiser traditionneller Wanterausstellung dédiëieren mer eisem Comitésmember dem Armand Weber deen eis ganz onerwaard den 16. März 2026 fir emmer verloss huet"
+    },
+    {
+      "id": "1e1ff8e64cab",
+      "title": "AI DAYS 2026 - 2nd Edition",
+      "start": "2026-12-05T10:00",
+      "end": "2026-12-05T18:00",
+      "venue": "Luxembourg Science Center",
+      "url": "https://redirect.echo.lu/ticket?link=5de54292b050c15913fb9a488232888cda7a7d5da405af0ac8e1df652b6e3861a8e867f10d0991200fae063dcd5e6ce2c73c04c1e929531a296e4b61a4e0eb7b283c62c5d13a9f4911064a5007548627051a1a0f614efdd71c1448f205f96459c5083c466c1d3d8cfa6ab5858b1a8c7e&id=ai-days-2026-2nd-edition-qfwvXN",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Künstliche Intelligenz entmystifiziert! Kofinanziert vom \"FNR - Fonds National de la Recherche\" Samstag, 5. Dezember: Künstliche Intelligenz entmystifiziert! Seit einigen Jahren tauchen immer leistung"
+    },
+    {
+      "id": "34a8219cae12",
+      "title": "Café autour du fil & Repair Couture",
+      "start": "2026-12-05T14:00",
+      "end": "2026-12-05T17:00",
+      "venue": "Facilitec",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "réparer au lieu de jeter Tous les premiers samedis du mois, rejoignez le Café autour du Fil à Facilitec, à Esch-sur-Alzette ! Le prochain rendez-vous : samedi 5 décembre, de 14h à 17h à Facilitec - 37"
+    },
+    {
+      "id": "f8ed6d763f56",
+      "title": "Gratis Kinder Bastelatelier",
+      "start": "2026-12-05T15:00",
+      "end": "2026-12-05T18:00",
+      "venue": "Place Benelux Clervaux",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Von 15.00 – 18.00 Uhr können Kinder beim Adventschalet ihre eigenen Weihnachtskarten selbst gestalten. Anstelle von fertigen Motiven können die Kinder ihrer Fantasie freien Lauf lassen und mit untersc"
+    },
+    {
+      "id": "61a2a2ab1c05",
+      "title": "Stadionsangen",
+      "start": "2026-12-05T17:00",
+      "end": "2026-12-05T18:30",
+      "venue": "Achille Hammerel Stadium",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Sanghaus organisiert zum ersten Mal in Luxemburg ein Stadionsangen, eine gesellige und familienfreundliche Veranstaltung, bei der mehrere Gesangsgruppen gemeinsam Weihnachtslieder singen werden. Die L"
+    },
+    {
+      "id": "f8d41f2a079c",
+      "title": "Winter Glimmer Dinner 2026",
+      "start": "2026-12-05T18:00",
+      "end": "2026-12-05T23:45",
+      "venue": "Parc Hotel Alvisse",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "mit Rosa Lëtzebuerg asbl Winter Glimmer Dinner 2026 Der Winter steht vor der Tür – und mit ihm neigt sich das Jahr 2026 seinem Ende zu. Während die Tage kürzer und die Nächte länger werden, ist es an "
+    },
+    {
+      "id": "6618c88b5da0",
+      "title": "Gratis Kinder Bastelatelier",
+      "start": "2026-12-12T15:00",
+      "end": "2026-12-12T18:00",
+      "venue": "Place Benelux Clervaux",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Von 15.00 – 18.00 Uhr können Kinder beim Adventschalet niedliche kleine Schneemänner aus Tannenzapfen basteln. Das Atelier wird gratis von der Gemeinde Clerf angeboten. Einfach vorbeikommen und mitmac"
+    },
+    {
+      "id": "884644e97c5d",
+      "title": "Krippenwanderaustellung",
+      "start": "2026-12-13T09:00",
+      "end": "2027-01-06T17:00",
+      "venue": "Moulin de Consdorf",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Stimmungsvoller Spaziergang von 5 km auf den Spuren der Weihnachtskrippen Eine besondere Krippenwanderung durch die Natur: Entdecken Sie eine vielfältige Sammlung von Weihnachtskrippen aus aller Welt."
+    },
+    {
+      "id": "3da4b1102cee",
+      "title": "Found & Bound - Junk Journal (Gestalte dein Junk Journal)",
+      "start": "2026-12-13T09:00",
+      "end": "2026-12-13T13:00",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Kreativ-Workshop mit Nina Bezirgani Workshop Found & Bound — Das einzigartige Junk-Journal-Workshop-Erlebnis Was wäre, wenn aus den Schnipseln in deiner Schublade, den Einkaufstüten, die du „für alle "
+    },
+    {
+      "id": "14431a692892",
+      "title": "Concert de bienfaisance au sein du Téléviezenter Aerenzdall 2027",
+      "start": "2026-12-13T17:00",
+      "end": "2026-12-13T18:30",
+      "venue": "Eglise Medernach",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Concert de bienfaisance de la Fanfare Medernach, ensemble avec la classes de la formation musicale et des Chorales réunies Aerenzdall. Quête pour Télévie Aerenzdall 2027"
+    },
+    {
+      "id": "9a018fc8d3a5",
+      "title": "Glüh-Nachmittag beim Advents-Chalet",
+      "start": "2026-11-28T15:00",
+      "end": "2026-11-28T19:00",
+      "venue": "Clervaux Centre-Ville",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Genießen Sie die Vorweihnachtszeit bei einem stimmungsvollen Nachmittag auf dem Benelux-Platz! Treffen Sie Freunde, Familie und Nachbarn im Advents-Chalet und lassen Sie sich von einer festlichen Atmo"
+    },
+    {
+      "id": "c8f5a50d322d",
+      "title": "Glüh-Nachmittag beim Advents-Chalet",
+      "start": "2026-12-05T15:00",
+      "end": "2026-12-05T19:00",
+      "venue": "Clervaux Centre-Ville",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Genießen Sie die Vorweihnachtszeit bei einem stimmungsvollen Nachmittag auf dem Benelux-Platz! Treffen Sie Freunde, Familie und Nachbarn im Advents-Chalet und lassen Sie sich von einer festlichen Atmo"
+    },
+    {
+      "id": "38b75a78e313",
+      "title": "Glüh-Nachmittag beim Advents-Chalet",
+      "start": "2026-12-12T15:00",
+      "end": "2026-12-12T19:00",
+      "venue": "Clervaux Centre-Ville",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Genießen Sie die Vorweihnachtszeit bei einem stimmungsvollen Nachmittag auf dem Benelux-Platz! Treffen Sie Freunde, Familie und Nachbarn im Advents-Chalet und lassen Sie sich von einer festlichen Atmo"
+    },
+    {
+      "id": "e7b089c28834",
+      "title": "Glüh-Nachmittag beim Advents-Chalet",
+      "start": "2026-12-19T15:00",
+      "end": "2026-12-19T19:00",
+      "venue": "Clervaux Centre-Ville",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Genießen Sie die Vorweihnachtszeit bei einem stimmungsvollen Nachmittag auf dem Benelux-Platz! Treffen Sie Freunde, Familie und Nachbarn im Advents-Chalet und lassen Sie sich von einer festlichen Atmo"
+    },
+    {
+      "id": "2e3519ca3b23",
+      "title": "Gratis Kinder Bastelatelier",
+      "start": "2026-12-19T15:00",
+      "end": "2026-12-19T18:00",
+      "venue": "Place Benelux Clervaux",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Von 15.00 – 18.00 Uhr können Kinder beim Adventschalet Fliesen im Weihnachtsstil gestalten. Die Kinder verwandeln eine schlichte Fliese in ein kleines weihnachtliches Kunstwerk. Vorlagen und Beispiele"
+    },
+    {
+      "id": "788e43d31ec5",
+      "title": "Chrëstmaart zu Dikrich",
+      "start": "2026-12-18T16:00",
+      "end": "2026-12-18T22:00",
+      "venue": "Zone Piétonne, Diekirch",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "De Syndicat d'Initiative an d'Gemeng Dikrich lueden häerzlech op de Chrëstmaart an der Dikricher Foussgängerzon an: - Freides, den 18. Dezember vu 16 bis 22 Auer - Samschdes, den 19. Dezember vun 11 b"
+    },
+    {
+      "id": "1c6b7842f50b",
+      "title": "Chrëstmaart zu Dikrich",
+      "start": "2026-12-19T11:00",
+      "end": "2026-12-19T22:00",
+      "venue": "Zone Piétonne, Diekirch",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "De Syndicat d'Initiative an d'Gemeng Dikrich lueden häerzlech op de Chrëstmaart an der Dikricher Foussgängerzon an: - Freides, den 18. Dezember vu 16 bis 22 Auer - Samschdes, den 19. Dezember vun 11 b"
+    },
+    {
+      "id": "59a3fa8bd0b1",
+      "title": "Chrëstmaart zu Dikrich",
+      "start": "2026-12-20T11:00",
+      "end": "2026-12-20T19:00",
+      "venue": "Zone Piétonne, Diekirch",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "De Syndicat d'Initiative an d'Gemeng Dikrich lueden häerzlech op de Chrëstmaart an der Dikricher Foussgängerzon an: - Freides, den 18. Dezember vu 16 bis 22 Auer - Samschdes, den 19. Dezember vun 11 b"
+    },
+    {
+      "id": "fcbd577af236",
+      "title": "Menu de Nouvel An",
+      "start": "2026-12-31T19:00",
+      "end": "",
+      "venue": "Le Sud",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Dîner Jeudi 31 Décembre Réveillon de Nouvel An ✨🥂 Célébrez le passage à la nouvelle année lors d'une soirée d’exception pour clôturer l’année en beauté ! ✨ À cette occasion, notre Chef vous dévoile un"
+    },
+    {
+      "id": "0217284b6c53",
+      "title": "Dreikönigskonzert",
+      "start": "2027-01-03T16:00",
+      "end": "2027-01-03T17:00",
+      "venue": "Eglise Esch-sur-Sûre",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Traditionelles Konzert der Philharmonie Esch-Sauer"
+    },
+    {
+      "id": "7addd244a75b",
+      "title": "Bachata-Tanzkurs in Luxemburg – Anfänger (A0) | LBF Dance School",
+      "start": "2027-01-05T19:00",
+      "end": "2027-10-30T20:00",
+      "venue": "LBF Dance School",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Dienstags und donnerstags 19:00–20:00 · Hollerich · in Trimestern · Infos und Anmeldung auf lbfdanceschool.lu Wöchentliche Bachata-Tanzkurse in Luxemburg-Stadt (Hollerich) für absolute Anfänger, Nivea"
+    },
+    {
+      "id": "0d4e67b2d326",
+      "title": "Bachata-Tanzkurs in Luxemburg – Mittelstufe 1 (A1) | LBF Dance School",
+      "start": "2027-01-05T20:00",
+      "end": "2027-10-30T21:00",
+      "venue": "LBF Dance School",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Dienstags und donnerstags 20:00–21:00 mit Kevin & Viktoriia · Hollerich · in Trimestern · Infos und Anmeldung auf lbfdanceschool.lu Wöchentliche Bachata-Tanzkurse in Luxemburg-Stadt (Hollerich), Nivea"
+    },
+    {
+      "id": "edfe833ad0ed",
+      "title": "Bachata-Tanzkurs in Luxemburg – Mittelstufe 2 (A2) | LBF Dance School",
+      "start": "2027-01-05T21:00",
+      "end": "2027-10-30T22:00",
+      "venue": "LBF Dance School",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Dienstags und donnerstags 21:00–22:00 mit Kevin & Viktoriia · Hollerich · in Trimestern · Infos und Anmeldung auf lbfdanceschool.lu Wöchentliche Bachata-Tanzkurse in Luxemburg-Stadt (Hollerich), Nivea"
+    },
+    {
+      "id": "c6080341e66e",
+      "title": "Dominikanische Bachata – Tanzkurs in Luxemburg, Anfänger (A0) | LBF Dance School",
+      "start": "2027-01-06T20:30",
+      "end": "2027-10-30T21:30",
+      "venue": "LBF Dance School",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Mittwochs 20:30–21:30 mit Casimiro & Ioana · Hollerich · in Trimestern · Infos und Anmeldung auf lbfdanceschool.lu Wöchentliche Kurse in Dominikanischer Bachata in Luxemburg-Stadt (Hollerich), Anfänge"
+    },
+    {
+      "id": "a8b2a08dee90",
+      "title": "Chaos & Composition",
+      "start": "2027-01-16T09:00",
+      "end": "2027-01-16T13:00",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Gelli-Printing- & Collage-Workshop mit Nina Bezirgani Workshop Experimentiere mit Farben und Texturen beim Gelli-Plate-Druck und verwandle deine einzigartigen Papiere in eine überraschende Collage – a"
+    },
+    {
+      "id": "332b4ccacc81",
+      "title": "Winterliche Naturschätze",
+      "start": "2027-01-16T14:00",
+      "end": "2027-01-16T16:30",
+      "venue": "ErwuesseBildung",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Naturdeko und Futterstationen für Vögel Naturdeko und Futterstationen für Vögel Wenn der Winter Einzug hält, laden wir Familien zu einem gemütlichen und kreativen Bastelnachmittag ein. Mit Tannenzapfe"
+    },
+    {
+      "id": "58e0fce99c24",
+      "title": "ABBA GOLD - The Concert Show",
+      "start": "2027-01-16T17:00",
+      "end": "",
+      "venue": "Rockhal - Etablissement public Centre de Musiques Amplifiées",
+      "url": "https://redirect.echo.lu/ticket?link=5de54292b050c15913fb9a488232888c757b606c5f851793657ea6d226ca3a8866d12b7c2eda6709e32026210cdfd632553c828bc076a4cde88e5d7c861b6620775a5543250e10993bf68e53c70af3ca5838884fe5863cdebe4a386d574b5fa7&id=abba-gold-the-concert-show-WZntam",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "#emotion"
+    },
+    {
+      "id": "318d91874a33",
+      "title": "Waldwichtel",
+      "start": "2027-01-19T15:00",
+      "end": "2027-01-19T16:30",
+      "venue": "Steinsel, Parkplatz „Bei der Antenn“",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Natur erleben und begreifen Natur erleben und begreifen ﻿ Gemeinsam mit Mama, Papa oder einer anderen vertrauten Bezugsperson begeben sich Kinder von 2 bis 6 Jahren einmal im Monat auf eine spannende "
+    },
+    {
+      "id": "5bf8f476507e",
+      "title": "Sticken auf Kleidung",
+      "start": "2027-01-19T18:00",
+      "end": "2027-01-19T20:00",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Stickworkshop mit Jennifer Schneider Workshop In diesem Kurs lernen die Teilnehmer die Kunst der Stickerei kennen und lernen, wie sie ihre Garderobe mit dieser traditionellen Technik personalisieren u"
+    },
+    {
+      "id": "5b1b5fb0848e",
+      "title": "Wo bist du religiös/spirituell daheim?",
+      "start": "2027-01-19T19:30",
+      "end": "2027-01-19T21:30",
+      "venue": "ErwuesseBildung",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Judentum Mit Ingo Hanke (CFD) & Erik Eschmann (EwB) Die ganz persönliche Bedeutung von Religion/Spiritualität in einer Welt vielfältiger Herausforderungen. Perspektive aus dem Judentum Laurent Moyse v"
+    },
+    {
+      "id": "6fcf523a8dbb",
+      "title": "Fastnachtsmasken",
+      "start": "2027-01-23T10:00",
+      "end": "2027-01-23T12:00",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Nähkurs mit Anne-Marie Herckes Workshop Fastnacht steht vor der Tür und ihr braucht noch eine Maske? Egal ob Tiermaske oder Superheld.in – die Kinder können ihrer Fantasie freien Lauf lassen und erste"
+    },
+    {
+      "id": "35c8f0307546",
+      "title": "Schlange",
+      "start": "2027-01-23T10:30",
+      "end": "2027-01-23T12:00",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Kreativworkshop mit Sophie Dewalque Workshop In diesem Kreativworkshop basteln die Kinder Schlangen. Es stellt sich nur die Frage: zum Kuscheln oder zum Erschrecken? Infos Sophie Dewalque ist eine lux"
+    },
+    {
+      "id": "a36ab44f8e1e",
+      "title": "Concert de Gala 2027",
+      "start": "2027-01-23T20:00",
+      "end": "2027-01-23T22:00",
+      "venue": "Centre culturel CELO Hesperange",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "La Fanfare Municipale Luxembourg-Bonnevoie (Bouneweger Musek), sous la direction de Romain Kerschen, donnera son traditionnel Concert de Gala en janvier 2027 au CELO à Hesperange. À cette occasion, l'"
+    },
+    {
+      "id": "3f7b2a6bedab",
+      "title": "Concert de Gala 2027",
+      "start": "2027-01-24T16:00",
+      "end": "2027-01-24T20:00",
+      "venue": "Centre culturel CELO Hesperange",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "La Fanfare Municipale Luxembourg-Bonnevoie (Bouneweger Musek), sous la direction de Romain Kerschen, donnera son traditionnel Concert de Gala en janvier 2027 au CELO à Hesperange. À cette occasion, l'"
+    },
+    {
+      "id": "6b2df704fd18",
+      "title": "Start ins Internet",
+      "start": "2027-01-25T10:00",
+      "end": "2027-01-25T12:00",
+      "venue": "ErwuesseBildung",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Ein Kompaktkurs zu Computern, Smartphones, Internet und Co. Das Internet bietet viele Möglichkeiten, kann aber auch sehr unübersichtlich sein. In diesem Kurs klären wir wichtige Begriffe und verschaff"
+    },
+    {
+      "id": "da09670ff575",
+      "title": "Start ins Internet",
+      "start": "2027-01-26T10:00",
+      "end": "2027-01-26T12:00",
+      "venue": "ErwuesseBildung",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Ein Kompaktkurs zu Computern, Smartphones, Internet und Co. Das Internet bietet viele Möglichkeiten, kann aber auch sehr unübersichtlich sein. In diesem Kurs klären wir wichtige Begriffe und verschaff"
+    },
+    {
+      "id": "ab9d981ada6e",
+      "title": "Crashkurs Internetkommunikation",
+      "start": "2027-01-27T10:00",
+      "end": "2027-01-27T12:00",
+      "venue": "ErwuesseBildung",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Ein Kompaktkurs zu Messenger Apps, Sozialen Medien und Co. Digitale Geräte geben uns viele Möglichkeiten, um mit anderen Menschen zu kommunizieren: E-Mails, Messenger Apps, Soziale Netzwerke . In dies"
+    },
+    {
+      "id": "48aad527f963",
+      "title": "Crashkurs Internetkommunikation",
+      "start": "2027-01-28T10:00",
+      "end": "2027-01-28T12:00",
+      "venue": "ErwuesseBildung",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Ein Kompaktkurs zu Messenger Apps, Sozialen Medien und Co. Digitale Geräte geben uns viele Möglichkeiten, um mit anderen Menschen zu kommunizieren: E-Mails, Messenger Apps, Soziale Netzwerke . In dies"
+    },
+    {
+      "id": "ecb756078854",
+      "title": "Goldrank + Holzplack (Kranz mit Trockenblumen und Holzelement)",
+      "start": "2027-01-29T19:00",
+      "end": "2027-01-29T21:00",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Blumenworkshop mit Edith Riehm Workshop Entdecken Sie die besondere Schönheit getrockneter Blumen und gestalten Sie gemeinsam mit Edith Riehm einen eleganten goldenen Metallring. Mit einer harmonische"
+    },
+    {
+      "id": "bc1805a53580",
+      "title": "Fotos, Cloud und Co",
+      "start": "2027-01-29T10:00",
+      "end": "2027-01-29T12:00",
+      "venue": "ErwuesseBildung",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Ein Kompaktkurs zum Fotografieren mit dem Smartphone und dem Speichern in der Cloud Viele benutzen ihr Smartphone auch als Kamera. Aber was tun, wenn die Fotos auf einmal den ganzen Speicher belegen? "
+    },
+    {
+      "id": "88244ffd22c2",
+      "title": "Fotos, Cloud und Co",
+      "start": "2027-02-01T10:00",
+      "end": "2027-02-01T12:00",
+      "venue": "ErwuesseBildung",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Ein Kompaktkurs zum Fotografieren mit dem Smartphone und dem Speichern in der Cloud Viele benutzen ihr Smartphone auch als Kamera. Aber was tun, wenn die Fotos auf einmal den ganzen Speicher belegen? "
+    },
+    {
+      "id": "7bf455622c22",
+      "title": "Mit dem Smartphone unterwegs",
+      "start": "2027-02-02T10:00",
+      "end": "2027-02-02T12:00",
+      "venue": "ErwuesseBildung",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Ein Kompaktkurs zum Smartphone als Hilfsmittel für Alltag und Freizeit In diesem Kurs lernen wir das Smartphone als nützliches Hilfsmittel für Alltag und Freizeit kennen. Einige Beispiele: Navigation "
+    },
+    {
+      "id": "8fc9a95ee726",
+      "title": "Mit dem Smartphone unterwegs",
+      "start": "2027-02-03T10:00",
+      "end": "2027-02-03T12:00",
+      "venue": "ErwuesseBildung",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Ein Kompaktkurs zum Smartphone als Hilfsmittel für Alltag und Freizeit In diesem Kurs lernen wir das Smartphone als nützliches Hilfsmittel für Alltag und Freizeit kennen. Einige Beispiele: Navigation "
+    },
+    {
+      "id": "4c1039588801",
+      "title": "Sicher bezahlen im Internet",
+      "start": "2027-02-04T10:00",
+      "end": "2027-02-04T12:00",
+      "venue": "ErwuesseBildung",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Ein Kompaktkurs zum Bestellen, Buchen und Bezahlen im Internet Sie möchten etwas im Internet bestellen oder eine Reise buchen, aber bei der Zahlung wird Ihnen mulmig? In diesem Kurs schauen wir uns an"
+    },
+    {
+      "id": "c944a5c1cd43",
+      "title": "Sicher bezahlen im Internet",
+      "start": "2027-02-05T10:00",
+      "end": "2027-02-05T12:00",
+      "venue": "ErwuesseBildung",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Ein Kompaktkurs zum Bestellen, Buchen und Bezahlen im Internet Sie möchten etwas im Internet bestellen oder eine Reise buchen, aber bei der Zahlung wird Ihnen mulmig? In diesem Kurs schauen wir uns an"
+    },
+    {
+      "id": "2d4cfa90a7cf",
+      "title": "Internetführerschein",
+      "start": "2027-01-25T10:00",
+      "end": "2027-01-25T12:00",
+      "venue": "ErwuesseBildung",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Basiskurs zum Umgang mit digitalen Geräten und dem Internet Den Alltag mit Smartphone, Internet & Co. sicherer meistern – dabei unterstützt der Internetführerscheins in angenehmer Atmosphäre. Der Kurs"
+    },
+    {
+      "id": "13cf10e0a1c2",
+      "title": "Internetführerschein",
+      "start": "2027-01-26T10:00",
+      "end": "2027-01-26T12:00",
+      "venue": "ErwuesseBildung",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Basiskurs zum Umgang mit digitalen Geräten und dem Internet Den Alltag mit Smartphone, Internet & Co. sicherer meistern – dabei unterstützt der Internetführerscheins in angenehmer Atmosphäre. Der Kurs"
+    },
+    {
+      "id": "d34ba42a7ffb",
+      "title": "Internetführerschein",
+      "start": "2027-01-27T10:00",
+      "end": "2027-01-27T12:00",
+      "venue": "ErwuesseBildung",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Basiskurs zum Umgang mit digitalen Geräten und dem Internet Den Alltag mit Smartphone, Internet & Co. sicherer meistern – dabei unterstützt der Internetführerscheins in angenehmer Atmosphäre. Der Kurs"
+    },
+    {
+      "id": "8c0f30bded60",
+      "title": "Internetführerschein",
+      "start": "2027-01-28T10:00",
+      "end": "2027-01-28T12:00",
+      "venue": "ErwuesseBildung",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Basiskurs zum Umgang mit digitalen Geräten und dem Internet Den Alltag mit Smartphone, Internet & Co. sicherer meistern – dabei unterstützt der Internetführerscheins in angenehmer Atmosphäre. Der Kurs"
+    },
+    {
+      "id": "ab40a9c69c53",
+      "title": "Internetführerschein",
+      "start": "2027-01-29T10:00",
+      "end": "2027-01-29T12:00",
+      "venue": "ErwuesseBildung",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Basiskurs zum Umgang mit digitalen Geräten und dem Internet Den Alltag mit Smartphone, Internet & Co. sicherer meistern – dabei unterstützt der Internetführerscheins in angenehmer Atmosphäre. Der Kurs"
+    },
+    {
+      "id": "af970387a9eb",
+      "title": "Internetführerschein",
+      "start": "2027-02-01T10:00",
+      "end": "2027-02-01T12:00",
+      "venue": "ErwuesseBildung",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Basiskurs zum Umgang mit digitalen Geräten und dem Internet Den Alltag mit Smartphone, Internet & Co. sicherer meistern – dabei unterstützt der Internetführerscheins in angenehmer Atmosphäre. Der Kurs"
+    },
+    {
+      "id": "f8c1fb83506c",
+      "title": "Internetführerschein",
+      "start": "2027-02-02T10:00",
+      "end": "2027-02-02T12:00",
+      "venue": "ErwuesseBildung",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Basiskurs zum Umgang mit digitalen Geräten und dem Internet Den Alltag mit Smartphone, Internet & Co. sicherer meistern – dabei unterstützt der Internetführerscheins in angenehmer Atmosphäre. Der Kurs"
+    },
+    {
+      "id": "64d7c754ce53",
+      "title": "Internetführerschein",
+      "start": "2027-02-03T10:00",
+      "end": "2027-02-03T12:00",
+      "venue": "ErwuesseBildung",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Basiskurs zum Umgang mit digitalen Geräten und dem Internet Den Alltag mit Smartphone, Internet & Co. sicherer meistern – dabei unterstützt der Internetführerscheins in angenehmer Atmosphäre. Der Kurs"
+    },
+    {
+      "id": "d0137eb8d838",
+      "title": "Internetführerschein",
+      "start": "2027-02-04T10:00",
+      "end": "2027-02-04T12:00",
+      "venue": "ErwuesseBildung",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Basiskurs zum Umgang mit digitalen Geräten und dem Internet Den Alltag mit Smartphone, Internet & Co. sicherer meistern – dabei unterstützt der Internetführerscheins in angenehmer Atmosphäre. Der Kurs"
+    },
+    {
+      "id": "c6a152451490",
+      "title": "Internetführerschein",
+      "start": "2027-02-05T10:00",
+      "end": "2027-02-05T12:00",
+      "venue": "ErwuesseBildung",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Basiskurs zum Umgang mit digitalen Geräten und dem Internet Den Alltag mit Smartphone, Internet & Co. sicherer meistern – dabei unterstützt der Internetführerscheins in angenehmer Atmosphäre. Der Kurs"
+    },
+    {
+      "id": "7066e26db8cd",
+      "title": "Galaconcert",
+      "start": "2027-03-20T20:00",
+      "end": "2027-03-21T03:00",
+      "venue": "Centre sportif et culturel Waldbillig",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "125 Joer Waldbelleger Musek Galaconcert"
+    },
+    {
+      "id": "5edd6ffdf14f",
+      "title": "Patchwork - Appliqué en Piqué Libre",
+      "start": "2027-01-18T19:00",
+      "end": "2027-01-18T21:00",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Patchworkkurs mit Malou Kemp Workshop Dieser Workshop richtet sich an Patchwork-Begeisterte, die die Technik der Freihand-Applikation anhand von kleinen Dekorationen für Ihr Zuhause erlernen möchten. "
+    },
+    {
+      "id": "fb528c4bb2e8",
+      "title": "Patchwork - Appliqué en Piqué Libre",
+      "start": "2027-02-15T19:00",
+      "end": "2027-02-15T21:00",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Patchworkkurs mit Malou Kemp Workshop Dieser Workshop richtet sich an Patchwork-Begeisterte, die die Technik der Freihand-Applikation anhand von kleinen Dekorationen für Ihr Zuhause erlernen möchten. "
+    },
+    {
+      "id": "e2f2ea1e5c84",
+      "title": "Patchwork - Appliqué en Piqué Libre",
+      "start": "2027-03-01T19:00",
+      "end": "2027-03-01T21:00",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Patchworkkurs mit Malou Kemp Workshop Dieser Workshop richtet sich an Patchwork-Begeisterte, die die Technik der Freihand-Applikation anhand von kleinen Dekorationen für Ihr Zuhause erlernen möchten. "
+    },
+    {
+      "id": "22e0132d04e0",
+      "title": "Patchwork - Appliqué en Piqué Libre",
+      "start": "2027-03-22T19:00",
+      "end": "2027-03-22T21:00",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Patchworkkurs mit Malou Kemp Workshop Dieser Workshop richtet sich an Patchwork-Begeisterte, die die Technik der Freihand-Applikation anhand von kleinen Dekorationen für Ihr Zuhause erlernen möchten. "
+    },
+    {
+      "id": "50240f4d03a8",
+      "title": "Patchwork - Appliqué en Piqué Libre",
+      "start": "2027-04-12T19:00",
+      "end": "2027-04-12T21:00",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Patchworkkurs mit Malou Kemp Workshop Dieser Workshop richtet sich an Patchwork-Begeisterte, die die Technik der Freihand-Applikation anhand von kleinen Dekorationen für Ihr Zuhause erlernen möchten. "
+    },
+    {
+      "id": "5afc466fff57",
+      "title": "Licence to sew (Nähmaschinenführerschein für Erwachsene)",
+      "start": "2027-01-24T09:00",
+      "end": "2027-01-24T12:30",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Nähkurs mit Anne-Marie Herckes Workshop Noch nie an einer Nähmaschine gesessen? Dann ist dieser Kurs genau das Richtige für Sie! Dieser Kurs richtet sich an alle, die gerne das Nähen lernen möchten, a"
+    },
+    {
+      "id": "88799bc9fe43",
+      "title": "Licence to sew (Nähmaschinenführerschein für Erwachsene)",
+      "start": "2027-04-17T09:00",
+      "end": "2027-04-17T12:30",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Nähkurs mit Anne-Marie Herckes Workshop Noch nie an einer Nähmaschine gesessen? Dann ist dieser Kurs genau das Richtige für Sie! Dieser Kurs richtet sich an alle, die gerne das Nähen lernen möchten, a"
+    },
+    {
+      "id": "c1337cb96139",
+      "title": "Let's make a Piñata",
+      "start": "2027-01-17T10:00",
+      "end": "2027-01-17T12:00",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Kreativworkshop für Kinder & Erwachene mit Christelle Filet-Klein Workshop Bastle deine eigene Piñata – bunt, kreativ und zum Zerschlagen (oder Behalten)! Für Kinder und Erwachsene – Spaß garantiert! "
+    },
+    {
+      "id": "13965809c5e2",
+      "title": "Let's make a Piñata",
+      "start": "2027-04-18T10:00",
+      "end": "2027-04-18T12:00",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Kreativworkshop für Kinder & Erwachene mit Christelle Filet-Klein Workshop Bastle deine eigene Piñata – bunt, kreativ und zum Zerschlagen (oder Behalten)! Für Kinder und Erwachsene – Spaß garantiert! "
+    },
+    {
+      "id": "7bb1318a841c",
+      "title": "Qi Gong",
+      "start": "2026-12-10T19:00",
+      "end": "2026-12-10T20:30",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Qi-Gong-Workshop mit Norman Folz Workshop Norman Folz begleitet Sie mit Respekt und Offenheit auf ihrem Weg zu mehr Beweglichkeit, innerer Ruhe und Lebensqualität. Umkleide- und Duschräume sind leider"
+    },
+    {
+      "id": "450e53b1851d",
+      "title": "Qi Gong",
+      "start": "2026-12-17T19:00",
+      "end": "2026-12-17T20:30",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Qi-Gong-Workshop mit Norman Folz Workshop Norman Folz begleitet Sie mit Respekt und Offenheit auf ihrem Weg zu mehr Beweglichkeit, innerer Ruhe und Lebensqualität. Umkleide- und Duschräume sind leider"
+    },
+    {
+      "id": "64977028060e",
+      "title": "Qi Gong",
+      "start": "2027-01-07T19:00",
+      "end": "2027-01-07T20:30",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Qi-Gong-Workshop mit Norman Folz Workshop Norman Folz begleitet Sie mit Respekt und Offenheit auf ihrem Weg zu mehr Beweglichkeit, innerer Ruhe und Lebensqualität. Umkleide- und Duschräume sind leider"
+    },
+    {
+      "id": "8e406d7e0bfa",
+      "title": "Qi Gong",
+      "start": "2027-01-21T19:00",
+      "end": "2027-01-21T20:30",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Qi-Gong-Workshop mit Norman Folz Workshop Norman Folz begleitet Sie mit Respekt und Offenheit auf ihrem Weg zu mehr Beweglichkeit, innerer Ruhe und Lebensqualität. Umkleide- und Duschräume sind leider"
+    },
+    {
+      "id": "d48f5c457994",
+      "title": "Qi Gong",
+      "start": "2027-02-04T19:00",
+      "end": "2027-02-04T20:30",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Qi-Gong-Workshop mit Norman Folz Workshop Norman Folz begleitet Sie mit Respekt und Offenheit auf ihrem Weg zu mehr Beweglichkeit, innerer Ruhe und Lebensqualität. Umkleide- und Duschräume sind leider"
+    },
+    {
+      "id": "42e0cad847a1",
+      "title": "Qi Gong",
+      "start": "2027-02-18T19:00",
+      "end": "2027-02-18T20:30",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Qi-Gong-Workshop mit Norman Folz Workshop Norman Folz begleitet Sie mit Respekt und Offenheit auf ihrem Weg zu mehr Beweglichkeit, innerer Ruhe und Lebensqualität. Umkleide- und Duschräume sind leider"
+    },
+    {
+      "id": "c93748f4ea00",
+      "title": "Qi Gong",
+      "start": "2027-03-04T19:00",
+      "end": "2027-03-04T20:30",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Qi-Gong-Workshop mit Norman Folz Workshop Norman Folz begleitet Sie mit Respekt und Offenheit auf ihrem Weg zu mehr Beweglichkeit, innerer Ruhe und Lebensqualität. Umkleide- und Duschräume sind leider"
+    },
+    {
+      "id": "8f31c68a0229",
+      "title": "Qi Gong",
+      "start": "2027-03-18T19:00",
+      "end": "2027-03-18T20:30",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Qi-Gong-Workshop mit Norman Folz Workshop Norman Folz begleitet Sie mit Respekt und Offenheit auf ihrem Weg zu mehr Beweglichkeit, innerer Ruhe und Lebensqualität. Umkleide- und Duschräume sind leider"
+    },
+    {
+      "id": "f6458999c567",
+      "title": "Qi Gong",
+      "start": "2027-04-15T19:00",
+      "end": "2027-04-15T20:30",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Qi-Gong-Workshop mit Norman Folz Workshop Norman Folz begleitet Sie mit Respekt und Offenheit auf ihrem Weg zu mehr Beweglichkeit, innerer Ruhe und Lebensqualität. Umkleide- und Duschräume sind leider"
+    },
+    {
+      "id": "629cce5d7f12",
+      "title": "Qi Gong",
+      "start": "2027-04-29T19:00",
+      "end": "2027-04-29T20:30",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Qi-Gong-Workshop mit Norman Folz Workshop Norman Folz begleitet Sie mit Respekt und Offenheit auf ihrem Weg zu mehr Beweglichkeit, innerer Ruhe und Lebensqualität. Umkleide- und Duschräume sind leider"
+    },
+    {
+      "id": "fcf51a044837",
+      "title": "Qi Gong",
+      "start": "2027-05-13T19:00",
+      "end": "2027-05-13T20:30",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Qi-Gong-Workshop mit Norman Folz Workshop Norman Folz begleitet Sie mit Respekt und Offenheit auf ihrem Weg zu mehr Beweglichkeit, innerer Ruhe und Lebensqualität. Umkleide- und Duschräume sind leider"
+    },
+    {
+      "id": "7d16b155af5e",
+      "title": "Qi Gong",
+      "start": "2027-05-20T19:00",
+      "end": "2027-05-20T20:30",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Qi-Gong-Workshop mit Norman Folz Workshop Norman Folz begleitet Sie mit Respekt und Offenheit auf ihrem Weg zu mehr Beweglichkeit, innerer Ruhe und Lebensqualität. Umkleide- und Duschräume sind leider"
+    },
+    {
+      "id": "8f56a26657a7",
+      "title": "Mellerdall in Concert",
+      "start": "2027-05-22T11:30",
+      "end": "2027-05-22T22:00",
+      "venue": "Touristcenter Heringer Millen",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Verschieden Musken spillen Concerten ob der Heringermillen fir Iessen , Gedrenks a Spass ass gesuergt"
+    },
+    {
+      "id": "ce388fda4245",
+      "title": "Keramikmalwerkstatt",
+      "start": "2027-01-30T09:00",
+      "end": "2027-01-30T11:30",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Kreativworkshop für Kinder & Erwachsene Workshop Keramik selbst bemalen - kinderleicht... und ein tolles kreatives Erlebnis, bei dem die ganze Familie (Kinder nur mit Begleitperson/ohne Begleitperson "
+    },
+    {
+      "id": "c43348b99f59",
+      "title": "Keramikmalwerkstatt",
+      "start": "2027-02-12T09:00",
+      "end": "2027-02-12T11:30",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Kreativworkshop für Kinder & Erwachsene Workshop Keramik selbst bemalen - kinderleicht... und ein tolles kreatives Erlebnis, bei dem die ganze Familie (Kinder nur mit Begleitperson/ohne Begleitperson "
+    },
+    {
+      "id": "102325d366f0",
+      "title": "Keramikmalwerkstatt",
+      "start": "2027-02-16T14:00",
+      "end": "2027-02-16T16:30",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Kreativworkshop für Kinder & Erwachsene Workshop Keramik selbst bemalen - kinderleicht... und ein tolles kreatives Erlebnis, bei dem die ganze Familie (Kinder nur mit Begleitperson/ohne Begleitperson "
+    },
+    {
+      "id": "a6ccd5aaa7ee",
+      "title": "Keramikmalwerkstatt",
+      "start": "2027-03-06T09:00",
+      "end": "2027-03-06T11:30",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Kreativworkshop für Kinder & Erwachsene Workshop Keramik selbst bemalen - kinderleicht... und ein tolles kreatives Erlebnis, bei dem die ganze Familie (Kinder nur mit Begleitperson/ohne Begleitperson "
+    },
+    {
+      "id": "b4d5fdb222b1",
+      "title": "Keramikmalwerkstatt",
+      "start": "2027-03-30T09:00",
+      "end": "2027-03-30T11:30",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Kreativworkshop für Kinder & Erwachsene Workshop Keramik selbst bemalen - kinderleicht... und ein tolles kreatives Erlebnis, bei dem die ganze Familie (Kinder nur mit Begleitperson/ohne Begleitperson "
+    },
+    {
+      "id": "d9df4ffeca45",
+      "title": "Keramikmalwerkstatt",
+      "start": "2027-03-31T09:00",
+      "end": "2027-03-31T11:30",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Kreativworkshop für Kinder & Erwachsene Workshop Keramik selbst bemalen - kinderleicht... und ein tolles kreatives Erlebnis, bei dem die ganze Familie (Kinder nur mit Begleitperson/ohne Begleitperson "
+    },
+    {
+      "id": "e4f429e03bc5",
+      "title": "Keramikmalwerkstatt",
+      "start": "2027-05-16T09:00",
+      "end": "2027-05-16T11:30",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Kreativworkshop für Kinder & Erwachsene Workshop Keramik selbst bemalen - kinderleicht... und ein tolles kreatives Erlebnis, bei dem die ganze Familie (Kinder nur mit Begleitperson/ohne Begleitperson "
+    },
+    {
+      "id": "e099bb94e978",
+      "title": "Keramikmalwerkstatt",
+      "start": "2027-06-04T09:00",
+      "end": "2027-06-04T11:30",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Kreativworkshop für Kinder & Erwachsene Workshop Keramik selbst bemalen - kinderleicht... und ein tolles kreatives Erlebnis, bei dem die ganze Familie (Kinder nur mit Begleitperson/ohne Begleitperson "
+    },
+    {
+      "id": "6454004bd532",
+      "title": "Keramikmalwerkstatt",
+      "start": "2027-06-05T09:00",
+      "end": "2027-06-05T11:30",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Kreativworkshop für Kinder & Erwachsene Workshop Keramik selbst bemalen - kinderleicht... und ein tolles kreatives Erlebnis, bei dem die ganze Familie (Kinder nur mit Begleitperson/ohne Begleitperson "
+    },
+    {
+      "id": "32f25771c7e4",
+      "title": "Cuts & Colours",
+      "start": "2026-12-01T09:00",
+      "end": "2026-12-01T13:00",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Nähkurs mit Natercia Rebelo Workshop Sie können schon nähen und brauchen nur etwas Hilfe? Natercia Rebelo kennt den ein oder anderen Trick und hilft Ihnen gerne bei der Umsetzung eigener Ideen und Pro"
+    },
+    {
+      "id": "81ad47279fca",
+      "title": "Cuts & Colours",
+      "start": "2026-12-08T09:00",
+      "end": "2026-12-08T13:00",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Nähkurs mit Natercia Rebelo Workshop Sie können schon nähen und brauchen nur etwas Hilfe? Natercia Rebelo kennt den ein oder anderen Trick und hilft Ihnen gerne bei der Umsetzung eigener Ideen und Pro"
+    },
+    {
+      "id": "3e4202a91d2b",
+      "title": "Cuts & Colours",
+      "start": "2026-12-15T09:00",
+      "end": "2026-12-15T13:00",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Nähkurs mit Natercia Rebelo Workshop Sie können schon nähen und brauchen nur etwas Hilfe? Natercia Rebelo kennt den ein oder anderen Trick und hilft Ihnen gerne bei der Umsetzung eigener Ideen und Pro"
+    },
+    {
+      "id": "72a423765f40",
+      "title": "Cuts & Colours",
+      "start": "2027-01-05T09:00",
+      "end": "2027-01-05T13:00",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Nähkurs mit Natercia Rebelo Workshop Sie können schon nähen und brauchen nur etwas Hilfe? Natercia Rebelo kennt den ein oder anderen Trick und hilft Ihnen gerne bei der Umsetzung eigener Ideen und Pro"
+    },
+    {
+      "id": "0b91c1f45343",
+      "title": "Cuts & Colours",
+      "start": "2027-01-12T09:00",
+      "end": "2027-01-12T13:00",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Nähkurs mit Natercia Rebelo Workshop Sie können schon nähen und brauchen nur etwas Hilfe? Natercia Rebelo kennt den ein oder anderen Trick und hilft Ihnen gerne bei der Umsetzung eigener Ideen und Pro"
+    },
+    {
+      "id": "e57ccfd0ccc1",
+      "title": "Cuts & Colours",
+      "start": "2027-01-19T09:00",
+      "end": "2027-01-19T13:00",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Nähkurs mit Natercia Rebelo Workshop Sie können schon nähen und brauchen nur etwas Hilfe? Natercia Rebelo kennt den ein oder anderen Trick und hilft Ihnen gerne bei der Umsetzung eigener Ideen und Pro"
+    },
+    {
+      "id": "f0f26edfe6d3",
+      "title": "Cuts & Colours",
+      "start": "2027-02-02T09:00",
+      "end": "2027-02-02T13:00",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Nähkurs mit Natercia Rebelo Workshop Sie können schon nähen und brauchen nur etwas Hilfe? Natercia Rebelo kennt den ein oder anderen Trick und hilft Ihnen gerne bei der Umsetzung eigener Ideen und Pro"
+    },
+    {
+      "id": "8adf5a69e485",
+      "title": "Cuts & Colours",
+      "start": "2027-02-16T09:00",
+      "end": "2027-02-16T13:00",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Nähkurs mit Natercia Rebelo Workshop Sie können schon nähen und brauchen nur etwas Hilfe? Natercia Rebelo kennt den ein oder anderen Trick und hilft Ihnen gerne bei der Umsetzung eigener Ideen und Pro"
+    },
+    {
+      "id": "d58795ef1178",
+      "title": "Cuts & Colours",
+      "start": "2027-02-23T09:00",
+      "end": "2027-02-23T13:00",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Nähkurs mit Natercia Rebelo Workshop Sie können schon nähen und brauchen nur etwas Hilfe? Natercia Rebelo kennt den ein oder anderen Trick und hilft Ihnen gerne bei der Umsetzung eigener Ideen und Pro"
+    },
+    {
+      "id": "351751626683",
+      "title": "Cuts & Colours",
+      "start": "2027-03-09T09:00",
+      "end": "2027-03-09T13:00",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Nähkurs mit Natercia Rebelo Workshop Sie können schon nähen und brauchen nur etwas Hilfe? Natercia Rebelo kennt den ein oder anderen Trick und hilft Ihnen gerne bei der Umsetzung eigener Ideen und Pro"
+    },
+    {
+      "id": "d75e462b76e4",
+      "title": "Cuts & Colours",
+      "start": "2027-03-16T09:00",
+      "end": "2027-03-16T13:00",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Nähkurs mit Natercia Rebelo Workshop Sie können schon nähen und brauchen nur etwas Hilfe? Natercia Rebelo kennt den ein oder anderen Trick und hilft Ihnen gerne bei der Umsetzung eigener Ideen und Pro"
+    },
+    {
+      "id": "cba86ca72551",
+      "title": "Cuts & Colours",
+      "start": "2027-03-23T09:00",
+      "end": "2027-03-23T13:00",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Nähkurs mit Natercia Rebelo Workshop Sie können schon nähen und brauchen nur etwas Hilfe? Natercia Rebelo kennt den ein oder anderen Trick und hilft Ihnen gerne bei der Umsetzung eigener Ideen und Pro"
+    },
+    {
+      "id": "cad01c3f935b",
+      "title": "Cuts & Colours",
+      "start": "2027-04-13T09:00",
+      "end": "2027-04-13T13:00",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Nähkurs mit Natercia Rebelo Workshop Sie können schon nähen und brauchen nur etwas Hilfe? Natercia Rebelo kennt den ein oder anderen Trick und hilft Ihnen gerne bei der Umsetzung eigener Ideen und Pro"
+    },
+    {
+      "id": "893c92ae6fa8",
+      "title": "Cuts & Colours",
+      "start": "2027-04-20T09:00",
+      "end": "2027-04-20T13:00",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Nähkurs mit Natercia Rebelo Workshop Sie können schon nähen und brauchen nur etwas Hilfe? Natercia Rebelo kennt den ein oder anderen Trick und hilft Ihnen gerne bei der Umsetzung eigener Ideen und Pro"
+    },
+    {
+      "id": "7d98b299e13e",
+      "title": "Cuts & Colours",
+      "start": "2027-04-27T09:00",
+      "end": "2027-04-27T13:00",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Nähkurs mit Natercia Rebelo Workshop Sie können schon nähen und brauchen nur etwas Hilfe? Natercia Rebelo kennt den ein oder anderen Trick und hilft Ihnen gerne bei der Umsetzung eigener Ideen und Pro"
+    },
+    {
+      "id": "b06f3aa79f59",
+      "title": "Cuts & Colours",
+      "start": "2027-05-04T09:00",
+      "end": "2027-05-04T13:00",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Nähkurs mit Natercia Rebelo Workshop Sie können schon nähen und brauchen nur etwas Hilfe? Natercia Rebelo kennt den ein oder anderen Trick und hilft Ihnen gerne bei der Umsetzung eigener Ideen und Pro"
+    },
+    {
+      "id": "1f10c1c10ce0",
+      "title": "Rhythmik-Workshop 2",
+      "start": "2027-01-07T15:00",
+      "end": "2027-01-07T16:00",
+      "venue": "ErwuesseBildung",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Ein inklusiver Workshop für Kinder zwischen 3 und 5 und ihre Vertrauensperson Inklusiver Workshop ﻿ Wenn man Rhythmik hört, denkt man an einen Trommelkurs. Doch Rhythmik ist viel mehr! In diesem Works"
+    },
+    {
+      "id": "6ccfb22d7fc0",
+      "title": "Rhythmik-Workshop 2",
+      "start": "2027-01-21T15:00",
+      "end": "2027-01-21T16:00",
+      "venue": "ErwuesseBildung",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Ein inklusiver Workshop für Kinder zwischen 3 und 5 und ihre Vertrauensperson Inklusiver Workshop ﻿ Wenn man Rhythmik hört, denkt man an einen Trommelkurs. Doch Rhythmik ist viel mehr! In diesem Works"
+    },
+    {
+      "id": "c699edca5eba",
+      "title": "Rhythmik-Workshop 2",
+      "start": "2027-02-04T15:00",
+      "end": "2027-02-04T16:00",
+      "venue": "ErwuesseBildung",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Ein inklusiver Workshop für Kinder zwischen 3 und 5 und ihre Vertrauensperson Inklusiver Workshop ﻿ Wenn man Rhythmik hört, denkt man an einen Trommelkurs. Doch Rhythmik ist viel mehr! In diesem Works"
+    },
+    {
+      "id": "df5fe2a77870",
+      "title": "Rhythmik-Workshop 2",
+      "start": "2027-02-25T15:00",
+      "end": "2027-02-25T16:00",
+      "venue": "ErwuesseBildung",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Ein inklusiver Workshop für Kinder zwischen 3 und 5 und ihre Vertrauensperson Inklusiver Workshop ﻿ Wenn man Rhythmik hört, denkt man an einen Trommelkurs. Doch Rhythmik ist viel mehr! In diesem Works"
+    },
+    {
+      "id": "36169a13575c",
+      "title": "Rhythmik-Workshop 2",
+      "start": "2027-03-11T15:00",
+      "end": "2027-03-11T16:00",
+      "venue": "ErwuesseBildung",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Ein inklusiver Workshop für Kinder zwischen 3 und 5 und ihre Vertrauensperson Inklusiver Workshop ﻿ Wenn man Rhythmik hört, denkt man an einen Trommelkurs. Doch Rhythmik ist viel mehr! In diesem Works"
+    },
+    {
+      "id": "04a9cfbeed94",
+      "title": "Rhythmik-Workshop 2",
+      "start": "2027-03-25T15:00",
+      "end": "2027-03-25T16:00",
+      "venue": "ErwuesseBildung",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Ein inklusiver Workshop für Kinder zwischen 3 und 5 und ihre Vertrauensperson Inklusiver Workshop ﻿ Wenn man Rhythmik hört, denkt man an einen Trommelkurs. Doch Rhythmik ist viel mehr! In diesem Works"
+    },
+    {
+      "id": "77fc0208d064",
+      "title": "Rhythmik-Workshop 2",
+      "start": "2027-04-22T15:00",
+      "end": "2027-04-22T16:00",
+      "venue": "ErwuesseBildung",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Ein inklusiver Workshop für Kinder zwischen 3 und 5 und ihre Vertrauensperson Inklusiver Workshop ﻿ Wenn man Rhythmik hört, denkt man an einen Trommelkurs. Doch Rhythmik ist viel mehr! In diesem Works"
+    },
+    {
+      "id": "941016d3543c",
+      "title": "Rhythmik-Workshop 2",
+      "start": "2027-05-13T15:00",
+      "end": "2027-05-13T16:00",
+      "venue": "ErwuesseBildung",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Ein inklusiver Workshop für Kinder zwischen 3 und 5 und ihre Vertrauensperson Inklusiver Workshop ﻿ Wenn man Rhythmik hört, denkt man an einen Trommelkurs. Doch Rhythmik ist viel mehr! In diesem Works"
+    },
+    {
+      "id": "854c78d32804",
+      "title": "Rhythmik-Workshop 2",
+      "start": "2027-05-27T15:00",
+      "end": "2027-05-27T16:00",
+      "venue": "ErwuesseBildung",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Ein inklusiver Workshop für Kinder zwischen 3 und 5 und ihre Vertrauensperson Inklusiver Workshop ﻿ Wenn man Rhythmik hört, denkt man an einen Trommelkurs. Doch Rhythmik ist viel mehr! In diesem Works"
+    },
+    {
+      "id": "757929b8b1c5",
+      "title": "Rhythmik-Workshop 2",
+      "start": "2027-06-17T15:00",
+      "end": "2027-06-17T16:00",
+      "venue": "ErwuesseBildung",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Ein inklusiver Workshop für Kinder zwischen 3 und 5 und ihre Vertrauensperson Inklusiver Workshop ﻿ Wenn man Rhythmik hört, denkt man an einen Trommelkurs. Doch Rhythmik ist viel mehr! In diesem Works"
+    },
+    {
+      "id": "e5e4da0c4b0c",
+      "title": "Rhythmik-Workshop 2",
+      "start": "2027-07-01T15:00",
+      "end": "2027-07-01T16:00",
+      "venue": "ErwuesseBildung",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Ein inklusiver Workshop für Kinder zwischen 3 und 5 und ihre Vertrauensperson Inklusiver Workshop ﻿ Wenn man Rhythmik hört, denkt man an einen Trommelkurs. Doch Rhythmik ist viel mehr! In diesem Works"
+    },
+    {
+      "id": "8981ad00efb8",
+      "title": "Tuftingwerkstatt",
+      "start": "2026-12-13T09:00",
+      "end": "2026-12-13T14:00",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Kreativworkshop mit Christelle Filet-Klein Workshop In diesem Workshop lernen Sie die Technik des Tuftings kennen und gestalten Schritt für Schritt Ihren persönlichen Teppich (80 × 80 cm). Bitte sende"
+    },
+    {
+      "id": "821d739aa63d",
+      "title": "Tuftingwerkstatt",
+      "start": "2027-01-10T09:00",
+      "end": "2027-01-10T14:00",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Kreativworkshop mit Christelle Filet-Klein Workshop In diesem Workshop lernen Sie die Technik des Tuftings kennen und gestalten Schritt für Schritt Ihren persönlichen Teppich (80 × 80 cm). Bitte sende"
+    },
+    {
+      "id": "ab738cea5c98",
+      "title": "Tuftingwerkstatt",
+      "start": "2027-02-07T09:00",
+      "end": "2027-02-07T14:00",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Kreativworkshop mit Christelle Filet-Klein Workshop In diesem Workshop lernen Sie die Technik des Tuftings kennen und gestalten Schritt für Schritt Ihren persönlichen Teppich (80 × 80 cm). Bitte sende"
+    },
+    {
+      "id": "24edf479f760",
+      "title": "Tuftingwerkstatt",
+      "start": "2027-02-14T09:00",
+      "end": "2027-02-14T14:00",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Kreativworkshop mit Christelle Filet-Klein Workshop In diesem Workshop lernen Sie die Technik des Tuftings kennen und gestalten Schritt für Schritt Ihren persönlichen Teppich (80 × 80 cm). Bitte sende"
+    },
+    {
+      "id": "058fee28bdc5",
+      "title": "Tuftingwerkstatt",
+      "start": "2027-03-20T09:00",
+      "end": "2027-03-20T14:00",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Kreativworkshop mit Christelle Filet-Klein Workshop In diesem Workshop lernen Sie die Technik des Tuftings kennen und gestalten Schritt für Schritt Ihren persönlichen Teppich (80 × 80 cm). Bitte sende"
+    },
+    {
+      "id": "947ebe04458a",
+      "title": "Tuftingwerkstatt",
+      "start": "2027-03-21T09:00",
+      "end": "2027-03-21T14:00",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Kreativworkshop mit Christelle Filet-Klein Workshop In diesem Workshop lernen Sie die Technik des Tuftings kennen und gestalten Schritt für Schritt Ihren persönlichen Teppich (80 × 80 cm). Bitte sende"
+    },
+    {
+      "id": "fc2887b570a9",
+      "title": "Tuftingwerkstatt",
+      "start": "2027-04-11T09:00",
+      "end": "2027-04-11T14:00",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Kreativworkshop mit Christelle Filet-Klein Workshop In diesem Workshop lernen Sie die Technik des Tuftings kennen und gestalten Schritt für Schritt Ihren persönlichen Teppich (80 × 80 cm). Bitte sende"
+    },
+    {
+      "id": "0586f9e6d23b",
+      "title": "Tuftingwerkstatt",
+      "start": "2027-05-15T09:00",
+      "end": "2027-05-15T14:00",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Kreativworkshop mit Christelle Filet-Klein Workshop In diesem Workshop lernen Sie die Technik des Tuftings kennen und gestalten Schritt für Schritt Ihren persönlichen Teppich (80 × 80 cm). Bitte sende"
+    },
+    {
+      "id": "982775b23578",
+      "title": "Tuftingwerkstatt",
+      "start": "2027-06-27T09:00",
+      "end": "2027-06-27T14:00",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Kreativworkshop mit Christelle Filet-Klein Workshop In diesem Workshop lernen Sie die Technik des Tuftings kennen und gestalten Schritt für Schritt Ihren persönlichen Teppich (80 × 80 cm). Bitte sende"
+    },
+    {
+      "id": "376c3bc60f85",
+      "title": "Tuftingwerkstatt",
+      "start": "2027-07-04T09:00",
+      "end": "2027-07-04T14:00",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Kreativworkshop mit Christelle Filet-Klein Workshop In diesem Workshop lernen Sie die Technik des Tuftings kennen und gestalten Schritt für Schritt Ihren persönlichen Teppich (80 × 80 cm). Bitte sende"
+    },
+    {
+      "id": "b2bf4322d4a5",
+      "title": "Rhythmik Workshop",
+      "start": "2027-01-14T15:00",
+      "end": "2027-01-14T16:00",
+      "venue": "ErwuesseBildung",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Ein inklusiver Workshop für Kinder zwischen 3 und 5 und ihre Vertrauensperson Wenn man Rhythmik hört, denkt man an einen Trommelkurs. Doch Rhythmik ist viel mehr! In diesem Workshop für Kinder zwische"
+    },
+    {
+      "id": "89c96de4c786",
+      "title": "Rhythmik Workshop",
+      "start": "2027-01-28T15:00",
+      "end": "2027-01-28T16:00",
+      "venue": "ErwuesseBildung",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Ein inklusiver Workshop für Kinder zwischen 3 und 5 und ihre Vertrauensperson Wenn man Rhythmik hört, denkt man an einen Trommelkurs. Doch Rhythmik ist viel mehr! In diesem Workshop für Kinder zwische"
+    },
+    {
+      "id": "a864ffefb8f0",
+      "title": "Rhythmik Workshop",
+      "start": "2027-02-18T15:00",
+      "end": "2027-02-18T16:00",
+      "venue": "ErwuesseBildung",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Ein inklusiver Workshop für Kinder zwischen 3 und 5 und ihre Vertrauensperson Wenn man Rhythmik hört, denkt man an einen Trommelkurs. Doch Rhythmik ist viel mehr! In diesem Workshop für Kinder zwische"
+    },
+    {
+      "id": "0d7808508bf0",
+      "title": "Rhythmik Workshop",
+      "start": "2027-03-04T15:00",
+      "end": "2027-03-04T16:00",
+      "venue": "ErwuesseBildung",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Ein inklusiver Workshop für Kinder zwischen 3 und 5 und ihre Vertrauensperson Wenn man Rhythmik hört, denkt man an einen Trommelkurs. Doch Rhythmik ist viel mehr! In diesem Workshop für Kinder zwische"
+    },
+    {
+      "id": "ecbfa57e3b3b",
+      "title": "Rhythmik Workshop",
+      "start": "2027-03-18T15:00",
+      "end": "2027-03-18T16:00",
+      "venue": "ErwuesseBildung",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Ein inklusiver Workshop für Kinder zwischen 3 und 5 und ihre Vertrauensperson Wenn man Rhythmik hört, denkt man an einen Trommelkurs. Doch Rhythmik ist viel mehr! In diesem Workshop für Kinder zwische"
+    },
+    {
+      "id": "d1e4cc40028f",
+      "title": "Rhythmik Workshop",
+      "start": "2027-04-15T15:00",
+      "end": "2027-04-15T16:00",
+      "venue": "ErwuesseBildung",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Ein inklusiver Workshop für Kinder zwischen 3 und 5 und ihre Vertrauensperson Wenn man Rhythmik hört, denkt man an einen Trommelkurs. Doch Rhythmik ist viel mehr! In diesem Workshop für Kinder zwische"
+    },
+    {
+      "id": "8407d817e39d",
+      "title": "Rhythmik Workshop",
+      "start": "2027-04-29T15:00",
+      "end": "2027-04-29T16:00",
+      "venue": "ErwuesseBildung",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Ein inklusiver Workshop für Kinder zwischen 3 und 5 und ihre Vertrauensperson Wenn man Rhythmik hört, denkt man an einen Trommelkurs. Doch Rhythmik ist viel mehr! In diesem Workshop für Kinder zwische"
+    },
+    {
+      "id": "e6d36d322e26",
+      "title": "Rhythmik Workshop",
+      "start": "2027-05-20T15:00",
+      "end": "2027-05-20T16:00",
+      "venue": "ErwuesseBildung",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Ein inklusiver Workshop für Kinder zwischen 3 und 5 und ihre Vertrauensperson Wenn man Rhythmik hört, denkt man an einen Trommelkurs. Doch Rhythmik ist viel mehr! In diesem Workshop für Kinder zwische"
+    },
+    {
+      "id": "17ba24a386bf",
+      "title": "Rhythmik Workshop",
+      "start": "2027-06-10T15:00",
+      "end": "2027-06-10T16:00",
+      "venue": "ErwuesseBildung",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Ein inklusiver Workshop für Kinder zwischen 3 und 5 und ihre Vertrauensperson Wenn man Rhythmik hört, denkt man an einen Trommelkurs. Doch Rhythmik ist viel mehr! In diesem Workshop für Kinder zwische"
+    },
+    {
+      "id": "0125f4fee66f",
+      "title": "Rhythmik Workshop",
+      "start": "2027-06-24T15:00",
+      "end": "2027-06-24T16:00",
+      "venue": "ErwuesseBildung",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Ein inklusiver Workshop für Kinder zwischen 3 und 5 und ihre Vertrauensperson Wenn man Rhythmik hört, denkt man an einen Trommelkurs. Doch Rhythmik ist viel mehr! In diesem Workshop für Kinder zwische"
+    },
+    {
+      "id": "dc29def4844f",
+      "title": "Rhythmik Workshop",
+      "start": "2027-07-08T15:00",
+      "end": "2027-07-08T16:00",
+      "venue": "ErwuesseBildung",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Ein inklusiver Workshop für Kinder zwischen 3 und 5 und ihre Vertrauensperson Wenn man Rhythmik hört, denkt man an einen Trommelkurs. Doch Rhythmik ist viel mehr! In diesem Workshop für Kinder zwische"
+    },
+    {
+      "id": "aab6e32a95e6",
+      "title": "Musek vun Ufank un",
+      "start": "2026-12-04T10:00",
+      "end": "2026-12-04T10:45",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Museksworkshop mam Sarah Grün Workshop Musek huet keng Altersgrenzen. Zesumme mat enger erwuessener Persoun (Mamm, Papp, Boma, Bopa, ...) entdecken d’Kanner d’Welt vun der Musek. Infos D’Sarah Grün hu"
+    },
+    {
+      "id": "4cac34d3cdc1",
+      "title": "Musek vun Ufank un",
+      "start": "2026-12-11T10:00",
+      "end": "2026-12-11T10:45",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Museksworkshop mam Sarah Grün Workshop Musek huet keng Altersgrenzen. Zesumme mat enger erwuessener Persoun (Mamm, Papp, Boma, Bopa, ...) entdecken d’Kanner d’Welt vun der Musek. Infos D’Sarah Grün hu"
+    },
+    {
+      "id": "711e9f8ff103",
+      "title": "Musek vun Ufank un",
+      "start": "2026-12-18T10:00",
+      "end": "2026-12-18T10:45",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Museksworkshop mam Sarah Grün Workshop Musek huet keng Altersgrenzen. Zesumme mat enger erwuessener Persoun (Mamm, Papp, Boma, Bopa, ...) entdecken d’Kanner d’Welt vun der Musek. Infos D’Sarah Grün hu"
+    },
+    {
+      "id": "0394c8e7c4bc",
+      "title": "Musek vun Ufank un",
+      "start": "2027-01-15T10:00",
+      "end": "2027-01-15T10:45",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Museksworkshop mam Sarah Grün Workshop Musek huet keng Altersgrenzen. Zesumme mat enger erwuessener Persoun (Mamm, Papp, Boma, Bopa, ...) entdecken d’Kanner d’Welt vun der Musek. Infos D’Sarah Grün hu"
+    },
+    {
+      "id": "9420e535e7e9",
+      "title": "Musek vun Ufank un",
+      "start": "2027-01-22T10:00",
+      "end": "2027-01-22T10:45",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Museksworkshop mam Sarah Grün Workshop Musek huet keng Altersgrenzen. Zesumme mat enger erwuessener Persoun (Mamm, Papp, Boma, Bopa, ...) entdecken d’Kanner d’Welt vun der Musek. Infos D’Sarah Grün hu"
+    },
+    {
+      "id": "d9ea7c650cf1",
+      "title": "Musek vun Ufank un",
+      "start": "2027-02-05T10:00",
+      "end": "2027-02-05T10:45",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Museksworkshop mam Sarah Grün Workshop Musek huet keng Altersgrenzen. Zesumme mat enger erwuessener Persoun (Mamm, Papp, Boma, Bopa, ...) entdecken d’Kanner d’Welt vun der Musek. Infos D’Sarah Grün hu"
+    },
+    {
+      "id": "ff211c0c4ad5",
+      "title": "Musek vun Ufank un",
+      "start": "2027-02-19T10:00",
+      "end": "2027-02-19T10:45",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Museksworkshop mam Sarah Grün Workshop Musek huet keng Altersgrenzen. Zesumme mat enger erwuessener Persoun (Mamm, Papp, Boma, Bopa, ...) entdecken d’Kanner d’Welt vun der Musek. Infos D’Sarah Grün hu"
+    },
+    {
+      "id": "4a8bc55d7d1e",
+      "title": "Musek vun Ufank un",
+      "start": "2027-03-05T10:00",
+      "end": "2027-03-05T10:45",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Museksworkshop mam Sarah Grün Workshop Musek huet keng Altersgrenzen. Zesumme mat enger erwuessener Persoun (Mamm, Papp, Boma, Bopa, ...) entdecken d’Kanner d’Welt vun der Musek. Infos D’Sarah Grün hu"
+    },
+    {
+      "id": "4e5fb33ebbb5",
+      "title": "Musek vun Ufank un",
+      "start": "2027-03-19T10:00",
+      "end": "2027-03-19T10:45",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Museksworkshop mam Sarah Grün Workshop Musek huet keng Altersgrenzen. Zesumme mat enger erwuessener Persoun (Mamm, Papp, Boma, Bopa, ...) entdecken d’Kanner d’Welt vun der Musek. Infos D’Sarah Grün hu"
+    },
+    {
+      "id": "e1b8df54ed60",
+      "title": "Musek vun Ufank un",
+      "start": "2027-04-16T10:00",
+      "end": "2027-04-16T10:45",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Museksworkshop mam Sarah Grün Workshop Musek huet keng Altersgrenzen. Zesumme mat enger erwuessener Persoun (Mamm, Papp, Boma, Bopa, ...) entdecken d’Kanner d’Welt vun der Musek. Infos D’Sarah Grün hu"
+    },
+    {
+      "id": "a6f80f66cf5d",
+      "title": "Musek vun Ufank un",
+      "start": "2027-04-23T10:00",
+      "end": "2027-04-23T10:45",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Museksworkshop mam Sarah Grün Workshop Musek huet keng Altersgrenzen. Zesumme mat enger erwuessener Persoun (Mamm, Papp, Boma, Bopa, ...) entdecken d’Kanner d’Welt vun der Musek. Infos D’Sarah Grün hu"
+    },
+    {
+      "id": "21e4e171f0f8",
+      "title": "Musek vun Ufank un",
+      "start": "2027-04-30T10:00",
+      "end": "2027-04-30T10:45",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Museksworkshop mam Sarah Grün Workshop Musek huet keng Altersgrenzen. Zesumme mat enger erwuessener Persoun (Mamm, Papp, Boma, Bopa, ...) entdecken d’Kanner d’Welt vun der Musek. Infos D’Sarah Grün hu"
+    },
+    {
+      "id": "f860e236600d",
+      "title": "Musek vun Ufank un",
+      "start": "2027-05-07T10:00",
+      "end": "2027-05-07T10:45",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Museksworkshop mam Sarah Grün Workshop Musek huet keng Altersgrenzen. Zesumme mat enger erwuessener Persoun (Mamm, Papp, Boma, Bopa, ...) entdecken d’Kanner d’Welt vun der Musek. Infos D’Sarah Grün hu"
+    },
+    {
+      "id": "effee14f224e",
+      "title": "Musek vun Ufank un",
+      "start": "2027-05-14T10:00",
+      "end": "2027-05-14T10:45",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Museksworkshop mam Sarah Grün Workshop Musek huet keng Altersgrenzen. Zesumme mat enger erwuessener Persoun (Mamm, Papp, Boma, Bopa, ...) entdecken d’Kanner d’Welt vun der Musek. Infos D’Sarah Grün hu"
+    },
+    {
+      "id": "ddd273d4493c",
+      "title": "Musek vun Ufank un",
+      "start": "2027-05-21T10:00",
+      "end": "2027-05-21T10:45",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Museksworkshop mam Sarah Grün Workshop Musek huet keng Altersgrenzen. Zesumme mat enger erwuessener Persoun (Mamm, Papp, Boma, Bopa, ...) entdecken d’Kanner d’Welt vun der Musek. Infos D’Sarah Grün hu"
+    },
+    {
+      "id": "7cf1f0ebe660",
+      "title": "Musek vun Ufank un",
+      "start": "2027-05-28T10:00",
+      "end": "2027-05-28T10:45",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Museksworkshop mam Sarah Grün Workshop Musek huet keng Altersgrenzen. Zesumme mat enger erwuessener Persoun (Mamm, Papp, Boma, Bopa, ...) entdecken d’Kanner d’Welt vun der Musek. Infos D’Sarah Grün hu"
+    },
+    {
+      "id": "4d72f2f7da2b",
+      "title": "Musek vun Ufank un",
+      "start": "2027-06-11T10:00",
+      "end": "2027-06-11T10:45",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Museksworkshop mam Sarah Grün Workshop Musek huet keng Altersgrenzen. Zesumme mat enger erwuessener Persoun (Mamm, Papp, Boma, Bopa, ...) entdecken d’Kanner d’Welt vun der Musek. Infos D’Sarah Grün hu"
+    },
+    {
+      "id": "e5e2dd6fb528",
+      "title": "Musek vun Ufank un",
+      "start": "2027-06-25T10:00",
+      "end": "2027-06-25T10:45",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Museksworkshop mam Sarah Grün Workshop Musek huet keng Altersgrenzen. Zesumme mat enger erwuessener Persoun (Mamm, Papp, Boma, Bopa, ...) entdecken d’Kanner d’Welt vun der Musek. Infos D’Sarah Grün hu"
+    },
+    {
+      "id": "6c3644a8af2c",
+      "title": "Musek vun Ufank un",
+      "start": "2027-07-02T10:00",
+      "end": "2027-07-02T10:45",
+      "venue": "Kulturhaus Niederanven",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Museksworkshop mam Sarah Grün Workshop Musek huet keng Altersgrenzen. Zesumme mat enger erwuessener Persoun (Mamm, Papp, Boma, Bopa, ...) entdecken d’Kanner d’Welt vun der Musek. Infos D’Sarah Grün hu"
+    },
+    {
+      "id": "87b08668d15e",
+      "title": "Kombinierte Führung durch den Hochofen und die „Cité des Sciences“ - Belval",
+      "start": "2027-02-07T14:30",
+      "end": "2027-02-07T16:30",
+      "venue": "Möllerei",
+      "url": "https://redirect.echo.lu/ticket?link=5de54292b050c15913fb9a488232888cb3f8a8c49368327f991ea8682e366f94828d17e787d3fe2e33475ea43770399ae7dd1f1c474e3dd1ce0628a44234c18b5b0e255ae96ec1ac93b8c568c2ad5788535557ec19bb3e6502de221f26511e89a3b4d065b7f1a4c123bbd07c8358743e7d5e26b2a53b7c17a5a1fda7f65ddb4e&id=kombinierte-fuhrung-durch-den-hochofen-und-die-cite-des-sciences-belval-ubCuGy",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Luxemburgisch/Deutsch Kombinierte Führung durch den Hochofen und die „Cité des Sciences“ Erkunden Sie den Standort Belval und lassen Sie sich beeindrucken von der modernen Architektur der neuen Bauten"
+    },
+    {
+      "id": "f76a8cf48bde",
+      "title": "Kombinierte Führung durch den Hochofen und die „Cité des Sciences“ - Belval",
+      "start": "2027-03-21T14:30",
+      "end": "2027-03-21T16:30",
+      "venue": "Möllerei",
+      "url": "https://redirect.echo.lu/ticket?link=5de54292b050c15913fb9a488232888cb3f8a8c49368327f991ea8682e366f94828d17e787d3fe2e33475ea43770399ae7dd1f1c474e3dd1ce0628a44234c18b5b0e255ae96ec1ac93b8c568c2ad5788535557ec19bb3e6502de221f26511e89a3b4d065b7f1a4c123bbd07c8358743e7d5e26b2a53b7c17a5a1fda7f65ddb4e&id=kombinierte-fuhrung-durch-den-hochofen-und-die-cite-des-sciences-belval-ubCuGy",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Luxemburgisch/Deutsch Kombinierte Führung durch den Hochofen und die „Cité des Sciences“ Erkunden Sie den Standort Belval und lassen Sie sich beeindrucken von der modernen Architektur der neuen Bauten"
+    },
+    {
+      "id": "366924510e0b",
+      "title": "Kombinierte Führung durch den Hochofen und die „Cité des Sciences“ - Belval",
+      "start": "2027-05-02T14:30",
+      "end": "2027-05-02T16:30",
+      "venue": "Möllerei",
+      "url": "https://redirect.echo.lu/ticket?link=5de54292b050c15913fb9a488232888cb3f8a8c49368327f991ea8682e366f94828d17e787d3fe2e33475ea43770399ae7dd1f1c474e3dd1ce0628a44234c18b5b0e255ae96ec1ac93b8c568c2ad5788535557ec19bb3e6502de221f26511e89a3b4d065b7f1a4c123bbd07c8358743e7d5e26b2a53b7c17a5a1fda7f65ddb4e&id=kombinierte-fuhrung-durch-den-hochofen-und-die-cite-des-sciences-belval-ubCuGy",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Luxemburgisch/Deutsch Kombinierte Führung durch den Hochofen und die „Cité des Sciences“ Erkunden Sie den Standort Belval und lassen Sie sich beeindrucken von der modernen Architektur der neuen Bauten"
+    },
+    {
+      "id": "163125eb19ad",
+      "title": "Kombinierte Führung durch den Hochofen und die „Cité des Sciences“ - Belval",
+      "start": "2027-06-27T14:30",
+      "end": "2027-06-27T16:30",
+      "venue": "Möllerei",
+      "url": "https://redirect.echo.lu/ticket?link=5de54292b050c15913fb9a488232888cb3f8a8c49368327f991ea8682e366f94828d17e787d3fe2e33475ea43770399ae7dd1f1c474e3dd1ce0628a44234c18b5b0e255ae96ec1ac93b8c568c2ad5788535557ec19bb3e6502de221f26511e89a3b4d065b7f1a4c123bbd07c8358743e7d5e26b2a53b7c17a5a1fda7f65ddb4e&id=kombinierte-fuhrung-durch-den-hochofen-und-die-cite-des-sciences-belval-ubCuGy",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Luxemburgisch/Deutsch Kombinierte Führung durch den Hochofen und die „Cité des Sciences“ Erkunden Sie den Standort Belval und lassen Sie sich beeindrucken von der modernen Architektur der neuen Bauten"
+    },
+    {
+      "id": "14118fb76a15",
+      "title": "Kombinierte Führung durch den Hochofen und die „Cité des Sciences“ - Belval",
+      "start": "2027-08-22T14:30",
+      "end": "2027-08-22T16:30",
+      "venue": "Möllerei",
+      "url": "https://redirect.echo.lu/ticket?link=5de54292b050c15913fb9a488232888cb3f8a8c49368327f991ea8682e366f94828d17e787d3fe2e33475ea43770399ae7dd1f1c474e3dd1ce0628a44234c18b5b0e255ae96ec1ac93b8c568c2ad5788535557ec19bb3e6502de221f26511e89a3b4d065b7f1a4c123bbd07c8358743e7d5e26b2a53b7c17a5a1fda7f65ddb4e&id=kombinierte-fuhrung-durch-den-hochofen-und-die-cite-des-sciences-belval-ubCuGy",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Luxemburgisch/Deutsch Kombinierte Führung durch den Hochofen und die „Cité des Sciences“ Erkunden Sie den Standort Belval und lassen Sie sich beeindrucken von der modernen Architektur der neuen Bauten"
+    },
+    {
+      "id": "f2d1204f9f3f",
+      "title": "Kombinierte Führung durch den Hochofen und die „Cité des Sciences“ - Belval",
+      "start": "2027-10-10T14:30",
+      "end": "2027-10-10T16:30",
+      "venue": "Möllerei",
+      "url": "https://redirect.echo.lu/ticket?link=5de54292b050c15913fb9a488232888cb3f8a8c49368327f991ea8682e366f94828d17e787d3fe2e33475ea43770399ae7dd1f1c474e3dd1ce0628a44234c18b5b0e255ae96ec1ac93b8c568c2ad5788535557ec19bb3e6502de221f26511e89a3b4d065b7f1a4c123bbd07c8358743e7d5e26b2a53b7c17a5a1fda7f65ddb4e&id=kombinierte-fuhrung-durch-den-hochofen-und-die-cite-des-sciences-belval-ubCuGy",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Luxemburgisch/Deutsch Kombinierte Führung durch den Hochofen und die „Cité des Sciences“ Erkunden Sie den Standort Belval und lassen Sie sich beeindrucken von der modernen Architektur der neuen Bauten"
+    },
+    {
+      "id": "7dcd3f530ecf",
+      "title": "Kombinierte Führung durch den Hochofen und die „Cité des Sciences“ - Belval",
+      "start": "2027-11-21T14:30",
+      "end": "2027-11-21T16:30",
+      "venue": "Möllerei",
+      "url": "https://redirect.echo.lu/ticket?link=5de54292b050c15913fb9a488232888cb3f8a8c49368327f991ea8682e366f94828d17e787d3fe2e33475ea43770399ae7dd1f1c474e3dd1ce0628a44234c18b5b0e255ae96ec1ac93b8c568c2ad5788535557ec19bb3e6502de221f26511e89a3b4d065b7f1a4c123bbd07c8358743e7d5e26b2a53b7c17a5a1fda7f65ddb4e&id=kombinierte-fuhrung-durch-den-hochofen-und-die-cite-des-sciences-belval-ubCuGy",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Luxemburgisch/Deutsch Kombinierte Führung durch den Hochofen und die „Cité des Sciences“ Erkunden Sie den Standort Belval und lassen Sie sich beeindrucken von der modernen Architektur der neuen Bauten"
+    },
+    {
+      "id": "68373853e34f",
+      "title": "THE WORLD OF HANS ZIMMER",
+      "start": "2028-04-15T20:00",
+      "end": "",
+      "venue": "Rockhal - Etablissement public Centre de Musiques Amplifiées",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "THE IMMERSIVE SYMPHONY Practical Info Venue: Rockhal Main Hall Configuration: Seated Promoter: Rockhal Doors: 18:45 The internationally acclaimed concert series ‘The World of Hans Zimmer’ will embark "
+    },
+    {
+      "id": "f249f0394472",
+      "title": "THE WORLD OF HANS ZIMMER",
+      "start": "2028-04-16T20:00",
+      "end": "",
+      "venue": "Rockhal - Etablissement public Centre de Musiques Amplifiées",
+      "url": "",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "THE IMMERSIVE SYMPHONY Practical Info Venue: Rockhal Main Hall Configuration: Seated Promoter: Rockhal Doors: 18:45 The internationally acclaimed concert series ‘The World of Hans Zimmer’ will embark "
+    },
+    {
+      "id": "480855b71791",
+      "title": "Sculptures",
+      "start": "2022-06-19T12:00",
+      "end": "2027-12-31T12:00",
+      "venue": "Maison de Soins : Am Schmettbesch-Novelia",
+      "url": "https://redirect.echo.lu/ticket?link=5de54292b050c15913fb9a488232888c680299feefea21f3afcf79d50369aa3a1ff8de22d45a418bd0764d36bc00db44d91a42a0ecbd776b0c71498f338d096fb981b1e4fd307a9d1c37cd5bfce5cee1b227d0f38b1eb141a1ada46bb1bfd275c9e5fbb68748c7295629544db8cea8c2&id=mus19VJf0mWOa4UdnVNkx_-uQUm91",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "D'So vum Marxeweier Pas de description"
+    }
+  ]
+}
