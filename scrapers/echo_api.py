@@ -179,7 +179,7 @@ def scrape(source):
     per_page = min(int(source.get("per_page", 100)), 100)
     max_pages = int(source.get("max_pages", 30))
     delay = float(source.get("delay", 0.5))
-    today = datetime.now(timezone.utc).strftime("%Y-%m-%dT00:00:00Z")
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%dT00:00Z")  # format exigé par l'API : 1970-01-01T00:00Z
 
     events, seen_ids, pages, total = [], set(), 0, 0
     combos = Counter()
@@ -188,7 +188,8 @@ def scrape(source):
     while pages < max_pages:
         params = {"pagination[page]": page, "pagination[perPage]": per_page}
         if use_date:
-            params["date[from]"] = today  # RFC 3339 (AAAA-MM-JJT00:00:00Z)
+            params["date[from]"] = today
+            params["date[to]"] = "2100-01-01T00:00Z"  # l'API exige from ET to
         try:
             data = get_json(f"{base}?{urllib.parse.urlencode(params)}", key)
         except urllib.error.HTTPError as exc:
@@ -212,6 +213,7 @@ def scrape(source):
         if pages == 1:
             print("[echo_api] champs d'une expérience :", ", ".join(sorted(records[0].keys())))
             print("[echo_api] URL fiche echo.lu trouvée :", echo_url_of(records[0]) or "aucune")
+            print("[echo_api] exemple id/objectID/api :", str(records[0].get("id"))[:60], "|", str(records[0].get("objectID"))[:60], "|", str(records[0].get("api"))[:150])
         total += len(records)
         new = 0
         for rec in records:
