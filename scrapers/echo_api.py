@@ -25,7 +25,7 @@ import urllib.parse
 import urllib.request
 from datetime import date, datetime, timedelta, timezone
 
-from common import USER_AGENT, make_event
+from common import clean, USER_AGENT, make_event
 
 try:
     from zoneinfo import ZoneInfo
@@ -111,6 +111,8 @@ def parse_record(rec, source_name):
     langs = [str(l).lower() for l in (rec.get("languages") or [])]
     explicit = "lb" if "lb" in langs else ""
     description = " ".join(p for p in (as_text(rec.get("subtitle")), as_text(rec.get("description"))) if p)
+    lt = rec.get("luxembourgTickets")
+    tickets = isinstance(lt, dict) and bool(lt.get("publishOnEventim"))
     out = []
     for d in (rec.get("dates") or [])[:25]:
         if not isinstance(d, dict) or not d.get("from"):  # « permanent » : pas de date
@@ -123,6 +125,11 @@ def parse_record(rec, source_name):
             venue=venue_of(rec), address=address_of(rec), description=description,
             url=link_of(rec), explicit_lang=explicit,
         ))
+        ev = out[-1]
+        ev["description"] = clean(description, 2000)  # licence ECHO : fiche reprise le plus complètement possible
+        ev["echo"] = True                              # affiche « Source : ECHO » + logo sur le site
+        if tickets:
+            ev["lt"] = True                            # « Billets disponibles avec luxembourgticket »
     return out
 
 

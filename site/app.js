@@ -155,9 +155,11 @@
         <dt>Plaz</dt><dd>${esc(e.venue || "—")}${e.address ? "<br>" + esc(e.address) : ""}${maps ? `<br><a href="${maps}" target="_blank" rel="noopener">Op der Kaart weisen</a>` : ""}</dd>
         <dt>Quell</dt><dd>${esc(e.source)}</dd>
       </dl>
+      ${e.lt ? '<p class="d__src">Billets disponibles avec <a href="https://www.luxembourgticket.lu/" target="_blank" rel="noopener noreferrer">luxembourgticket</a></p>' : ""}
+      ${e.echo ? '<p class="d__src">Source : <a href="https://www.echo.lu/" target="_blank" rel="noopener noreferrer"><img src="echo-logo.png" alt="ECHO" width="70" height="25"></a></p>' : ""}
       ${e.description ? `<p class="d__desc">${esc(e.description)}</p>` : '<p class="d__desc" style="color:var(--muted)">Keng Beschreiwung verfügbar.</p>'}
       <div class="d__actions">
-        ${url ? `<a class="btn btn--primary" href="${esc(url)}" target="_blank" rel="noopener">Méi Infos</a>` : ""}
+        ${url ? `<a class="btn btn--primary" href="${esc(url)}" target="_blank" rel="noopener noreferrer${e.proposed ? " nofollow ugc" : ""}">Méi Infos</a>` : ""}
         <button type="button" class="btn" id="dIcs">Zum Kalenner derbäisetzen</button>
         <button type="button" class="btn" id="dCopy">Link kopéieren</button>
       </div>`;
@@ -183,13 +185,13 @@
   }
   function downloadIcs(e) {
     const dt = (s, allDay) => allDay ? s.replace(/-/g, "").slice(0, 8) : s.replace(/[-:]/g, "").slice(0, 13) + "00";
-    const allDay = !timeOf(e), esc2 = (s) => String(s || "").replace(/[\\,;]/g, "\\$&").replace(/\n/g, " ");
+    const allDay = !timeOf(e), esc2 = (s) => String(s || "").replace(/[\\,;]/g, "\\$&").replace(/[\r\n]+/g, " ");
     const endD = allDay ? iso(addDays(parse(endDay(e)), 1)) : (e.end || e.start);
     const lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//agenda-letzebuergesch//LB//", "BEGIN:VEVENT", "UID:" + e.id + "@agenda-letzebuergesch",
       "DTSTAMP:" + new Date().toISOString().replace(/[-:]/g, "").slice(0, 15) + "Z",
       (allDay ? "DTSTART;VALUE=DATE:" : "DTSTART:") + dt(e.start, allDay), (allDay ? "DTEND;VALUE=DATE:" : "DTEND:") + dt(endD, allDay),
       "SUMMARY:" + esc2(e.title), "LOCATION:" + esc2(e.venue + (e.address ? ", " + e.address : ""))];
-    if (safeUrl(e.url)) lines.push("URL:" + e.url);
+    if (safeUrl(e.url) && !/[\r\n]/.test(e.url)) lines.push("URL:" + e.url);
     lines.push("END:VEVENT", "END:VCALENDAR");
     const a = document.createElement("a");
     a.href = URL.createObjectURL(new Blob([lines.join("\r\n") + "\r\n"], { type: "text/calendar" }));

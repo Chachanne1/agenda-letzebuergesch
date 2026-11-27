@@ -25,6 +25,7 @@
       <button type="button" data-view="list" aria-pressed="true">Lëscht</button>
       <button type="button" data-view="month" aria-pressed="false">Mount</button>
     </div>
+    <button id="proposeBtn" type="button" class="btn btn--primary propose" hidden>+ <span>Aktivitéit virschloen</span></button>
   </header>
 
   <div class="app">
@@ -92,8 +93,42 @@
     </div>
     <div id="dBody" class="drawer__body"></div>
   </aside>
+
+  <dialog id="proposeDlg" class="dlg" aria-labelledby="proposeT">
+    <div class="dlg__head">
+      <h2 id="proposeT">Aktivitéit virschloen</h2>
+      <button id="proposeClose" type="button" class="icon" aria-label="Zoumaachen">×</button>
+    </div>
+    <form id="proposeForm" novalidate>
+      <p class="hint">Mir kucken all Virschlag no, ier en op der Säit erscheint. D'Aktivitéit muss op Lëtzebuergesch sinn.</p>
+      <div class="f"><label for="p_title">Titel *</label><input id="p_title" required maxlength="150" autocomplete="off"></div>
+      <div class="f2">
+        <div class="f"><label for="p_date">Datum *</label><input id="p_date" type="date" required></div>
+        <div class="f"><label for="p_time">Auer</label><input id="p_time" type="time"></div>
+        <div class="f"><label for="p_end">Bis (Datum)</label><input id="p_end" type="date"></div>
+      </div>
+      <div class="f"><label for="p_venue">Plaz *</label><input id="p_venue" required maxlength="150" autocomplete="off"></div>
+      <div class="f"><label for="p_address">Adress</label><input id="p_address" maxlength="200" autocomplete="off"></div>
+      <div class="f"><label for="p_desc">Beschreiwung</label><textarea id="p_desc" rows="4" maxlength="800"></textarea></div>
+      <div class="f"><label for="p_url">Link fir méi Infos (https://…)</label><input id="p_url" type="url" inputmode="url" maxlength="300" autocomplete="off" placeholder="https://"></div>
+      <div class="f f--check"><input id="p_lb" type="checkbox"><label for="p_lb">Dës Aktivitéit ass op Lëtzebuergesch. *</label></div>
+      <div class="f hp" aria-hidden="true"><label for="p_website">Website</label><input id="p_website" tabindex="-1" autocomplete="off"></div>
+      <div id="proposeCaptcha" class="captcha"></div>
+      <p id="proposeMsg" class="fmsg" role="status" aria-live="polite"></p>
+      <div class="dlg__actions">
+        <button id="proposeCancel" type="button" class="btn">Ofbriechen</button>
+        <button id="proposeSend" type="submit" class="btn btn--primary" disabled>Schécken</button>
+      </div>
+    </form>
+    <div id="proposeDone" hidden>
+      <p><strong>Merci!</strong> Däi Virschlag ass ukomm. Mir kucken en no a setzen en dann op d'Säit.</p>
+      <button id="proposeDoneClose" type="button" class="btn btn--primary">Zoumaachen</button>
+    </div>
+  </dialog>
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
 
+  <script src="config.js"></script>
   <script src="app.js"></script>
+  <script src="form.js"></script>
 </body>
 </html>

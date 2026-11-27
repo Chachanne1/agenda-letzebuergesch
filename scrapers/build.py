@@ -1,5 +1,6 @@
 """Construit le dossier _site/ : copie le site, les données, et génère events.ics."""
 import json
+import re
 import shutil
 from pathlib import Path
 
@@ -8,7 +9,7 @@ OUT = ROOT / "_site"
 
 
 def ics_escape(s):
-    return (s or "").replace("\\", "\\\\").replace(",", "\\,").replace(";", "\\;").replace("\n", " ")
+    return (s or "").replace("\\", "\\\\").replace(",", "\\,").replace(";", "\\;").replace("\r", " ").replace("\n", " ")
 
 
 def ics_date(iso):
@@ -24,7 +25,7 @@ def build_ics(events):
         lines += ["BEGIN:VEVENT", f"UID:{e['id']}@agenda-letzebuergesch",
                   ics_date(e["start"]), f"SUMMARY:{ics_escape(e['title'])}",
                   f"LOCATION:{ics_escape(e.get('venue', ''))}"]
-        if e.get("url"):
+        if str(e.get("url", "")).startswith(("https://", "http://")) and not re.search(r"[\r\n]", e["url"]):
             lines.append(f"URL:{e['url']}")
         lines.append("END:VEVENT")
     lines.append("END:VCALENDAR")
@@ -53,7 +54,8 @@ def main():
     except (FileNotFoundError, json.JSONDecodeError):
         updated = ""
     (OUT / "data" / "meta.json").write_text(json.dumps({"updated": updated}), encoding="utf-8")
-    (OUT / "events.ics").write_text(build_ics(events), encoding="utf-8")
+    # licence ECHO : pas de réexportation par des tiers → les fiches ECHO (API) ne sont pas dans le flux .ics public
+    (OUT / "events.ics").write_text(build_ics([e for e in events if not e.get("echo")]), encoding="utf-8")
     print(f"Site construit dans {OUT} ({len(events)} événements)")
 
 

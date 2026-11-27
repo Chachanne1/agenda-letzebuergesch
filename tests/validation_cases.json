@@ -1,0 +1,438 @@
+{
+ "today": "2026-11-26",
+ "cases": [
+  {
+   "name": "minimal ok",
+   "input": {
+    "title": "Concert op Lëtzebuergesch",
+    "date": "2026-12-01",
+    "venue": "Rotondes",
+    "lb_confirm": true
+   },
+   "errors": {}
+  },
+  {
+   "name": "complet + tracking retiré",
+   "input": {
+    "title": "  Lies­ung  ",
+    "date": "2026-12-05",
+    "end_date": "2026-12-06",
+    "time": "19:30",
+    "venue": "Philharmonie",
+    "address": "1 Place de l'Europe",
+    "description": "Ee flotten Owend.",
+    "url": "https://Example.lu/event?id=3&utm_source=x&fbclid=abc#top",
+    "lb_confirm": true
+   },
+   "errors": {},
+   "clean": {
+    "title": "Liesung",
+    "date": "2026-12-05",
+    "end_date": "2026-12-06",
+    "time": "19:30",
+    "venue": "Philharmonie",
+    "address": "1 Place de l'Europe",
+    "description": "Ee flotten Owend.",
+    "url": "https://example.lu/event?id=3#top"
+   }
+  },
+  {
+   "name": "rien",
+   "input": {},
+   "errors": {
+    "title": "required",
+    "venue": "required",
+    "date": "required",
+    "lb_confirm": "unconfirmed"
+   }
+  },
+  {
+   "name": "pas objet",
+   "input": [],
+   "errors": {
+    "form": "format"
+   }
+  },
+  {
+   "name": "lb non confirmé (chaîne true)",
+   "input": {
+    "title": "Abc",
+    "date": "2026-12-01",
+    "venue": "Xy",
+    "lb_confirm": "true"
+   },
+   "errors": {
+    "lb_confirm": "unconfirmed"
+   }
+  },
+  {
+   "name": "titre trop court",
+   "input": {
+    "title": "ab",
+    "date": "2026-12-01",
+    "venue": "Xy",
+    "lb_confirm": true
+   },
+   "errors": {
+    "title": "length"
+   }
+  },
+  {
+   "name": "titre trop long",
+   "input": {
+    "title": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "date": "2026-12-01",
+    "venue": "Xy",
+    "lb_confirm": true
+   },
+   "errors": {
+    "title": "length"
+   }
+  },
+  {
+   "name": "date passée",
+   "input": {
+    "title": "Abc",
+    "date": "2026-11-25",
+    "venue": "Xy",
+    "lb_confirm": true
+   },
+   "errors": {
+    "date": "past"
+   }
+  },
+  {
+   "name": "aujourd'hui ok",
+   "input": {
+    "title": "Abc",
+    "date": "2026-11-26",
+    "venue": "Xy",
+    "lb_confirm": true
+   },
+   "errors": {}
+  },
+  {
+   "name": "trop loin",
+   "input": {
+    "title": "Abc",
+    "date": "2029-01-01",
+    "venue": "Xy",
+    "lb_confirm": true
+   },
+   "errors": {
+    "date": "range"
+   }
+  },
+  {
+   "name": "date impossible",
+   "input": {
+    "title": "Abc",
+    "date": "2026-02-30",
+    "venue": "Xy",
+    "lb_confirm": true
+   },
+   "errors": {
+    "date": "format"
+   }
+  },
+  {
+   "name": "fin avant début",
+   "input": {
+    "title": "Abc",
+    "date": "2026-12-10",
+    "end_date": "2026-12-09",
+    "venue": "Xy",
+    "lb_confirm": true
+   },
+   "errors": {
+    "end_date": "range"
+   }
+  },
+  {
+   "name": "heure invalide",
+   "input": {
+    "title": "Abc",
+    "date": "2026-12-10",
+    "time": "25:00",
+    "venue": "Xy",
+    "lb_confirm": true
+   },
+   "errors": {
+    "time": "format"
+   }
+  },
+  {
+   "name": "javascript:",
+   "input": {
+    "title": "Abc",
+    "date": "2026-12-10",
+    "venue": "Xy",
+    "url": "javascript:alert(1)",
+    "lb_confirm": true
+   },
+   "errors": {
+    "url": "scheme"
+   }
+  },
+  {
+   "name": "data:",
+   "input": {
+    "title": "Abc",
+    "date": "2026-12-10",
+    "venue": "Xy",
+    "url": "data:text/html,<script>",
+    "lb_confirm": true
+   },
+   "errors": {
+    "url": "scheme"
+   }
+  },
+  {
+   "name": "http simple",
+   "input": {
+    "title": "Abc",
+    "date": "2026-12-10",
+    "venue": "Xy",
+    "url": "http://example.lu",
+    "lb_confirm": true
+   },
+   "errors": {
+    "url": "scheme"
+   }
+  },
+  {
+   "name": "identifiants dans l'URL",
+   "input": {
+    "title": "Abc",
+    "date": "2026-12-10",
+    "venue": "Xy",
+    "url": "https://user:pw@example.lu/",
+    "lb_confirm": true
+   },
+   "errors": {
+    "url": "format"
+   }
+  },
+  {
+   "name": "astuce @ dans l'hôte",
+   "input": {
+    "title": "Abc",
+    "date": "2026-12-10",
+    "venue": "Xy",
+    "url": "https://example.lu@evil.com/",
+    "lb_confirm": true
+   },
+   "errors": {
+    "url": "format"
+   }
+  },
+  {
+   "name": "IP",
+   "input": {
+    "title": "Abc",
+    "date": "2026-12-10",
+    "venue": "Xy",
+    "url": "https://192.168.0.1/x",
+    "lb_confirm": true
+   },
+   "errors": {
+    "url": "host"
+   }
+  },
+  {
+   "name": "localhost",
+   "input": {
+    "title": "Abc",
+    "date": "2026-12-10",
+    "venue": "Xy",
+    "url": "https://localhost/x",
+    "lb_confirm": true
+   },
+   "errors": {
+    "url": "host"
+   }
+  },
+  {
+   "name": "punycode",
+   "input": {
+    "title": "Abc",
+    "date": "2026-12-10",
+    "venue": "Xy",
+    "url": "https://xn--pple-43d.com/",
+    "lb_confirm": true
+   },
+   "errors": {
+    "url": "host"
+   }
+  },
+  {
+   "name": "raccourcisseur",
+   "input": {
+    "title": "Abc",
+    "date": "2026-12-10",
+    "venue": "Xy",
+    "url": "https://bit.ly/3abc",
+    "lb_confirm": true
+   },
+   "errors": {
+    "url": "shortener"
+   }
+  },
+  {
+   "name": "sous-domaine de raccourcisseur",
+   "input": {
+    "title": "Abc",
+    "date": "2026-12-10",
+    "venue": "Xy",
+    "url": "https://www.bit.ly/3abc",
+    "lb_confirm": true
+   },
+   "errors": {
+    "url": "shortener"
+   }
+  },
+  {
+   "name": "accents dans l'URL",
+   "input": {
+    "title": "Abc",
+    "date": "2026-12-10",
+    "venue": "Xy",
+    "url": "https://example.lu/é",
+    "lb_confirm": true
+   },
+   "errors": {
+    "url": "format"
+   }
+  },
+  {
+   "name": "guillemet dans l'URL",
+   "input": {
+    "title": "Abc",
+    "date": "2026-12-10",
+    "venue": "Xy",
+    "url": "https://example.lu/\"onclick=x",
+    "lb_confirm": true
+   },
+   "errors": {
+    "url": "format"
+   }
+  },
+  {
+   "name": "port 443 toléré",
+   "input": {
+    "title": "Abc",
+    "date": "2026-12-10",
+    "venue": "Xy",
+    "url": "https://example.lu:443/a",
+    "lb_confirm": true
+   },
+   "errors": {},
+   "clean": {
+    "title": "Abc",
+    "date": "2026-12-10",
+    "venue": "Xy",
+    "url": "https://example.lu/a"
+   }
+  },
+  {
+   "name": "autre port",
+   "input": {
+    "title": "Abc",
+    "date": "2026-12-10",
+    "venue": "Xy",
+    "url": "https://example.lu:8443/a",
+    "lb_confirm": true
+   },
+   "errors": {
+    "url": "format"
+   }
+  },
+  {
+   "name": "balises HTML",
+   "input": {
+    "title": "<b>Abc</b>",
+    "date": "2026-12-10",
+    "venue": "Xy",
+    "lb_confirm": true
+   },
+   "errors": {
+    "title": "chars"
+   }
+  },
+  {
+   "name": "lien dans le titre",
+   "input": {
+    "title": "Gratis https://x.co",
+    "date": "2026-12-10",
+    "venue": "Xy",
+    "lb_confirm": true
+   },
+   "errors": {
+    "title": "links"
+   }
+  },
+  {
+   "name": "trop de liens en description",
+   "input": {
+    "title": "Abc",
+    "date": "2026-12-10",
+    "venue": "Xy",
+    "description": "http://a.lu http://b.lu www.c.lu",
+    "lb_confirm": true
+   },
+   "errors": {
+    "description": "links"
+   }
+  },
+  {
+   "name": "caractères de contrôle et bidi",
+   "input": {
+    "title": "A‮bc\u0000d",
+    "date": "2026-12-10",
+    "venue": "Xy",
+    "lb_confirm": true
+   },
+   "errors": {},
+   "clean": {
+    "title": "Abcd",
+    "date": "2026-12-10",
+    "venue": "Xy"
+   }
+  },
+  {
+   "name": "retours à la ligne aplatis",
+   "input": {
+    "title": "Abc",
+    "date": "2026-12-10",
+    "venue": "Xy",
+    "description": "ligne1\nligne2\r\n\r\nligne3",
+    "lb_confirm": true
+   },
+   "errors": {},
+   "clean": {
+    "title": "Abc",
+    "date": "2026-12-10",
+    "venue": "Xy",
+    "description": "ligne1 ligne2 ligne3"
+   }
+  },
+  {
+   "name": "valeurs non texte",
+   "input": {
+    "title": 123,
+    "date": [
+     "2026-12-10"
+    ],
+    "venue": {
+     "a": 1
+    },
+    "lb_confirm": true
+   },
+   "errors": {
+    "title": "required",
+    "date": "required",
+    "venue": "required"
+   }
+  }
+ ]
+}
