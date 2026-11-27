@@ -3041,20 +3041,6 @@
     "reason": "lb déclaré + mention explicite dans le texte"
   },
   {
-    "id": "516994f0abcd",
-    "title": "Concert et yoga",
-    "start": "2027-04-15T18:00",
-    "end": "",
-    "venue": "Aalt Stadhaus",
-    "address": "Avenue Charlotte 38, L-4530 Differdange",
-    "description": "Jnanadev David Ianni Le pianiste et professeur de yoga Jnanadev David Ianni propose un concert immersif, où la musique du piano se mêle aux mouvements doux et à la respiration du yoga. À la suite du succès des premiers concerts, nous avons décidé de continuer cette expérience unique, conçue pour les adultes et les jeunes dès 12 ans. Elle invite chacun à explorer un espace de calme intérieur à travers le son, le mouvement et le silence. Dans cette rencontre entre le piano et le yoga, Jnanadev David Ianni guide les participants vers un état de détente et de pleine conscience. Aucun prérequis en yoga ni souplesse particulière ne sont nécessaires; la pratique est accessible à tous. Les instructions de yoga sont données en luxembourgeois , permettant à chacun de suivre aisément le déroulement de la séance. Ce concert est une invitation à se reconnecter avec soi-même et à trouver un équilibre intérieur profond, porté par la beauté de la musique et la tranquillité du yoga. En savoir plus",
-    "url": "https://www.echo.lu/fr/experiences/concert-et-yoga-GzvqAA",
-    "source": "ECHO API (officielle)",
-    "echo": true,
-    "status": "probable",
-    "reason": "mention « en luxembourgeois » dans le texte, lb non déclaré"
-  },
-  {
     "id": "4e0f2f0e4efb",
     "title": "Découvrez Lofy’s Place : une visite guidée",
     "start": "2027-04-16T18:00",
@@ -3433,20 +3419,6 @@
     "reason": "texte en luxembourgeois (3 mots typiques)"
   },
   {
-    "id": "6c7f2e0a415a",
-    "title": "Concert et yoga",
-    "start": "2027-06-10T18:00",
-    "end": "",
-    "venue": "Aalt Stadhaus",
-    "address": "Avenue Charlotte 38, L-4530 Differdange",
-    "description": "Jnanadev David Ianni Le pianiste et professeur de yoga Jnanadev David Ianni propose un concert immersif, où la musique du piano se mêle aux mouvements doux et à la respiration du yoga. À la suite du succès des premiers concerts, nous avons décidé de continuer cette expérience unique, conçue pour les adultes et les jeunes dès 12 ans. Elle invite chacun à explorer un espace de calme intérieur à travers le son, le mouvement et le silence. Dans cette rencontre entre le piano et le yoga, Jnanadev David Ianni guide les participants vers un état de détente et de pleine conscience. Aucun prérequis en yoga ni souplesse particulière ne sont nécessaires; la pratique est accessible à tous. Les instructions de yoga sont données en luxembourgeois , permettant à chacun de suivre aisément le déroulement de la séance. Ce concert est une invitation à se reconnecter avec soi-même et à trouver un équilibre intérieur profond, porté par la beauté de la musique et la tranquillité du yoga. En savoir plus",
-    "url": "https://www.echo.lu/fr/experiences/concert-et-yoga-rSKv9J",
-    "source": "ECHO API (officielle)",
-    "echo": true,
-    "status": "probable",
-    "reason": "mention « en luxembourgeois » dans le texte, lb non déclaré"
-  },
-  {
     "id": "dc9dad8c1717",
     "title": "Kichegerabbels",
     "start": "2027-06-12T16:00",
@@ -3614,19 +3586,5 @@
     "echo": true,
     "status": "confirmé",
     "reason": "lb déclaré + mention explicite dans le texte"
-  },
-  {
-    "id": "661555e6d602",
-    "title": "Concert et yoga",
-    "start": "2027-10-21T18:00",
-    "end": "",
-    "venue": "Aalt Stadhaus",
-    "address": "Avenue Charlotte 38, L-4530 Differdange",
-    "description": "Jnanadev David Ianni Le pianiste et professeur de yoga Jnanadev David Ianni propose un concert immersif, où la musique du piano se mêle aux mouvements doux et à la respiration du yoga. À la suite du succès des premiers concerts, nous avons décidé de continuer cette expérience unique, conçue pour les adultes et les jeunes dès 12 ans. Elle invite chacun à explorer un espace de calme intérieur à travers le son, le mouvement et le silence. Dans cette rencontre entre le piano et le yoga, Jnanadev David Ianni guide les participants vers un état de détente et de pleine conscience. Aucun prérequis en yoga ni souplesse particulière ne sont nécessaires; la pratique est accessible à tous. Les instructions de yoga sont données en luxembourgeois , permettant à chacun de suivre aisément le déroulement de la séance. Ce concert est une invitation à se reconnecter avec soi-même et à trouver un équilibre intérieur profond, porté par la beauté de la musique et la tranquillité du yoga. En savoir plus",
-    "url": "https://www.echo.lu/fr/experiences/concert-et-yoga-Z-wBc1",
-    "source": "ECHO API (officielle)",
-    "echo": true,
-    "status": "probable",
-    "reason": "mention « en luxembourgeois » dans le texte, lb non déclaré"
   }
 ]

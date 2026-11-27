@@ -1,35 +1,4 @@
 {
-  "verifier": [
-    {
-      "id": "516994f0abcd",
-      "title": "Concert et yoga",
-      "start": "2027-04-15T18:00",
-      "end": "",
-      "venue": "Aalt Stadhaus",
-      "url": "https://www.echo.lu/fr/experiences/concert-et-yoga-GzvqAA",
-      "reason": "mention « en luxembourgeois » dans le texte, lb non déclaré",
-      "snippet": "Jnanadev David Ianni Le pianiste et professeur de yoga Jnanadev David Ianni propose un concert immersif, où la musique du piano se mêle aux mouvements doux et à la respiration du yoga. À la suite du succès des premiers concerts, nous avons décidé de "
-    },
-    {
-      "id": "6c7f2e0a415a",
-      "title": "Concert et yoga",
-      "start": "2027-06-10T18:00",
-      "end": "",
-      "venue": "Aalt Stadhaus",
-      "url": "https://www.echo.lu/fr/experiences/concert-et-yoga-rSKv9J",
-      "reason": "mention « en luxembourgeois » dans le texte, lb non déclaré",
-      "snippet": "Jnanadev David Ianni Le pianiste et professeur de yoga Jnanadev David Ianni propose un concert immersif, où la musique du piano se mêle aux mouvements doux et à la respiration du yoga. À la suite du succès des premiers concerts, nous avons décidé de "
-    },
-    {
-      "id": "661555e6d602",
-      "title": "Concert et yoga",
-      "start": "2027-10-21T18:00",
-      "end": "",
-      "venue": "Aalt Stadhaus",
-      "url": "https://www.echo.lu/fr/experiences/concert-et-yoga-Z-wBc1",
-      "reason": "mention « en luxembourgeois » dans le texte, lb non déclaré",
-      "snippet": "Jnanadev David Ianni Le pianiste et professeur de yoga Jnanadev David Ianni propose un concert immersif, où la musique du piano se mêle aux mouvements doux et à la respiration du yoga. À la suite du succès des premiers concerts, nous avons décidé de "
-    }
-  ],
+  "verifier": [],
   "sauver": []
 }
