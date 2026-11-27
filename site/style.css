@@ -176,3 +176,11 @@ li:first-child > .row { border-top: 0; }
 .srclogo { display: inline-flex; align-items: center; }
 .srclogo img { display: block; height: 25px; width: auto; }
 @media (prefers-color-scheme: dark) { .srclogo--gray { filter: invert(1) brightness(1.1); } }
+.srclogo { display: inline-flex; align-items: center; }
+.srclogo img { display: block; height: 25px; width: auto; }
+@media (prefers-color-scheme: dark) { .srclogo--gray { filter: invert(1) brightness(1.1); } }
+
+.ongoing { margin: 0 0 1.5rem; border: 1px solid rgba(128,128,128,.3); border-radius: 10px; }
+.ongoing > summary { cursor: pointer; padding: .75rem 1rem; font-weight: 600; }
+.ongoing > summary span { font-weight: 400; opacity: .7; }
+.ongoing[open] > summary { border-bottom: 1px solid rgba(128,128,128,.3); }

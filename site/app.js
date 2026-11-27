@@ -69,16 +69,25 @@
   }
 
   function renderList(list) {
-    const today = todayIso(), groups = new Map();
-    list.forEach((e) => { const k = startDay(e) < today ? today : startDay(e); (groups.get(k) || groups.set(k, []).get(k)).push(e); });
+    const today = todayIso(), groups = new Map(), ongoing = [];
+    list.forEach((e) => {
+      if (startDay(e) < today) { ongoing.push(e); return; }
+      const k = startDay(e);
+      (groups.get(k) || groups.set(k, []).get(k)).push(e);
+    });
+    ongoing.sort((a, b) => endDay(a).localeCompare(endDay(b)));
     const keys = [...groups.keys()].sort();
     $("more").hidden = keys.length <= shownDays;
-    $("list").innerHTML = keys.slice(0, shownDays).map((k) => {
+    const days = keys.slice(0, shownDays).map((k) => {
       const d = parse(k), rel = dayLabel(k);
       return `<section class="day${k === today ? " day--today" : ""}" aria-label="${esc(fullDate(k))}">
         <h2 class="day__h">${rel ? `<b>${rel}</b>` : ""}<span>${rel ? "· " : "<b>"}${DAYS[d.getDay()]}${rel ? "" : "</b>"} ${d.getDate()}. ${MONTHS[d.getMonth()]}${d.getFullYear() !== new Date().getFullYear() ? " " + d.getFullYear() : ""}</span></h2>
         <ul class="rows">${groups.get(k).map(rowHtml).join("")}</ul></section>`;
     }).join("");
+    const run = ongoing.length
+      ? `<details class="ongoing"${$("q").value.trim() ? " open" : ""}><summary>Lafend Aktivitéiten <span>(${ongoing.length})</span></summary><ul class="rows">${ongoing.map(rowHtml).join("")}</ul></details>`
+      : "";
+    $("list").innerHTML = run + days;
   }
 
   function renderNext(list, f) {
