@@ -218,6 +218,9 @@ def scrape(source):
         new = 0
         for rec in records:
             rid = rec.get("id")
+            t = as_text(rec.get("title")).strip().lower()
+            if t in ("cornhole", "80. salon vum art vivant") or t.startswith("mi ma mach musik"):
+                print(f"[echo_api] REPERE {t[:30]} | id={rid} | objectID={rec.get('objectID')} | timestamps={rec.get('timestamps')}")
             if rid in seen_ids:
                 continue
             seen_ids.add(rid)
