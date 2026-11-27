@@ -28,6 +28,20 @@
     "reason": "texte en luxembourgeois (4 mots typiques)"
   },
   {
+    "id": "60b94bf892e5",
+    "title": "Lëtzebuergesch verstoen a schwätze léieren",
+    "start": "2026-09-22T18:00",
+    "end": "2026-12-08T20:00",
+    "venue": "Munsbach - Ancienne école (Salle A)",
+    "address": "202, rue Principale, L-5366 Münsbach",
+    "description": "Mir üben a schwätze Lëtzebuergesch am Alldag – praktesch Uwendungen Cours vu 42 Stonnen, deen den 22.09.26 ufänkt. Si sinn ëmmer dënschdes a mëttwochs ab 18:00 Auer (2 Stonnen). Méi Informatiounen an obligatoresch Umeldung ënnert https://www.unipop.lu/formations/letzebuergesch-verstoen-a-schwatze-leiren-a-1-1-du-cecrl-la-lb-1859-/ Pratiquer et parler le luxembourgeois au quotidien – applications pratiques Cours de 42 heures débutant le 22/09/26. Les cours ont lieu tous les mardis et mercredis à partir de 18h (2 heures). Plus d’informations et inscription obligatoire sur https://www.unipop.lu/formations/letzebuergesch-verstoen-a-schwatze-leiren-a-1-1-du-cecrl-la-lb-1859-/ Practising and speaking Luxembourgish in everyday life – practical applications A 42-hour course starting on 22/09/26. Classes are held every Tuesday and Wednesday from 6 p.m. (2 hours). More information and compulsory registration at https://www.unipop.lu/formations/letzebuergesch-verstoen-a-schwatze-leiren-a-1-1-du-cecrl-la-lb-1859-/",
+    "url": "https://www.echo.lu/fr/experiences/letzebuergesch-verstoen-a-schwatze-leieren-kBHjCh",
+    "source": "ECHO API (officielle)",
+    "echo": true,
+    "status": "confirmé",
+    "reason": "rattrapé manuellement"
+  },
+  {
     "id": "ca35d89d20ac",
     "title": "Lëtzebuergesch am Alldag - Schwätzen, verbesseren an uwenden",
     "start": "2026-10-15T16:40",
@@ -180,6 +194,20 @@
     "echo": true,
     "status": "confirmé",
     "reason": "texte en luxembourgeois (4 mots typiques)"
+  },
+  {
+    "id": "6160843241b5",
+    "title": "FEEL GOOD - POSITIV DUERCH DEN ALLDAG!",
+    "start": "2026-11-28T09:00",
+    "end": "2026-11-28T13:00",
+    "venue": "ManuKultura",
+    "address": "am Millenhaff 1, L-8706 Useldange",
+    "description": "Wat wär, wann eng bewosst positiv Haltung däin Alldag méi liicht, deng Bezéiungen déiwer a deng Resilienz méi staark maache géif? Entdeck konkret Übungen an Impulser – fir Beruff a Liewen. Du hëlls e perséinleche Positivitéitsplang mat heem. Was wäre, wenn eine bewusst positive Haltung deinen Alltag leichter, deine Beziehungen tiefer und deine Resilienz stärker machen würde? Entdecke konkrete Übungen und Impulse – für Beruf und Leben. Du nimmst einen persönlichen Positivitäts\u0002plan mit nach Hause. Ab 18 Joer",
+    "url": "https://www.echo.lu/fr/experiences/feel-good-positiv-duerch-den-alldag-JKcsg6",
+    "source": "ECHO API (officielle)",
+    "echo": true,
+    "status": "confirmé",
+    "reason": "rattrapé manuellement"
   },
   {
     "id": "6f323af9f51c",
