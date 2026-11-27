@@ -98,20 +98,6 @@
     "reason": "texte en luxembourgeois (4 mots typiques)"
   },
   {
-    "id": "ca4179875848",
-    "title": "Theaterfrënn Mansfeldia Clausen - Theaterowenter 2026",
-    "start": "2026-11-27T20:00",
-    "end": "2026-11-27T23:00",
-    "venue": "Centre Culturel Neudorf",
-    "address": "Rue de Neudorf 254, L-2222 LUXEMBOURG",
-    "description": "Theaterfrënn Mansfeldia Clausen invitéieren op hir Theaterowenter 2026: Beschass : Näischt lass Eng liicht frivol / pikant Komedie an dräi Akte vum Bernd Kietzke iwwersat vum Jos Weimerskirch Zwou Frëndinnen deelen zënter Joren alles mateneen – och dat, wat an hirem Bestietnes gutt leeft... oder eben net. Mee aus engem harmlos geduechte Plang gëtt séier vill méi, wéi sech iergendee virgestallt huet. Exzentresch Familljememberen, onerwaart Gäscht an eng Rei vu Mëssverständnesser suergen dofir, datt aus enger klenger Iddi e risege Chaos entsteet... Et spille mat: Brecht Tina -Eiffes Viv - Feller Danièle - Georges Sophie - Hentzen Liz Goedert Alex - Lang Mike - Muller Dan - Schommer Alex - Theisen Roland Technik: Bintz Elio Regie an Assistenz: Bebing Chris - Graffé Sonja",
-    "url": "",
-    "source": "ECHO API (officielle)",
-    "echo": true,
-    "status": "confirmé",
-    "reason": "texte en luxembourgeois (3 mots typiques)"
-  },
-  {
     "id": "3db3a41995e1",
     "title": "Kabaret Sténkdéier",
     "start": "2026-11-27T20:00",
@@ -124,6 +110,20 @@
     "echo": true,
     "status": "confirmé",
     "reason": "texte en luxembourgeois (19 mots typiques)"
+  },
+  {
+    "id": "ca4179875848",
+    "title": "Theaterfrënn Mansfeldia Clausen - Theaterowenter 2026",
+    "start": "2026-11-27T20:00",
+    "end": "2026-11-27T23:00",
+    "venue": "Centre Culturel Neudorf",
+    "address": "Rue de Neudorf 254, L-2222 LUXEMBOURG",
+    "description": "Theaterfrënn Mansfeldia Clausen invitéieren op hir Theaterowenter 2026: Beschass : Näischt lass Eng liicht frivol / pikant Komedie an dräi Akte vum Bernd Kietzke iwwersat vum Jos Weimerskirch Zwou Frëndinnen deelen zënter Joren alles mateneen – och dat, wat an hirem Bestietnes gutt leeft... oder eben net. Mee aus engem harmlos geduechte Plang gëtt séier vill méi, wéi sech iergendee virgestallt huet. Exzentresch Familljememberen, onerwaart Gäscht an eng Rei vu Mëssverständnesser suergen dofir, datt aus enger klenger Iddi e risege Chaos entsteet... Et spille mat: Brecht Tina -Eiffes Viv - Feller Danièle - Georges Sophie - Hentzen Liz Goedert Alex - Lang Mike - Muller Dan - Schommer Alex - Theisen Roland Technik: Bintz Elio Regie an Assistenz: Bebing Chris - Graffé Sonja",
+    "url": "",
+    "source": "ECHO API (officielle)",
+    "echo": true,
+    "status": "confirmé",
+    "reason": "texte en luxembourgeois (3 mots typiques)"
   },
   {
     "id": "21c5fc9f1519",
@@ -350,20 +350,6 @@
     "reason": "lb déclaré + mention explicite dans le texte"
   },
   {
-    "id": "e8e58da2a594",
-    "title": "Mardis littéraires – Handel, Wandel, Bauen an der Stad",
-    "start": "2026-12-01T18:30",
-    "end": "2026-12-01T20:00",
-    "venue": "Luxembourg-Ville - City Bibliothèque",
-    "address": "3, rue Genistre, L-1623 Lëtzebuerg",
-    "description": "’Union Commerciale vbibliotheque-events@vdl.luun der Stad gouf virun 120 Joer gegrënnt. Hir Fonctioun wor deemools fir kënnen den Interlocuteur vu Stad a Staat ze si wann et ëm Urbanismus a wirtschaftlech Entwécklung goung. D’Geschäftsleit hunn eng spezifesch Architektur an Design entwéckelt fir hir Geschäftshaiser an Devanturen. Si hu sech an der Stad eng Identitéit ginn, déi mer an der Konferenz gesinn. D’Geschäftswelt huet och engagéiert matdiscutéiert wann et ëm d’Urbaniséierung vum Plateau Bourbon goung an huet eng 2. Avenue duerch d’Alstad gefrot. Hir Meenung huet gezielt bei Projets wéi dem Bau vun enger neier Kathedral, engem Palais de Justice, engem Nationalmusée, enger Maarthal, schaafe vu Passages commerciaux. Selwer wollte si aus Lëtzebuerg eng « Kurstadt » maache fir Touristen. D’Konferenz geet op dës Froen aus den Ufanksjoren vun der Union Commerciale an. obligatoresch Reservéierung bibliotheque-events@vdl.lu",
-    "url": "",
-    "source": "ECHO API (officielle)",
-    "echo": true,
-    "status": "confirmé",
-    "reason": "texte en luxembourgeois (10 mots typiques)"
-  },
-  {
     "id": "44ccbfdea502",
     "title": "Mardis littéraires - Robert Philippart",
     "start": "2026-12-01T18:30",
@@ -371,6 +357,20 @@
     "venue": "Cercle Cité - Auditorium Cité",
     "address": "Rue Genistre 3, L-1623",
     "description": "Handel, Wandel, Bauen an der Stad D'Union Commerciale vun der Stad gouf virun 120 Joer gegrënnt. Hir Fonctioun wor deemools fir kënnen den Interlocuteur vu Stad a Staat ze si wann et ëm Urbanismus a wirtschaftlech Entwécklung goung. D'Geschäftsleit hunn eng spezifesch Architektur an Design entwéckelt fir hir Geschäftshaiser an Devanturen. Si hu sech an der Stad eng Identitéit ginn, déi mer an der Konferenz gesinn. D'Geschäftswelt huet och engagéiert matdiscutéiert wann et ëm d'Urbaniséierung vum Plateau Bourbon goung an huet eng 2. Avenue duerch d'Alstad gefrot. Hir Meenung huet gezielt bei Projets wéi dem Bau vun enger neier Kathedral, engem Palais de Justice, engem Nationalmusée, enger Maarthal, schaafe vu Passages commerciaux. Selwer wollte si aus Lëtzebuerg eng \"Kurstadt\" maache fir Touristen. D'Konferenz geet op dës Froen aus den Ufanksjoren vun der Union Commericale an. obligatoresch Reservéierung bibliotheque-events@vdl.lu www.citybiblio.lu",
+    "url": "",
+    "source": "ECHO API (officielle)",
+    "echo": true,
+    "status": "confirmé",
+    "reason": "texte en luxembourgeois (10 mots typiques)"
+  },
+  {
+    "id": "e8e58da2a594",
+    "title": "Mardis littéraires – Handel, Wandel, Bauen an der Stad",
+    "start": "2026-12-01T18:30",
+    "end": "2026-12-01T20:00",
+    "venue": "Luxembourg-Ville - City Bibliothèque",
+    "address": "3, rue Genistre, L-1623 Lëtzebuerg",
+    "description": "’Union Commerciale vbibliotheque-events@vdl.luun der Stad gouf virun 120 Joer gegrënnt. Hir Fonctioun wor deemools fir kënnen den Interlocuteur vu Stad a Staat ze si wann et ëm Urbanismus a wirtschaftlech Entwécklung goung. D’Geschäftsleit hunn eng spezifesch Architektur an Design entwéckelt fir hir Geschäftshaiser an Devanturen. Si hu sech an der Stad eng Identitéit ginn, déi mer an der Konferenz gesinn. D’Geschäftswelt huet och engagéiert matdiscutéiert wann et ëm d’Urbaniséierung vum Plateau Bourbon goung an huet eng 2. Avenue duerch d’Alstad gefrot. Hir Meenung huet gezielt bei Projets wéi dem Bau vun enger neier Kathedral, engem Palais de Justice, engem Nationalmusée, enger Maarthal, schaafe vu Passages commerciaux. Selwer wollte si aus Lëtzebuerg eng « Kurstadt » maache fir Touristen. D’Konferenz geet op dës Froen aus den Ufanksjoren vun der Union Commerciale an. obligatoresch Reservéierung bibliotheque-events@vdl.lu",
     "url": "",
     "source": "ECHO API (officielle)",
     "echo": true,
@@ -1093,20 +1093,6 @@
     "reason": "texte en luxembourgeois (3 mots typiques)"
   },
   {
-    "id": "00e01778e400",
-    "title": "D’Märche vun de Stärentaler",
-    "start": "2026-12-13T14:30",
-    "end": "2026-12-13T15:30",
-    "venue": "CAPE - Centre des Arts Pluriels Ettelbruck",
-    "address": "Place Marie-Adélaïde 1, L-9063 Ettelbrück",
-    "description": "E musikalescht Matmaachmärchen fräi inspiréiert vun „Die Sterntaler” vun de Gebridder Grimm Bei engem klenge Bësch lieft e Meedche mat engem groussen Häerz. Hat huet net vill – just e bëssen Iessen, e klengt Duch an eng waarm Mutz. Awer hat huet eppes, dat vill méi wäertvoll ass: d’Freed um Deelen. Op sengem Wee duerch de Bësch begéint hat Déieren, déi Hëllef brauchen. Eent fréiert, en anert huet Honger, en drëtt ass traureg oder eleng. Ouni ze zécken deelt hat, wat hat huet. Eng waarm, interaktiv Geschicht iwwer Zesummenhalt, Matgefill an den Zauber vum Deelen. Produktioun CAPE – Centre des Arts Pluriels Ettelbruck Mitwirkung : Dominique Steiner : Konzeptioun, Animatioun Arthur Possing : Piano & Keyboard",
-    "url": "https://cape.lu/dmarche-vun-de-starentaler/14298",
-    "source": "ECHO API (officielle)",
-    "echo": true,
-    "status": "confirmé",
-    "reason": "texte en luxembourgeois (4 mots typiques)"
-  },
-  {
     "id": "24a70c883057",
     "title": "Visite guidée combinée du Haut Fourneau et de la Cité des Sciences",
     "start": "2026-12-13T14:30",
@@ -1119,6 +1105,20 @@
     "echo": true,
     "status": "confirmé",
     "reason": "texte en luxembourgeois (3 mots typiques)"
+  },
+  {
+    "id": "00e01778e400",
+    "title": "D’Märche vun de Stärentaler",
+    "start": "2026-12-13T14:30",
+    "end": "2026-12-13T15:30",
+    "venue": "CAPE - Centre des Arts Pluriels Ettelbruck",
+    "address": "Place Marie-Adélaïde 1, L-9063 Ettelbrück",
+    "description": "E musikalescht Matmaachmärchen fräi inspiréiert vun „Die Sterntaler” vun de Gebridder Grimm Bei engem klenge Bësch lieft e Meedche mat engem groussen Häerz. Hat huet net vill – just e bëssen Iessen, e klengt Duch an eng waarm Mutz. Awer hat huet eppes, dat vill méi wäertvoll ass: d’Freed um Deelen. Op sengem Wee duerch de Bësch begéint hat Déieren, déi Hëllef brauchen. Eent fréiert, en anert huet Honger, en drëtt ass traureg oder eleng. Ouni ze zécken deelt hat, wat hat huet. Eng waarm, interaktiv Geschicht iwwer Zesummenhalt, Matgefill an den Zauber vum Deelen. Produktioun CAPE – Centre des Arts Pluriels Ettelbruck Mitwirkung : Dominique Steiner : Konzeptioun, Animatioun Arthur Possing : Piano & Keyboard",
+    "url": "https://cape.lu/dmarche-vun-de-starentaler/14298",
+    "source": "ECHO API (officielle)",
+    "echo": true,
+    "status": "confirmé",
+    "reason": "texte en luxembourgeois (4 mots typiques)"
   },
   {
     "id": "ff8ef742b0ca",
