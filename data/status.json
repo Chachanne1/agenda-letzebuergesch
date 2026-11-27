@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-27T13:49:10+00:00",
+  "updated": "2026-11-27T13:52:56+00:00",
   "sources": [
     {
       "name": "Visit Luxembourg (ECHO)",
@@ -18,8 +18,8 @@
     {
       "name": "ECHO API (officielle)",
       "ok": true,
-      "found": 10535,
-      "kept": 20,
+      "found": 4295,
+      "kept": 306,
       "error": ""
     }
   ]
