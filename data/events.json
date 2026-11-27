@@ -126,6 +126,20 @@
     "reason": "texte en luxembourgeois (4 mots typiques)"
   },
   {
+    "id": "4c5788afa2a5",
+    "title": "Sproochecafé",
+    "start": "2026-11-27T19:00",
+    "end": "2026-11-27T21:00",
+    "venue": "Miseler Kollektiv - MiKo",
+    "address": "rue de Trèves 23, 6793 Grevenmacher",
+    "description": "LUX Edition Loscht aaneren ze hëllefen hir lëtzebuergesch Sproochekenntnisser ze verdéiwen? Am Sproochecafé schwätzen a laache mir an entdecken zesummen eis lëtzebuerger Sprooch. Komm laanscht an gëff aaneren d’Méiglechkeet Lëtzebuergesch ze schwätzen, nei Leit kennenzeléieren an dobäi e flotte Moment zesummen ze verbréngen. All Mount ass de Sproochecafé anescht!",
+    "url": "https://www.echo.lu/fr/experiences/language-cafe-HI4814",
+    "source": "ECHO API (officielle)",
+    "echo": true,
+    "status": "confirmé",
+    "reason": "rattrapé manuellement"
+  },
+  {
     "id": "3db3a41995e1",
     "title": "Kabaret Sténkdéier",
     "start": "2026-11-27T20:00",
