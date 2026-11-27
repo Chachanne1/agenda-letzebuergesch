@@ -307,6 +307,20 @@
     "reason": "texte en luxembourgeois (8 mots typiques)"
   },
   {
+    "id": "3f7b2a6bedab",
+    "title": "Concert de Gala 2027",
+    "start": "2027-01-24T16:00",
+    "end": "2027-01-24T20:00",
+    "venue": "Centre culturel CELO Hesperange",
+    "address": "route de Thionville 476, L-5886 HESPERANGE",
+    "description": "La Fanfare Municipale Luxembourg-Bonnevoie (Bouneweger Musek), sous la direction de Romain Kerschen, donnera son traditionnel Concert de Gala en janvier 2027 au CELO à Hesperange. À cette occasion, l'orchestre présentera au public un programme riche et varié, illustrant toute la diversité et la richesse du répertoire pour fanfare. Parmi les œuvres interprétées figureront notamment The Lords of Masmine de Jan Van der Roost, Wonders of Nature de Bert Appermont ainsi que Plasma for Fanfare Band de Gauthier Dupertuis.",
+    "url": "",
+    "source": "ECHO API (officielle)",
+    "echo": true,
+    "status": "confirmé",
+    "reason": "rattrapé manuellement"
+  },
+  {
     "id": "a6f7b8f90828",
     "title": "Ernärung als verstoppte Basis",
     "start": "2027-01-27T18:30",
