@@ -45,7 +45,7 @@
     "max_pages": 30,
     "delay": 0.5,
     "lb_only": false,
-    "enabled": false,
+    "enabled": true,
     "note": "API officielle d'ECHO. Nécessite une clé (secret GitHub ECHO_API_KEY). Champ `languages` : « lb » = confirmé. À activer quand la clé est obtenue ; comparer ensuite avec la source Visit Luxembourg (ECHO) pour éviter les doublons."
   },
   {
