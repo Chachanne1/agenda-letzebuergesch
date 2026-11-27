@@ -6,7 +6,7 @@ import unicodedata
 import urllib.request
 from datetime import datetime, timezone
 
-USER_AGENT = "agenda-letzebuergesch/0.1 (+https://github.com/Chachanne1/agenda-letzebuergesch)"
+USER_AGENT = "agenda-letzebuergesch/0.1 (+https://github.com/agenda-letzebuergesch/agenda-letzebuergesch.github.io)"
 
 
 def fetch(url, timeout=30):

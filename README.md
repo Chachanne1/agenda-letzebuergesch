@@ -3,7 +3,7 @@
 Rassemble les activités en luxembourgeois au Luxembourg.
 Sammel d'Aktivitéiten op Lëtzebuergesch zu Lëtzebuerg zesummen.
 
-Site : https://chachanne1.github.io/agenda-letzebuergesch
+Site : https://agenda-letzebuergesch.github.io
 
 ## Comment ça marche
 

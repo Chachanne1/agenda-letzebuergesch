@@ -18,7 +18,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "snapshots"
-UA = "agenda-letzebuergesch/0.1 (+https://github.com/Chachanne1/agenda-letzebuergesch)"
+UA = "agenda-letzebuergesch/0.1 (+https://github.com/agenda-letzebuergesch/agenda-letzebuergesch.github.io)"
 MAX_BYTES = 1_500_000
 SKIP_TYPES = {"post", "page", "attachment", "nav_menu_item", "wp_block", "wp_template",
               "wp_template_part", "wp_navigation", "wp_global_styles", "wp_font_family",

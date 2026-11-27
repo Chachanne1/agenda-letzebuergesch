@@ -15,7 +15,7 @@ GitHub → ton avatar → **Settings → Developer settings → Personal access 
 
 ## 3. Turnstile, l'anti-robots gratuit de Cloudflare (3 min)
 Cloudflare (crée un compte gratuit si besoin) → **Turnstile → Add widget**
-- Hostname : `chachanne1.github.io`
+- Hostname : `agenda-letzebuergesch.github.io`
 - Mode : **Managed**
 - Tu obtiens une **clé de site** (publique) et une **clé secrète** (à garder).
 
@@ -27,8 +27,8 @@ Puis **Settings → Variables and Secrets** :
 |---|---|---|
 | `GITHUB_TOKEN` | Secret | le jeton de l'étape 2 |
 | `TURNSTILE_SECRET` | Secret | la clé secrète de l'étape 3 |
-| `GITHUB_REPO` | Texte | `Chachanne1/agenda-letzebuergesch` |
-| `ALLOWED_ORIGIN` | Texte | `https://chachanne1.github.io` (sans `/` final) |
+| `GITHUB_REPO` | Texte | `agenda-letzebuergesch/agenda-letzebuergesch.github.io` |
+| `ALLOWED_ORIGIN` | Texte | `https://agenda-letzebuergesch.github.io` (sans `/` final) |
 
 Note l'adresse du Worker : `https://agenda-propositions.<ton-compte>.workers.dev`.
 
@@ -62,4 +62,4 @@ puis `git add . && git commit -m "Formulaire activé" && git pull --rebase && gi
 ## Limites connues
 - Offre gratuite Cloudflare : 100 000 requêtes/jour pour le Worker ; Turnstile gratuit.
 - Les textes du formulaire en luxembourgeois sont de moi : relis-les.
-- Tant que le site tourne sur `github.io`, l'origine autorisée est `https://chachanne1.github.io` ; si tu achètes un domaine, change `ALLOWED_ORIGIN` et le hostname Turnstile.
+- Tant que le site tourne sur `github.io`, l'origine autorisée est `https://agenda-letzebuergesch.github.io` ; si tu achètes un domaine, change `ALLOWED_ORIGIN` et le hostname Turnstile.

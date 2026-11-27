@@ -11,7 +11,7 @@ import urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-UA = "agenda-letzebuergesch/0.1 (+https://github.com/Chachanne1/agenda-letzebuergesch)"
+UA = "agenda-letzebuergesch/0.1 (+https://github.com/agenda-letzebuergesch/agenda-letzebuergesch.github.io)"
 
 
 def probe(url):

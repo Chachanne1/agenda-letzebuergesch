@@ -16,7 +16,7 @@ concurrency:
 jobs:
   apply:
     # seulement les issues de revue, et seulement si c'est le propriétaire du dépôt qui les modifie
-    if: github.actor == github.repository_owner && (contains(join(github.event.issue.labels.*.name, ','), 'revue-verifier') || contains(join(github.event.issue.labels.*.name, ','), 'revue-sauver'))
+    if: github.actor == 'Chachanne1' && (contains(join(github.event.issue.labels.*.name, ','), 'revue-verifier') || contains(join(github.event.issue.labels.*.name, ','), 'revue-sauver'))
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
