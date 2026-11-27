@@ -18,14 +18,15 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 OWNER = os.environ.get("REVUE_OWNER", "Chachanne1")
-MAX_ITEMS = 150
+MAX_ITEMS = 100
+VERSION = "<!--v3-->"  # change quand le format de l'issue change : force la réécriture des issues existantes
 LISTS = {
     "verifier": {
         "label": "revue-verifier", "decision": "retirer",
         "title": "À vérifier : activités affichées dont le texte dit « en luxembourgeois »",
         "intro": "Ces activités **sont affichées** sur le site. Le texte mentionne le luxembourgeois mais l'organisateur n'a pas "
                  "coché « lb ». **Cochez celles qui sont des faux positifs** : elles seront retirées au prochain passage. "
-                 "Ne rien cocher = elles restent affichées.",
+                 "Ne rien cocher = elles restent affichées. « écarter définitivement » : l'activité disparaît de cette liste pour de bon.",
     },
     "sauver": {
         "label": "revue-sauver", "decision": "ajouter",
@@ -35,6 +36,8 @@ LISTS = {
     },
 }
 ID_RE = re.compile(r"^- \[( |x|X)\] <!--id:([0-9a-f]{12})-->", re.M)
+ALL_RE = re.compile(r"^- \[(x|X)\] <!--all-->", re.M)
+NO_RE = re.compile(r"^\s+- \[( |x|X)\] <!--no:([0-9a-f]{12})-->", re.M)
 
 
 def gh(*args, check=True):
@@ -43,6 +46,8 @@ def gh(*args, check=True):
 
 def line(it):
     when = (it.get("start") or "")[:16].replace("T", " ")
+    if it.get("end") and it["end"][:10] != (it.get("start") or "")[:10]:
+        when += " → " + it["end"][:10]
     bits = [f"**{it['title']}**", when, it.get("venue") or "", it.get("reason") or ""]
     txt = f"- [ ] <!--id:{it['id']}--> " + " · ".join(b for b in bits if b)
     if it.get("url"):
@@ -50,15 +55,26 @@ def line(it):
     if it.get("snippet"):
         snippet = re.sub(r"\s+", " ", it["snippet"])
         txt += f"\n  > {snippet}…"
-    return txt
+    return txt + f"\n  - [ ] <!--no:{it['id']}--> écarter définitivement"
 
 
-def body_for(kind, items, ticked=()):
+def body_for(kind, items, ticked=(), ticked_no=()):
     cfg = LISTS[kind]
     shown = items[:MAX_ITEMS]
-    rows = [line(it).replace("- [ ]", "- [x]", 1) if it["id"] in ticked else line(it) for it in shown]
+    rows = []
+    for it in shown:
+        row = line(it)
+        if it["id"] in ticked:
+            row = row.replace("- [ ]", "- [x]", 1)
+        if it["id"] in ticked_no:
+            row = row.replace(f"- [ ] <!--no:{it['id']}-->", f"- [x] <!--no:{it['id']}-->")
+        rows.append(row)
     more = f"\n\n_{len(items) - MAX_ITEMS} autres à venir au prochain passage._" if len(items) > MAX_ITEMS else ""
-    return f"@{OWNER}\n\n{cfg['intro']}\n\n" + "\n".join(rows) + more + "\n"
+    master = ""
+    if kind == "sauver":
+        master = (f"- [ ] <!--all--> **Écarter TOUTE la liste d'un coup** ({len(items)} activités, y compris celles pas encore "
+                  "affichées ci-dessous), sauf celles dont la case « ajouter » est cochée\n\n")
+    return f"@{OWNER} {VERSION}\n\n{cfg['intro']}\n\n" + master + "\n".join(rows) + more + "\n"
 
 
 def ids_in(body):
@@ -84,10 +100,11 @@ def publish():
         num, old = existing[0]["number"], existing[0]["body"]
         old_ids = [i for _, i in ids_in(old)]
         new_ids = [i["id"] for i in items[:MAX_ITEMS]]
-        if old_ids == new_ids:
+        if old_ids == new_ids and VERSION in (old or ""):
             continue  # rien de changé : on ne touche pas à l'issue (les cases cochées en cours restent)
         ticked = {i for mark, i in ids_in(old) if mark.lower() == "x"}
-        gh("issue", "edit", str(num), "--body", body_for(kind, items, ticked))
+        ticked_no = {i for mark, i in NO_RE.findall(old or "") if mark.lower() == "x"}
+        gh("issue", "edit", str(num), "--body", body_for(kind, items, ticked, ticked_no))
         added = [i for i in new_ids if i not in old_ids]
         if added:
             gh("issue", "comment", str(num), "--body", f"@{OWNER} {len(added)} nouvel(le)s activité(s) à examiner.")
@@ -100,8 +117,11 @@ def apply():
     if not kind:
         print("[revue] issue sans étiquette de revue : rien à faire")
         return
-    ticked = [i for mark, i in ids_in(os.environ.get("ISSUE_BODY", "")) if mark.lower() == "x"]
-    if not ticked:
+    body = os.environ.get("ISSUE_BODY", "")
+    ticked = [i for mark, i in ids_in(body) if mark.lower() == "x"]
+    ticked_no = [i for mark, i in NO_RE.findall(body) if mark.lower() == "x"]
+    all_ticked = bool(ALL_RE.search(body)) and kind == "sauver"
+    if not ticked and not ticked_no and not all_ticked:
         print("[revue] aucune case cochée")
         return
     path = DATA / "revue.json"
@@ -110,10 +130,19 @@ def apply():
     except (FileNotFoundError, json.JSONDecodeError):
         revue = {}
     key = LISTS[kind]["decision"]
-    merged = sorted(set(revue.get(key, [])) | set(ticked))
-    revue = {"retirer": revue.get("retirer", []), "ajouter": revue.get("ajouter", []), key: merged}
-    path.write_text(json.dumps(revue, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"[revue] {len(ticked)} décision(s) enregistrée(s) ({key})")
+    out = {k: list(revue.get(k, [])) for k in ("retirer", "ajouter", "ecarter")}
+    out[key] = sorted(set(out[key]) | (set(ticked) - set(ticked_no)))
+    out["ecarter"] = sorted(set(out["ecarter"]) | set(ticked_no))
+    if all_ticked:  # tout ce qui attend dans la file, sauf les « ajouter » cochés
+        try:
+            queue = json.loads((DATA / "revue_queue.json").read_text(encoding="utf-8")).get("sauver", [])
+        except (FileNotFoundError, json.JSONDecodeError):
+            queue = []
+        rest = {q["id"] for q in queue} - set(ticked)
+        out["ecarter"] = sorted(set(out["ecarter"]) | rest)
+        print(f"[revue] liste entière écartée : {len(rest)} activités")
+    path.write_text(json.dumps(out, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(f"[revue] {len(ticked)} décision(s) {key}, {len(ticked_no)} écartée(s) définitivement")
 
 
 if __name__ == "__main__":

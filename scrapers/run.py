@@ -41,7 +41,7 @@ def is_upcoming(ev, today):
 
 def revue_item(ev, reason):
     keys = ("id", "title", "start", "end", "venue", "url")
-    return {**{k: ev.get(k, "") for k in keys}, "reason": reason, "snippet": (ev.get("description") or "")[:200]}
+    return {**{k: ev.get(k, "") for k in keys}, "reason": reason, "snippet": (ev.get("description") or "")[:250]}
 
 
 def main():
@@ -53,6 +53,7 @@ def main():
     # décisions prises dans les issues de revue (voir revue.py) : {"retirer": [ids], "ajouter": [ids]}
     revue = load(DATA / "revue.json", {})
     retirer, ajouter = set(revue.get("retirer", [])), set(revue.get("ajouter", []))
+    ecarter = set(revue.get("ecarter", []))  # « écarter définitivement » (cases des issues de revue)
     queue = load(DATA / "revue_queue.json", {"verifier": [], "sauver": []})
     status = []
 
@@ -91,7 +92,7 @@ def main():
                     found_ids.add(ev["id"])
                     voie, reason = classify_echo(ev["title"], ev["description"], ev.pop("_langs", []))
                     ev.pop("_lang", None)
-                    if voie is None or ev["id"] in retirer:
+                    if voie is None or ev["id"] in retirer or ev["id"] in ecarter:
                         continue
                     if voie == "sauver":
                         if ev["id"] not in ajouter:
@@ -124,6 +125,7 @@ def main():
             if src["type"] == "echo_api":
                 retirer &= found_ids  # on oublie les décisions sur des événements qui ne sont plus dans l'API
                 ajouter &= found_ids
+                ecarter &= found_ids
             entry["ok"] = True
         except Exception as exc:  # une source cassée ne doit pas bloquer les autres
             entry["error"] = f"{type(exc).__name__}: {exc}"
@@ -135,7 +137,7 @@ def main():
     save(DATA / "events.json", sorted(events.values(), key=lambda e: e["start"]))
     save(DATA / "pending.json", sorted(pending.values(), key=lambda e: e["start"]))
     save(DATA / "rejected.json", sorted(rejected))
-    save(DATA / "revue.json", {"retirer": sorted(retirer), "ajouter": sorted(ajouter)})
+    save(DATA / "revue.json", {"retirer": sorted(retirer), "ajouter": sorted(ajouter), "ecarter": sorted(ecarter)})
     save(DATA / "revue_queue.json", queue)
     save(DATA / "status.json", {
         "updated": datetime.now(timezone.utc).isoformat(timespec="seconds"),

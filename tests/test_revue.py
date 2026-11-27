@@ -21,11 +21,36 @@ class Issue(unittest.TestCase):
         body = revue.body_for("sauver", items, ticked={"b" * 12})
         self.assertEqual([i for _, i in revue.ids_in(body)], ["a" * 12, "b" * 12])
         self.assertEqual([i for m, i in revue.ids_in(body) if m == "x"], ["b" * 12])
+        self.assertEqual(body.count("écarter définitivement"), 2)
+        self.assertLess(len(revue.body_for("sauver", items * 50)), 65000)
+        body2 = body.replace(f"- [ ] <!--no:{'a'*12}-->", f"- [x] <!--no:{'a'*12}-->").replace(f"- [ ] <!--id:{'a'*12}-->", f"- [x] <!--id:{'a'*12}-->")
         with tempfile.TemporaryDirectory() as d:
             revue.DATA = Path(d)
             os.environ.update(ISSUE_BODY=body, ISSUE_LABELS="revue-sauver")
             revue.apply()
             self.assertEqual(json.loads((Path(d) / "revue.json").read_text())["ajouter"], ["b" * 12])
+            os.environ["ISSUE_BODY"] = body2
+            revue.apply()
+            r = json.loads((Path(d) / "revue.json").read_text())
+            self.assertEqual(r["ecarter"], ["a" * 12])
+            self.assertEqual(r["ajouter"], ["b" * 12])  # écarter l'emporte sur ajouter
+
+
+class MasterTick(unittest.TestCase):
+    def test_tout_ecarter(self):
+        items = [{"id": c * 12, "title": c, "start": "2026-12-01", "venue": "", "url": "", "reason": "r", "snippet": ""} for c in "abc"]
+        body = revue.body_for("sauver", items)
+        self.assertIn("<!--all-->", body)
+        self.assertNotIn("<!--all-->", revue.body_for("verifier", items))
+        body = body.replace("- [ ] <!--all-->", "- [x] <!--all-->").replace(f"- [ ] <!--id:{'b'*12}-->", f"- [x] <!--id:{'b'*12}-->")
+        with tempfile.TemporaryDirectory() as d:
+            revue.DATA = Path(d)
+            (Path(d) / "revue_queue.json").write_text(json.dumps({"sauver": items + [{"id": "d" * 12}]}))
+            os.environ.update(ISSUE_BODY=body, ISSUE_LABELS="revue-sauver")
+            revue.apply()
+            r = json.loads((Path(d) / "revue.json").read_text())
+            self.assertEqual(r["ecarter"], ["a" * 12, "c" * 12, "d" * 12])
+            self.assertEqual(r["ajouter"], ["b" * 12])
 
 
 if __name__ == "__main__":
