@@ -1,4 +1,155 @@
 {
   "verifier": [],
-  "sauver": []
+  "sauver": [
+    {
+      "id": "46f0ffb66d50",
+      "title": "QUATUOR LUDWIG",
+      "start": "2026-11-29T17:00",
+      "end": "",
+      "venue": "Château de Bourglinster",
+      "url": "https://www.echo.lu/fr/experiences/quatuor-ludwig-eLxNEQ",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Artiste : Sébastien Surel violon I, Manuel Doutrelant violon II, Violaine Despeyroux alto, Anne Copéry violoncelle Œuvre : Œuvres de Ludwig van Beethoven, Johannes Brahms"
+    },
+    {
+      "id": "e9eca2ed5ef6",
+      "title": "LES ANNÉES FOLLES",
+      "start": "2027-01-08T19:00",
+      "end": "2027-01-08T23:45",
+      "venue": "Sang a Klang",
+      "url": "https://www.echo.lu/fr/experiences/les-annees-folles-y7ciuW",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "THE ROARING '20s ES ANNÉES FOLLES - ROARING '20s Eine Jazzband mit Sängerin spielt Blues und Swing für Musikliebhaber und Tänzer und lässt die Eleganz und gesellige Atmosphäre der Gatsby-Ära wieder aufleben. Und neu in dieser zweiten Saison: ein Hauc"
+    },
+    {
+      "id": "e8cdef0e3a62",
+      "title": "La renaissance d’une friche industrielle",
+      "start": "2027-01-20T12:30",
+      "end": "2027-01-20T14:00",
+      "venue": "LUCA – Luxembourg Center for Architecture",
+      "url": "https://www.echo.lu/fr/experiences/la-renaissance-d-une-friche-industrielle-0Ze1-t",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Le nouveau quartier de « NeiSchmelz » à Dudelange Ancien site sidérurgique de Dudelange, « NeiSchmelz » fait aujourd’hui l’objet d’un vaste projet de reconversion urbaine. La transformation de cette friche industrielle en un quartier durable et mixte"
+    },
+    {
+      "id": "9a380d6c6fe1",
+      "title": "Kaffi & Kuch am Rainbow Center",
+      "start": "2026-12-13T14:00",
+      "end": "2026-12-13T17:00",
+      "venue": "Rainbow Center - Zentrum fir queer Kultur",
+      "url": "https://www.echo.lu/fr/experiences/kaffi-kuch-am-rainbow-center-fQr48C",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Kaffee und Kuchen Das Rainbow Center ist als queeres Kulturzentrum eine Begegnungsstätte, um sich kennenzulernen und auszutauschen. In diesem Sinne veranstalten wir seit Anfang 2024 das monatliche „Kaffi a Kuch“ (übersetzt Kaffee und Kuchen) an. Wir "
+    },
+    {
+      "id": "f9a7390aeaa8",
+      "title": "Kaffi & Kuch am Rainbow Center",
+      "start": "2027-01-10T14:00",
+      "end": "2027-01-10T17:00",
+      "venue": "Rainbow Center - Zentrum fir queer Kultur",
+      "url": "https://www.echo.lu/fr/experiences/kaffi-kuch-am-rainbow-center-fQr48C",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Kaffee und Kuchen Das Rainbow Center ist als queeres Kulturzentrum eine Begegnungsstätte, um sich kennenzulernen und auszutauschen. In diesem Sinne veranstalten wir seit Anfang 2024 das monatliche „Kaffi a Kuch“ (übersetzt Kaffee und Kuchen) an. Wir "
+    },
+    {
+      "id": "b12037f09c39",
+      "title": "Kaffi & Kuch am Rainbow Center",
+      "start": "2027-02-14T14:00",
+      "end": "2027-02-14T17:00",
+      "venue": "Rainbow Center - Zentrum fir queer Kultur",
+      "url": "https://www.echo.lu/fr/experiences/kaffi-kuch-am-rainbow-center-fQr48C",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Kaffee und Kuchen Das Rainbow Center ist als queeres Kulturzentrum eine Begegnungsstätte, um sich kennenzulernen und auszutauschen. In diesem Sinne veranstalten wir seit Anfang 2024 das monatliche „Kaffi a Kuch“ (übersetzt Kaffee und Kuchen) an. Wir "
+    },
+    {
+      "id": "bc6926dce712",
+      "title": "Kaffi & Kuch am Rainbow Center",
+      "start": "2027-03-14T14:00",
+      "end": "2027-03-14T17:00",
+      "venue": "Rainbow Center - Zentrum fir queer Kultur",
+      "url": "https://www.echo.lu/fr/experiences/kaffi-kuch-am-rainbow-center-fQr48C",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Kaffee und Kuchen Das Rainbow Center ist als queeres Kulturzentrum eine Begegnungsstätte, um sich kennenzulernen und auszutauschen. In diesem Sinne veranstalten wir seit Anfang 2024 das monatliche „Kaffi a Kuch“ (übersetzt Kaffee und Kuchen) an. Wir "
+    },
+    {
+      "id": "fe370b8f7226",
+      "title": "Kaffi & Kuch am Rainbow Center",
+      "start": "2027-04-11T14:00",
+      "end": "2027-04-11T17:00",
+      "venue": "Rainbow Center - Zentrum fir queer Kultur",
+      "url": "https://www.echo.lu/fr/experiences/kaffi-kuch-am-rainbow-center-fQr48C",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Kaffee und Kuchen Das Rainbow Center ist als queeres Kulturzentrum eine Begegnungsstätte, um sich kennenzulernen und auszutauschen. In diesem Sinne veranstalten wir seit Anfang 2024 das monatliche „Kaffi a Kuch“ (übersetzt Kaffee und Kuchen) an. Wir "
+    },
+    {
+      "id": "e887479d7e14",
+      "title": "Pink Ladies Meetup",
+      "start": "2026-12-11T20:00",
+      "end": "2026-12-11T23:00",
+      "venue": "Rainbow Center - Zentrum fir queer Kultur",
+      "url": "https://www.echo.lu/fr/experiences/pink-ladies-meetup-zH8-9_",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Queer Women Luxembourg Pink Ladies Meetup 💗 Une petite rencontre entre femmes queer au Luxembourg ! Rejoignez-nous au Rainbow Center pour une soirée conviviale et décontractée, l’occasion de faire de nouvelles rencontres, de retrouver des visages fam"
+    },
+    {
+      "id": "04562a77239a",
+      "title": "Pink Ladies Meetup",
+      "start": "2027-01-08T20:00",
+      "end": "2027-01-08T23:00",
+      "venue": "Rainbow Center - Zentrum fir queer Kultur",
+      "url": "https://www.echo.lu/fr/experiences/pink-ladies-meetup-zH8-9_",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Queer Women Luxembourg Pink Ladies Meetup 💗 Une petite rencontre entre femmes queer au Luxembourg ! Rejoignez-nous au Rainbow Center pour une soirée conviviale et décontractée, l’occasion de faire de nouvelles rencontres, de retrouver des visages fam"
+    },
+    {
+      "id": "956f1e736a49",
+      "title": "Pink Ladies Meetup",
+      "start": "2027-02-12T20:00",
+      "end": "2027-02-12T23:00",
+      "venue": "Rainbow Center - Zentrum fir queer Kultur",
+      "url": "https://www.echo.lu/fr/experiences/pink-ladies-meetup-zH8-9_",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Queer Women Luxembourg Pink Ladies Meetup 💗 Une petite rencontre entre femmes queer au Luxembourg ! Rejoignez-nous au Rainbow Center pour une soirée conviviale et décontractée, l’occasion de faire de nouvelles rencontres, de retrouver des visages fam"
+    },
+    {
+      "id": "bb61a86d58a8",
+      "title": "Pink Ladies Meetup",
+      "start": "2027-03-12T20:00",
+      "end": "2027-03-12T23:00",
+      "venue": "Rainbow Center - Zentrum fir queer Kultur",
+      "url": "https://www.echo.lu/fr/experiences/pink-ladies-meetup-zH8-9_",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Queer Women Luxembourg Pink Ladies Meetup 💗 Une petite rencontre entre femmes queer au Luxembourg ! Rejoignez-nous au Rainbow Center pour une soirée conviviale et décontractée, l’occasion de faire de nouvelles rencontres, de retrouver des visages fam"
+    },
+    {
+      "id": "1dc905f0e496",
+      "title": "Pink Ladies Meetup",
+      "start": "2027-04-09T20:00",
+      "end": "2027-04-09T23:00",
+      "venue": "Rainbow Center - Zentrum fir queer Kultur",
+      "url": "https://www.echo.lu/fr/experiences/pink-ladies-meetup-zH8-9_",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Queer Women Luxembourg Pink Ladies Meetup 💗 Une petite rencontre entre femmes queer au Luxembourg ! Rejoignez-nous au Rainbow Center pour une soirée conviviale et décontractée, l’occasion de faire de nouvelles rencontres, de retrouver des visages fam"
+    },
+    {
+      "id": "8232fe0f0994",
+      "title": "Pink Ladies Meetup",
+      "start": "2027-05-14T20:00",
+      "end": "2027-05-14T23:00",
+      "venue": "Rainbow Center - Zentrum fir queer Kultur",
+      "url": "https://www.echo.lu/fr/experiences/pink-ladies-meetup-zH8-9_",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Queer Women Luxembourg Pink Ladies Meetup 💗 Une petite rencontre entre femmes queer au Luxembourg ! Rejoignez-nous au Rainbow Center pour une soirée conviviale et décontractée, l’occasion de faire de nouvelles rencontres, de retrouver des visages fam"
+    },
+    {
+      "id": "4268cbee6502",
+      "title": "Pink Ladies Meetup",
+      "start": "2027-06-11T20:00",
+      "end": "2027-06-11T22:00",
+      "venue": "Rainbow Center - Zentrum fir queer Kultur",
+      "url": "https://www.echo.lu/fr/experiences/pink-ladies-meetup-zH8-9_",
+      "reason": "lb déclaré mais aucune indication dans le texte",
+      "snippet": "Queer Women Luxembourg Pink Ladies Meetup 💗 Une petite rencontre entre femmes queer au Luxembourg ! Rejoignez-nous au Rainbow Center pour une soirée conviviale et décontractée, l’occasion de faire de nouvelles rencontres, de retrouver des visages fam"
+    }
+  ]
 }
